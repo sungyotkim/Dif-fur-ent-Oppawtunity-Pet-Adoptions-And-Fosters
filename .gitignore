@@ -1,2 +1,8 @@
 node_modules/
 .DS_Store
+self_notes.md
+.env
+main.js
+main.js.map
+main.css
+main.css.map
