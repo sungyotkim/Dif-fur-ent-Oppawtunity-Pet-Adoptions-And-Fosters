@@ -24,6 +24,12 @@ let shelters = [
     location: "306 E 59th St, New York, NY 10022",
     zipcode: 10022,
     website: "http://www.humanesocietyny.org/adoptions/"
+  },
+  {
+    name: "Bobbi & the Strays",
+    location: "80-36 Cooper Ave, Glendale, NY 11385",
+    zipcode: 11385,
+    website: "https://bobbiandthestrays.org/"
   }
 ]
 

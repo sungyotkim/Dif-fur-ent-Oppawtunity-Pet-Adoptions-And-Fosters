@@ -1,14 +1,13 @@
 $lightbrown: #743e28;
 $darkbrown: #bb8c5d;
 $lightgray: #AAA7A6;
+$white: white;
 
 body {
-  background: white;
+  background: $white;
 }
 
 .container {
-  // position: absolute;
-  // overflow: hidden;
   height: auto;
   width: 100%;
   top: 0px;
@@ -21,14 +20,18 @@ body {
   height: 100vh;
   width: 80%;
   margin:0 auto;
-  // background-color: green;
+  background-color: green;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 1fr 4fr;
 }
 
 .left{
   position: absolute;
   background: url(../dist/assets/pawprint1.png);
   background-size: 100px;
-  background-repeat: space;
+  background-repeat: repeat;
+  // background-repeat: repeat-y;
   height: 100vh;
   width: 10%;
   top: 50px;
@@ -38,7 +41,8 @@ body {
   position: absolute;
   background: url(../dist/assets/pawprint2.png);
   background-size: 100px;
-  background-repeat: space;
+  background-repeat: repeat;
+  // background-repeat: repeat-y;
   height: 100vh;
   width: 10%;
   top: 50px;
@@ -54,10 +58,42 @@ nav {
 .featured-container{
   height: 200px;
   width: 100%;
-  // background-color: blue;
+  background-color: blue;
+  grid-column: 1 / -1;
+  grid-row: auto;
 }
 
 #btn:hover {
   cursor: pointer;
 }
 
+.search-results-container {
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.search-bar-container {
+  background-color: green;
+  height: auto;
+  width: 100%;
+}
+
+.search-results-container {
+  background-color: pink;
+}
+
+.right-container {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+}
+
+.shelter-chart-container {
+  background-color: gray;
+}
+
+.favorites-container {
+  background-color: beige;
+}
