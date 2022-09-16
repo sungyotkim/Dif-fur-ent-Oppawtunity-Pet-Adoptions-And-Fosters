@@ -18,7 +18,9 @@ In Dif-fur-ent Oppawtunity, users will be able to: <br>
 - [ ] Request to foster the animal
 - [ ] Request to adopt the animal
 - [ ] See the shelter's requirements to foster/adopt the animal
-<br> In addition, this project will include: <br>
+
+<br> <p> In addition, this project will include: </p> <br>
+
 - [ ] A README explaining the project
 - [ ] An about page detailing additional background information resulting to the creation of this project
 - [ ] Credits to relevant sources
