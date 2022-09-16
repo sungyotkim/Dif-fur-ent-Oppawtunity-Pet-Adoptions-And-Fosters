@@ -1,0 +1,52 @@
+$lightbrown: #743e28;
+$darkbrown: #bb8c5d;
+$lightgray: #AAA7A6;
+
+body {
+  background:
+  linear-gradient(to right, $lightbrown, $darkbrown, $lightgray);
+  background-color: $lightbrown;
+}
+
+.container {
+  position: absolute;
+  overflow: hidden;
+  height: auto;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 2500;
+}
+
+.container-center {
+  position: relative;
+  height: 100vh;
+  width: 80%;
+  margin:0 auto;
+}
+
+.left{
+  position: absolute;
+  // background: ;
+  height: 100vh;
+  width: 10%;
+  top: 0px;
+}
+
+.right{
+  position: absolute;
+  // background: ;
+  height: 100vh;
+  width: 10%;
+  top: 0px;
+  right: 0px;
+}
+nav {
+  height: 50px;
+}
+
+.featured-container{
+  height: auto;
+  width: 100%;
+}
+
