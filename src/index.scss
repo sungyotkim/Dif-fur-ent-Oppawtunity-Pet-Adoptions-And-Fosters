@@ -3,9 +3,7 @@ $darkbrown: #bb8c5d;
 $lightgray: #AAA7A6;
 
 body {
-  background:
-  linear-gradient(to right, $lightbrown, $darkbrown, $lightgray);
-  background-color: $lightbrown;
+  background: white;
 }
 
 .container {
@@ -23,30 +21,39 @@ body {
   height: 100vh;
   width: 80%;
   margin:0 auto;
+  background-color: green;
 }
 
 .left{
   position: absolute;
-  // background: ;
+  background: url(../dist/assets/pawprint1.png);
+  background-size: 100px;
+  background-repeat: space;
   height: 100vh;
   width: 10%;
-  top: 0px;
+  top: 50px;
 }
 
 .right{
   position: absolute;
-  // background: ;
+  background: url(../dist/assets/pawprint2.png);
+  background-size: 100px;
+  background-repeat: space;
   height: 100vh;
   width: 10%;
-  top: 0px;
+  top: 50px;
   right: 0px;
 }
+
 nav {
   height: 50px;
+  background-color: $lightgray;
+  overflow: hidden;
 }
 
 .featured-container{
-  height: auto;
+  height: 100px;
   width: 100%;
+  background-color: blue;
 }
 
