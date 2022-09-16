@@ -21,7 +21,7 @@ In Dif-fur-ent Oppawtunity, users will be able to: <br>
 
 In addition, this project will include:
 
-- [ ] A README explaining the project
+- [x] A README explaining the project
 - [ ] An about page detailing additional background information resulting to the creation of this project
 - [ ] Credits to relevant sources
 
