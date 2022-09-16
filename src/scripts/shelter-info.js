@@ -1,3 +1,5 @@
+const fs = require('fs');
+
 let shelters = [
   {
     name: "Bideawee",
@@ -24,3 +26,13 @@ let shelters = [
     website: "http://www.humanesocietyny.org/adoptions/"
   }
 ]
+
+const data = JSON.stringify(shelters, null, 4);
+
+fs.writeFile('shelter-info.json', data, (err) => {
+  if (err) {
+    throw err;
+  }
+
+  console.log("JSON shelter data is saved.");
+});
