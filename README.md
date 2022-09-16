@@ -12,9 +12,16 @@ By allowing for a more unique online interaction with the animals, shelters woul
 
 ## Functionality & MVPs
 In Dif-fur-ent Oppawtunity, users will be able to: <br>
-- [ ] 1
-- [ ] 2
-- [ ] 3
-- [ ] 4
-- [ ] 5
-- [ ] 6
+- [ ] Search through animals available for adoption/fostering from different shelters
+- [ ] Filter their search result by species, breed, gender, age, characteristics, and location
+- [ ] View individual animals profiles to see relevant pictures, bio, and videos of the animal
+- [ ] Request to foster the animal
+- [ ] Request to adopt the animal
+- [ ] See the shelter's requirements to foster/adopt the animal
+In addition, this project will include:
+- [ ] A README explaining the project
+- [ ] An about page detailing additional background information resulting to the creation of this project
+- [ ] Credits to relevant sources
+
+## Wireframes
+
