@@ -1,35 +1,23 @@
 {
-  "name": "dif-fur-ent-oppawtunity-pet-adoptions",
+  "name": "dif-fur-ent-oppawtunity-pet-adoptions-and-fosters",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js",
-    "start:debug": "node --inspect app.js",
     "watch": "webpack --watch --mode=development",
-    "build": "webpack --mode=production"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sungyotkim/Dif-fur-ent-Oppawtunity-Pet-Adoptions.git"
+    "build": "webpack --mode=production",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sungyotkim/Dif-fur-ent-Oppawtunity-Pet-Adoptions/issues"
-  },
-  "homepage": "https://github.com/sungyotkim/Dif-fur-ent-Oppawtunity-Pet-Adoptions#readme",
   "dependencies": {
     "@babel/core": "^7.19.1",
     "@babel/preset-env": "^7.19.1",
     "babel-loader": "^8.2.5",
     "core-js": "^3.25.1",
     "css-loader": "^6.7.1",
-    "dotenv": "^16.0.2",
-    "express": "^4.18.1",
     "mini-css-extract-plugin": "^2.6.1",
-    "node-fetch": "^3.2.10",
     "regenerator-runtime": "^0.13.9",
     "sass": "^1.54.9",
     "sass-loader": "^13.0.2",
@@ -38,8 +26,5 @@
   },
   "browserslist": [
     "defaults"
-  ],
-  "engines": {
-    "node": "16.x"
-  }
+  ]
 }
