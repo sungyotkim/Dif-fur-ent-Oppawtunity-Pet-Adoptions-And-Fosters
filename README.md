@@ -9,3 +9,12 @@ For example, an owner was interested in a calm, quiet dog and met Fido who was s
 In order to minimize the rate of adoption returns and to maximize the rates of adopting an animal the owner wishes to find, I wanted to create a webapp that encapsulates adoption, foster, and socialization information for a given pet. The objective is to capture the animal in a variety of environmental settings to better display realistic behavior for the user to see. By obtaining footage of the animal interacting with different volunteers during socialization or even during daily walks for dogs and of the animal in different foster environments, the user would be able to see how the dog behaves and interacts with other people and other animals that's more realistic to their real nature. <br>
 Beyond visual information, an interactive review userface would be implemented to allow for visitors, volunteers, and fosterers to leave reviews describing their (hopefully positive) interactions with the pets to allow for a better up-to-date description of the animal. Potential adopters can then absorb this variety of data upfront and online before going and visiting the pet to filter the animals of interest with ease and comparing their in person interactions with the information on the animal's profile page to confirm whether or not they make a good pair. <br>
 By allowing for a more unique online interaction with the animals, shelters would also experience a more efficient means of interacting with prospective adopters and ideally, face less rates of return. There will also be an option to request to foster these animals for people who are interested in fostering, but either unsure of adopting or only able to foster for a period of time. If possible, data from multiple shelters will be obtained thereby allowing users to see available animals from multiple shelters at one given place, saving them from the effort of navigating multiple websites to access such information.
+
+## Functionality & MVPs
+In Dif-fur-ent Oppawtunity, users will be able to: <br>
+- [ ] 1
+- [ ] 2
+- [ ] 3
+- [ ] 4
+- [ ] 5
+- [ ] 6
