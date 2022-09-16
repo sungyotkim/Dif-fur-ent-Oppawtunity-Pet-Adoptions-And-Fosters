@@ -1,3 +1,5 @@
+const fs = require('fs');
+
 let pets = [
   {
     name: "Bella",
@@ -233,4 +235,13 @@ let pets = [
     characteristics: ["shy", "curious", "needs time to warm up", "bonded pairs"],
     reviews: []
   }
-]
+];
+
+const data = JSON.stringify(pets, null, 4);
+
+fs.writeFile('pet-info.json', data, (err) => {
+  if (err) {
+    throw err;
+  }
+  console.log("JSON pet data is saved.")
+})
