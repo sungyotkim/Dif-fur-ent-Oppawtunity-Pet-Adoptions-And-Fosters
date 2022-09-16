@@ -28,7 +28,7 @@ In addition, this project will include:
 ## Wireframes
 ##### Main Page: 
 <img src="./github-assets/main-page-wireframe.JPG" width="600" alt="main-page-wireframe">
-<br>
+
 ##### Animal Profile Page:
 <img src="./github-assets/profile-page-wireframe.JPG" width="600" alt="profile-page-wireframe">
 
