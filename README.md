@@ -27,3 +27,16 @@ In addition, this project will include:
 
 ## Wireframes
 
+## Technologies, Libraries, APIs
+- Dog API for dog image placeholders: https://dog.ceo/dog-api/
+- Cat API for cat image placeholders: https://thecatapi.com/
+- Express.js backend holding information of animals to pull from
+- D3 library for rendering charts in the about page
+
+## Implementation Timeline
+- Friday Afternoon: Complete main display page set up
+- Weekend: Research APIs, how to use express.js, possibly build out backend, finish set up
+- Monday: Populate index page, set sorting ability
+- Tuesday: Populate profile pages for animals
+- Wednesday: Set up shelter pages, work on html/css
+- Thursday Morning: Test functionality, debug kinks
