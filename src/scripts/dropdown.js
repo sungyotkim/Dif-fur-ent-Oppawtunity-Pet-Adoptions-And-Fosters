@@ -37,6 +37,7 @@ speciesItems.forEach(speciesItem => {
                 }
                 li.setAttribute("style", "display: none")
             })
+            addSearchPicture(speciesChecked[0].innerText)
         } else if (speciesChecked && speciesChecked.length > 1) {
             btnTexts[0].innerText = "Multiple";
             let showList1 = document.querySelectorAll(`.Canine`);
@@ -47,6 +48,7 @@ speciesItems.forEach(speciesItem => {
             showList2.forEach(li => {
                 li.removeAttribute("style")
             })
+            addSearchPicture();
         } else {
             btnTexts[0].innerText = "Any";
             let showList1 = document.querySelectorAll(`.Canine`);
@@ -57,6 +59,7 @@ speciesItems.forEach(speciesItem => {
             showList2.forEach(li => {
                 li.removeAttribute("style")
             })
+            addSearchPicture();
         }
     })
 })
@@ -102,3 +105,20 @@ ageItems.forEach(ageItem => {
         }
     })
 })
+
+function addSearchPicture(name="catdog") {
+    const btn = document.querySelector(".search-button");
+    if (btn.childNodes.length > 2) {
+        btn.removeChild(btn.lastChild)
+    }
+    const div = document.createElement('div');
+    const pic = document.createElement('img');
+    pic.src = `../../dist/assets/${name}.png`;
+    pic.setAttribute('height', "80rem");
+    pic.setAttribute('class', 'search-current-photo');
+    div.appendChild(pic);
+    div.setAttribute('class', 'search-photo')
+    btn.append(div)
+}
+
+addSearchPicture();
