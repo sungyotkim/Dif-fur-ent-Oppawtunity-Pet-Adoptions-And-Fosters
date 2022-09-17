@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", e => {
   const petsUrl = '../dist/data/petInfo.json'
   const container = document.querySelector('.container-center')
 
-  const dropdown = require('./scripts/dropdown')
+  const dropdown = require('./scripts/dropdown');
+  const featured = require('./scripts/featured');
 
   // btn.addEventListener('click', reqData);
   
