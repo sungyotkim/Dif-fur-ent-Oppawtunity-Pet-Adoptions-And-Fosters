@@ -20,10 +20,10 @@ body {
   height: 100vh;
   width: 80%;
   margin:0 auto;
-  background-color: green;
+  background-color: purple;
   display: grid;
-  grid-template-columns: 3fr 2fr;
-  grid-template-rows: 1fr 4fr;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 2fr 4fr;
 }
 
 .left{
@@ -56,32 +56,27 @@ nav {
 }
 
 .featured-container{
-  height: 200px;
+  height: 100%;
   width: 100%;
   background-color: blue;
   grid-column: 1 / -1;
-  grid-row: auto;
 }
 
 #btn:hover {
   cursor: pointer;
 }
 
-.search-results-container {
-  background-color: yellow;
-  display: flex;
-  flex-direction: column;
-}
-
 
 .search-bar-container {
   background-color: green;
   height: auto;
-  width: 100%;
+  grid-column: 1 / -1;
 }
 
 .search-results-container {
-  background-color: pink;
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
 }
 
 .right-container {
