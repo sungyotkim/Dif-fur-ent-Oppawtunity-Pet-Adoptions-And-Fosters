@@ -35,7 +35,7 @@ let shelters = [
 
 const data = JSON.stringify(shelters, null, 4);
 
-fs.writeFile('shelter-info.json', data, (err) => {
+fs.writeFile('shelterInfo.json', data, (err) => {
   if (err) {
     throw err;
   }

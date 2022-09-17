@@ -263,7 +263,7 @@ let pets = [
     mini: false,
     colors: ["Black"],
     shelter: "Bobbi & the Strays",
-    photos: ["photo_1_addison", "photo_2_addison", "photo_3_addison", "photo_4_addison", "photo_5_addison"],
+    photos: ["photo_1_addison.png", "photo_2_addison.png", "photo_3_addison.png", "photo_4_addison.png", "photo_5_addison.png"],
     firstPhoto: "",
     videos: [],
     status: "Available for adoption",
@@ -275,7 +275,7 @@ let pets = [
 
 const data = JSON.stringify(pets, null, 4);
 
-fs.writeFile('pet-info.json', data, (err) => {
+fs.writeFile('petInfo.json', data, (err) => {
   if (err) {
     throw err;
   }

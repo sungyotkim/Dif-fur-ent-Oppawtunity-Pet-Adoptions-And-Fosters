@@ -500,11 +500,11 @@
         ],
         "shelter": "Bobbi & the Strays",
         "photos": [
-            "photo_1_addison",
-            "photo_2_addison",
-            "photo_3_addison",
-            "photo_4_addison",
-            "photo_5_addison"
+            "photo_1_addison.png",
+            "photo_2_addison.png",
+            "photo_3_addison.png",
+            "photo_4_addison.png",
+            "photo_5_addison.png"
         ],
         "firstPhoto": "",
         "videos": [],
