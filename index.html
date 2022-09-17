@@ -7,31 +7,118 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./dist/main.css" />
     <script src="./dist/main.js"></script>
+    <script src="https://kit.fontawesome.com/2687a23fd5.js" crossorigin="anonymous"></script>
     <title>Project Name</title>
   </head>
 
   <body>
     <div class="container">
-      <nav>nav bar</nav>
+      <nav class="main-nav">
+        <div class="nav-item">
+          <a href=""><img src="./dist/assets/logo.png" alt="logo" width="45px"></a>
+          <h1>Dif-fur-ent Oppawtunity Pet Adoptions and Fosters</h1>
+        </div>
+        <div class="nav-item">
+          <a href="">About</a>
+          <a href="https://github.com/sungyotkim" target="_blank"><img src="./dist/assets/github-icon.png" alt="github-icon" width="45px"></a>
+          <a href="https://www.linkedin.com/in/sungyo-kim-ab7a30163/" target="_blank"><img src="./dist/assets/linkedIn-icon.png" alt="linkedIn-icon" width="45px"></a>
+        </div>
+      </nav>
       <div class="left"></div>
       <div class="container-center">
         <div class="search-bar-container">
           <input type="text" id="zip-input" placeholder="Zipcode (i.e. 10027)">
+
           <div class="search-bar-species-dropdown">
-            <span class="dropdown-title">Species</span>
-            <span class="dropdown-content">Any</span>
+            <div class="dropdown-top">
+              <span class="dropdown-title">Species</span>
+              <div class="dropdown-btn">
+                <span class="dropdown-btn-text">Any</span>
+                <span><i class="fa-solid fa-caret-down"></i></span>
+              </div>
+            </div>
+            <ul class="dropdown-items">
+              <li class="item-species">
+                <span class="checkbox">
+                  <i class="fa-solid fa-check check-icon"></i>
+                </span>
+                <span class="item-text">Canine</span>
+              </li>
+              <li class="item-species">
+                <span class="checkbox">
+                  <i class="fa-solid fa-check check-icon"></i>
+                </span>
+                <span class="item-text">Feline</span>
+              </li>
+            </ul>    
           </div>
+
+
           <div class="search-bar-breed-dropdown">
-            <span class="dropdown-title">Breed</span>
-            <span class="dropdown-content">Any</span>
+            <div class="dropdown-top">
+              <span class="dropdown-title">Breed</span>
+              <span class="dropdown-btn">
+                <span class="dropdown-btn-text">Any</span>
+                <span><i class="fa-solid fa-caret-down"></i></span>
+              </span>
+            </div>
+            <ul class="dropdown-items">
+              <li class="item-breed">
+                <span class="checkbox">
+                  <i class="fa-solid fa-check check-icon"></i>
+                </span>
+                <span class="item-text">one</span>
+              </li>
+              <li class="item-breed">
+                <span class="checkbox">
+                  <i class="fa-solid fa-check check-icon"></i>
+                </span>
+                <span class="item-text">two</span>
+              </li>
+            </ul> 
           </div>
+
+
           <div class="search-bar-age-dropdown">
-            <span class="dropdown-title">Age</span>
-            <span class="dropdown-content">Any</span>
+            <div class="dropdown-top">
+              <span class="dropdown-title">Age</span>
+              <span class="dropdown-btn">
+                <span class="dropdown-btn-text">Any</span>
+                <span><i class="fa-solid fa-caret-down"></i></span>
+              </span>          
+            </div>
+            <ul class="dropdown-items">
+              <li class="item-age">
+                <span class="checkbox">
+                  <i class="fa-solid fa-check check-icon"></i>
+                </span>
+                <span class="item-text">Young</span>
+              </li>
+              <li class="item-age">
+                <span class="checkbox">
+                  <i class="fa-solid fa-check check-icon"></i>
+                </span>
+                <span class="item-text">Teen</span>
+              </li>
+              <li class="item-age">
+                <span class="checkbox">
+                  <i class="fa-solid fa-check check-icon"></i>
+                </span>
+                <span class="item-text">Adult</span>
+              </li>
+              <li class="item-age">
+                <span class="checkbox">
+                  <i class="fa-solid fa-check check-icon"></i>
+                </span>
+                <span class="item-text">Senior</span>
+              </li>
+            </ul> 
           </div>
-          <!-- <div class="search-bar-characteristics-dropdown">Characteristics</div> -->
           <button class="search-button">
-            <div class="search-icon">Search</div>
+            <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              Search
+            </div>
           </button>
 
         </div>
