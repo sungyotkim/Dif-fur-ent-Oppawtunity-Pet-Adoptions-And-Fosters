@@ -3,6 +3,8 @@ const speciesItems = document.querySelectorAll(".item-species");
 const breedItems = document.querySelectorAll(".item-breed");
 const ageItems = document.querySelectorAll(".item-age");
 const breedItemsList = document.querySelector(".breed-items-list");
+const btn = document.querySelector(".search-button");
+const featuredContainer = document.querySelector(".featured-container")
 
 //toggles for all dropdowns
 selectBtns.forEach(selectBtn => {
@@ -107,7 +109,6 @@ ageItems.forEach(ageItem => {
 })
 
 function addSearchPicture(name="catdog") {
-    const btn = document.querySelector(".search-button");
     if (btn.childNodes.length > 2) {
         btn.removeChild(btn.lastChild)
     }
@@ -122,3 +123,10 @@ function addSearchPicture(name="catdog") {
 }
 
 addSearchPicture();
+
+// function searchBtn() {
+    btn.addEventListener("click", () => {
+        featuredContainer.setAttribute('style', 'display: none;');
+        console.log(featuredContainer)
+    })
+// }

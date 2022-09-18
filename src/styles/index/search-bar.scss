@@ -5,7 +5,8 @@ $white: white;
 
 
 .search-bar-container {
-    position: sticky;
+    // position: sticky;
+    position: relative;
     top: 0px;
     background-color: $darkbrown;
     min-height: fit-content;
