@@ -1,6 +1,7 @@
 @import "./index/search-bar.scss";
 @import "./index/main-nav.scss";
 @import "./index/featured.scss";
+@import "./index/results.scss";
 
 $lightbrown: #743e28;
 $darkbrown: #bb8c5d;
@@ -20,22 +21,20 @@ body {
 
 .container-center {
   position: relative;
-  height: 200vh;
+  height: 300vh;
   width: 80%;
   margin:0 auto;
-  // background-color: purple;
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: auto 2fr 4fr;
+  grid-template-rows: auto auto 4fr;
 }
 
 .left{
   position: absolute;
   background: url(../dist/assets/pawprint1.png);
   background-size: 100px;
-  background-repeat: repeat;
-  // background-repeat: repeat-y;
-  height: 100vh;
+  background-repeat: round;
+  height: 300vh;
   width: 10%;
   top: 50px;
 }
@@ -44,9 +43,8 @@ body {
   position: absolute;
   background: url(../dist/assets/pawprint2.png);
   background-size: 100px;
-  background-repeat: repeat;
-  // background-repeat: repeat-y;
-  height: 100vh;
+  background-repeat: round;
+  height: 300vh;
   width: 10%;
   top: 50px;
   right: 0px;

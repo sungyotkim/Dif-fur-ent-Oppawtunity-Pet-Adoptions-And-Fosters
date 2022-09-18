@@ -63,7 +63,11 @@ table {
   padding-bottom: 0.375rem;
   justify-content: space-around;
   flex-wrap: wrap;
-  z-index: 999;
+  z-index: 1;
+}
+
+.search-bar-container > a {
+  text-decoration: none;
 }
 
 #zip-input {
@@ -543,6 +547,10 @@ table {
   filter: grayscale(10%);
 }
 
+.search-results-container {
+  padding-top: 120px;
+}
+
 body {
   background: white;
 }
@@ -556,20 +564,20 @@ body {
 
 .container-center {
   position: relative;
-  height: 200vh;
+  height: 300vh;
   width: 80%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: auto 2fr 4fr;
+  grid-template-rows: auto auto 4fr;
 }
 
 .left {
   position: absolute;
   background: url(../dist/assets/pawprint1.png);
   background-size: 100px;
-  background-repeat: repeat;
-  height: 100vh;
+  background-repeat: round;
+  height: 300vh;
   width: 10%;
   top: 50px;
 }
@@ -578,8 +586,8 @@ body {
   position: absolute;
   background: url(../dist/assets/pawprint2.png);
   background-size: 100px;
-  background-repeat: repeat;
-  height: 100vh;
+  background-repeat: round;
+  height: 300vh;
   width: 10%;
   top: 50px;
   right: 0px;
