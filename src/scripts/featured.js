@@ -71,3 +71,17 @@ function timer() {
 }
 
 timer();
+
+//fake incrementer to simulate adoptions
+function goalIncrementer() {
+    let goal = document.getElementById("adopted-numbers");
+
+    setInterval(() => {
+        let current = goal.innerText;
+        current = current.split(",").join("");
+        let next = parseInt(current) + 1;
+        goal.innerText = next.toLocaleString("en-US");
+    }, 10000);
+}
+
+goalIncrementer();
