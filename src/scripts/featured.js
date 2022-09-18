@@ -28,10 +28,19 @@ function photoAdder(data) {
         img.setAttribute('width', '50px')
         img.setAttribute('class', 'featured-img')
         const cardTitle = document.createElement('div');
-        cardTitle.innerText = `${currentPet.characteristics[0]} ${currentPet.species === 'Canine' ? 'Dog' : 'Cat'}`
+        cardTitle.innerText = `${currentPet.name} the ${currentPet.characteristics[0]} ${currentPet.species === 'Canine' ? 'dog' : 'cat'}`
         cardTitle.setAttribute('class', 'featured-card-title');
+        const cardName = document.createElement('div');
+        const cardDescription = document.createElement('div');
+        // cardName.innerText = `${currentPet.name}`;
+        cardName.innerText = `${currentPet.name} the ${currentPet.characteristics[0]} ${currentPet.species === 'Canine' ? 'dog' : 'cat'}`
+        cardName.setAttribute('class', 'featured-card-name');
+        cardDescription.innerText = `${currentPet.bio} Click to see more!`;
+        cardDescription.setAttribute('class', 'featured-card-bio');
         card.appendChild(img);
         card.appendChild(cardTitle);
+        card.appendChild(cardName);
+        card.appendChild(cardDescription);
         container.append(card)
     })
 }
