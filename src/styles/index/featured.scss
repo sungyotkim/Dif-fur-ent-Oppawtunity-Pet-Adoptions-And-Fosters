@@ -93,31 +93,31 @@
 }
 
 .featured-card:hover  {
-    flex-grow: 5;
+    flex-grow: 3;
     .featured-card-title {
         text-align: center;
         color: white;
-        background: rgba(255, 168, 118, 0.65);
+        background: rgba(255, 168, 118, 0.75);
         font-size: 2rem;
         transform: rotate(0deg);
         left: 0;
         bottom: -4rem;
     }
     .featured-card-name {
-        background: rgba(255, 168, 118, 0.65);
+        background: rgba(255, 168, 118, 0.75);
         transform: translateY(100%);
         color: white;
         transition-delay: 0.5s;
     }
     .featured-card-bio {
-        background: rgba(255, 168, 118, 0.65);
+        background: rgba(255, 168, 118, 0.75);
         color: white;
         transform: translateY(-100%);
         transition-delay: 0.5s;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         padding: 0.25rem;
     }
     .featured-img {
-        filter: grayscale(0);
+        filter: grayscale(10%);
     }
 }

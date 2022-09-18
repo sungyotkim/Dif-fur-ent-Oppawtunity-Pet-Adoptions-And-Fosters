@@ -356,9 +356,8 @@ table {
   border: none;
   border-radius: 0.375rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   cursor: pointer;
   margin-left: 0.375rem;
   margin-right: 0.75rem;
@@ -367,17 +366,18 @@ table {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   font-size: 1.25rem;
   line-height: 2rem;
+  position: relative;
 }
 
-.search-photo {
-  position: relative;
-  bottom: 4.5rem;
-  right: -3.75rem;
+.search-photo img {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
 }
 
 .search-icon {
   position: relative;
-  top: 2.75rem;
+  flex-basis: 100%;
 }
 
 .catchphrase {
@@ -514,33 +514,33 @@ table {
 }
 
 .featured-card:hover {
-  flex-grow: 5;
+  flex-grow: 3;
 }
 .featured-card:hover .featured-card-title {
   text-align: center;
   color: white;
-  background: rgba(255, 168, 118, 0.65);
+  background: rgba(255, 168, 118, 0.75);
   font-size: 2rem;
   transform: rotate(0deg);
   left: 0;
   bottom: -4rem;
 }
 .featured-card:hover .featured-card-name {
-  background: rgba(255, 168, 118, 0.65);
+  background: rgba(255, 168, 118, 0.75);
   transform: translateY(100%);
   color: white;
   transition-delay: 0.5s;
 }
 .featured-card:hover .featured-card-bio {
-  background: rgba(255, 168, 118, 0.65);
+  background: rgba(255, 168, 118, 0.75);
   color: white;
   transform: translateY(-100%);
   transition-delay: 0.5s;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding: 0.25rem;
 }
 .featured-card:hover .featured-img {
-  filter: grayscale(0);
+  filter: grayscale(10%);
 }
 
 body {

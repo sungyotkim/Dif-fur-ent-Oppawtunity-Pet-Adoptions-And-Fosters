@@ -48,7 +48,7 @@ speciesItems.forEach(speciesItem => {
             showList2.forEach(li => {
                 li.removeAttribute("style")
             })
-            addSearchPicture();
+            addSearchPicture('catdogcatdog');
         } else {
             btnTexts[0].innerText = "Any";
             let showList1 = document.querySelectorAll(`.Canine`);
