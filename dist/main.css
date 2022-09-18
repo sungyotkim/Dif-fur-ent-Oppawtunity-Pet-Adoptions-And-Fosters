@@ -476,7 +476,6 @@ table {
   width: 100%;
   object-fit: cover;
   transition: all 1s ease-in-out;
-  filter: grayscale(100%);
 }
 
 .featured-card:not(:nth-child(5)) {
@@ -549,8 +548,9 @@ table {
   font-size: 1.3rem;
   padding: 0.25rem;
 }
-.featured-card:hover .featured-img {
-  filter: grayscale(10%);
+
+.featured-inner-container:hover .featured-card:not(:hover) .featured-img {
+  filter: grayscale(100%);
 }
 
 body {
