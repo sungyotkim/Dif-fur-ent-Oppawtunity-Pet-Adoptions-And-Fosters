@@ -31,10 +31,9 @@
 
 .featured-bottom-container {
     display: flex;
+    flex-direction: column;
     height: 100%;
     width: 100%;
-    color: white;
-    background-color: $lightbrown;
 }
 
 .featured-card {
@@ -131,4 +130,57 @@
             filter: grayscale(100%);
         }
     }
+}
+
+.goal-request-container {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.goals-container {
+    background-color: yellow;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.stretch-goal {
+    background-color: blue;
+    height: 50%;
+    width: 100%;
+}
+
+.current-goal {
+    background-color: purple;
+    height: 50%;
+    width: 100%;
+}
+
+.requests-container {
+    background-color: green;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.goal-timer {
+    background-color: pink;
+    height: 30%;
+    width: 100%;
+}
+
+.requests {
+    background-color: aqua;
+    height: 70%;
+    width: 100%;
+}
+
+.shelter-support-container {
+    background-color: orange;
+    height: 20%;
+    width: 100%;
 }
