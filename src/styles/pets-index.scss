@@ -27,9 +27,6 @@ body {
   margin:0 auto;
   display: flex;
   flex-direction: column;
-  // display: grid;
-  // grid-template-columns: 3fr 1fr;
-  // grid-template-rows: auto auto 4fr;
 }
 
 .left{
@@ -58,12 +55,10 @@ body {
 }
 
 .container-bottom {
-  // display: none;
   height: 100%;
 }
 
 .container-results {
-  display: flex;
   height: 100%;
   width: 100%;
   display: none;

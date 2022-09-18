@@ -4,7 +4,8 @@ const breedItems = document.querySelectorAll(".item-breed");
 const ageItems = document.querySelectorAll(".item-age");
 const breedItemsList = document.querySelector(".breed-items-list");
 const btn = document.querySelector(".search-button");
-const featuredContainer = document.querySelector(".featured-container")
+const featuredContainer = document.querySelector(".featured-container");
+const resultsContainer = document.querySelector(".container-results");
 
 //toggles for all dropdowns
 selectBtns.forEach(selectBtn => {
@@ -127,6 +128,6 @@ addSearchPicture();
 // function searchBtn() {
     btn.addEventListener("click", () => {
         featuredContainer.setAttribute('style', 'display: none;');
-        console.log(featuredContainer)
+        resultsContainer.setAttribute('style', 'display: flex;')
     })
 // }

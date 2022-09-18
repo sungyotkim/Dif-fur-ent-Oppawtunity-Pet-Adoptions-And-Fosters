@@ -431,7 +431,7 @@ table {
 }
 
 .featured-inner-container {
-  height: 100%;
+  height: 60%;
   width: fit-content;
   grid-column: 1/-1;
   display: flex;
@@ -451,6 +451,14 @@ table {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+}
+
+.featured-bottom-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  color: white;
+  background-color: #743e28;
 }
 
 .featured-card {
@@ -595,7 +603,6 @@ body {
 }
 
 .container-results {
-  display: flex;
   height: 100%;
   width: 100%;
   display: none;
