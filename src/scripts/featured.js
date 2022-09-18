@@ -47,3 +47,27 @@ function photoAdder(data) {
 }
 
 reqPetPhoto()
+
+function timer() {
+    let countDownDate = new Date("Jan 1, 2023 00:00:00").getTime();
+
+    let x = setInterval(function() {
+        let timeNow = new Date().getTime();
+
+        let timeDistance = countDownDate - timeNow;
+
+        let days = Math.floor(timeDistance / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((timeDistance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((timeDistance % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((timeDistance % (1000 * 60)) / 1000);
+
+        let goalTimer = document.getElementById("goal-timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+        if (timeDistance < 0 ) {
+            clearInterval(x);
+            goalTimer.innerHTML = 'Finished!'
+        }
+    }, 1000);
+}
+
+timer();

@@ -146,17 +146,28 @@
     display: flex;
     flex-direction: column;
 }
+.goal-timer-container {
+    background-color: pink;
+    height: 30%;
+    width: 100%;
+    display: flex;
+    padding: 0.375rem;
+}
 
 .stretch-goal {
     background-color: blue;
     height: 50%;
     width: 100%;
+    display: flex;
+    padding: 0.375rem;
 }
 
 .current-goal {
     background-color: purple;
     height: 50%;
     width: 100%;
+    display: flex;
+    padding: 0.375rem;
 }
 
 .requests-container {
@@ -167,11 +178,6 @@
     flex-direction: column;
 }
 
-.goal-timer {
-    background-color: pink;
-    height: 30%;
-    width: 100%;
-}
 
 .requests {
     background-color: aqua;
