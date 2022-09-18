@@ -453,6 +453,7 @@ table {
   height: 100%;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .featured-img {
@@ -532,8 +533,7 @@ table {
   transition-delay: 0.5s;
   font-size: 1.5rem;
 }
-
-.featured-img:hover {
+.featured-card:hover .featured-img {
   filter: grayscale(0);
 }
 

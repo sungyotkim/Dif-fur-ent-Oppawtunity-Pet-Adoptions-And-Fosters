@@ -21,7 +21,8 @@ function photoAdder(data) {
     }
 
     featuredPets.forEach(currentPet => {
-        const card = document.createElement('div');
+        const card = document.createElement('a');
+        // card.setAttribute('href', '')
         card.setAttribute('class', 'featured-card');
         const img = document.createElement('img');
         img.src = `../../dist/data/pets/${currentPet.name.toLowerCase()}/photos/${currentPet.photos[1]}`;
