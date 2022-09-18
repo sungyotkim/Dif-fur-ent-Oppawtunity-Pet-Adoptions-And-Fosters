@@ -93,7 +93,7 @@
 }
 
 .featured-card:hover  {
-    flex-grow: 3;
+    flex-grow: 5;
     .featured-card-title {
         text-align: center;
         color: white;
@@ -115,6 +115,7 @@
         transform: translateY(-100%);
         transition-delay: 0.5s;
         font-size: 1.5rem;
+        padding: 0.25rem;
     }
     .featured-img {
         filter: grayscale(0);
