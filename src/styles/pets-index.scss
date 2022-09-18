@@ -1,7 +1,7 @@
 @import "./index/search-bar.scss";
 @import "./index/main-nav.scss";
 @import "./index/featured.scss";
-@import "./index/results.scss";
+@import "./index/search-results.scss";
 @import "./index/chart.scss";
 
 $lightbrown: #743e28;
@@ -58,31 +58,3 @@ body {
   height: 100%;
 }
 
-.container-results {
-  height: 100%;
-  width: 100%;
-  display: none;
-}
-
-.search-results-container {
-  background-color: yellow;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 60%;
-}
-
-.right-container {
-  background-color: red;
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-}
-
-.shelter-chart-container {
-  background-color: gray;
-}
-
-.favorites-container {
-  background-color: beige;
-}

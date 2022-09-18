@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", e => {
 
   const dropdown = require('./scripts/dropdown');
   const featured = require('./scripts/featured');
+  const searchResult = require('./scripts/search-result');
 
   // btn.addEventListener('click', reqData);
   
