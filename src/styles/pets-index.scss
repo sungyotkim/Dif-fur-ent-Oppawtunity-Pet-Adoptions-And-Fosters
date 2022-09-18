@@ -22,7 +22,7 @@ body {
 
 .container-center {
   position: relative;
-  height: 300vh;
+  height: 100vh;
   width: 80%;
   margin:0 auto;
   display: grid;
@@ -35,7 +35,7 @@ body {
   background: url(../dist/assets/pawprint1.png);
   background-size: 100px;
   background-repeat: round;
-  height: 300vh;
+  height: 100vh;
   width: 10%;
   top: 50px;
 }
@@ -45,7 +45,7 @@ body {
   background: url(../dist/assets/pawprint2.png);
   background-size: 100px;
   background-repeat: round;
-  height: 300vh;
+  height: 100vh;
   width: 10%;
   top: 50px;
   right: 0px;
