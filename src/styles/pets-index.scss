@@ -1,5 +1,6 @@
 @import "./index/search-bar.scss";
 @import "./index/main-nav.scss";
+@import "./index/featured.scss";
 
 $lightbrown: #743e28;
 $darkbrown: #bb8c5d;
@@ -15,7 +16,6 @@ body {
   width: 100%;
   top: 0px;
   left: 0px;
-  z-index: 2500;
 }
 
 .container-center {
@@ -50,13 +50,6 @@ body {
   width: 10%;
   top: 50px;
   right: 0px;
-}
-
-.featured-container{
-  height: 100%;
-  width: 100%;
-  background-color: blue;
-  grid-column: 1 / -1;
 }
 
 #btn:hover {
