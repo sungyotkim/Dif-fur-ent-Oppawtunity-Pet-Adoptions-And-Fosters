@@ -1,4 +1,4 @@
-const container = document.querySelector('.featured-container');
+const container = document.querySelector('.featured-inner-container');
 const petsUrl = '../../dist/data/petInfo.json';
 
 function reqPetPhoto() {
@@ -26,6 +26,7 @@ function photoAdder(data) {
         const img = document.createElement('img');
         img.src = `../../dist/data/pets/${currentPet.name.toLowerCase()}/photos/${currentPet.photos[1]}`;
         img.setAttribute('width', '50px')
+        img.setAttribute('class', 'featured-img')
         const cardTitle = document.createElement('div');
         cardTitle.innerText = `${currentPet.characteristics[0]} ${currentPet.species === 'Canine' ? 'Dog' : 'Cat'}`
         cardTitle.setAttribute('class', 'featured-card-title');

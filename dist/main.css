@@ -425,10 +425,76 @@ table {
   background-color: blue;
   grid-column: 1/-1;
   display: flex;
+  flex-direction: column;
+}
+
+.featured-inner-container {
+  height: 60vh;
+  width: fit-content;
+  grid-column: 1/-1;
+  display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  position: relative;
+}
+
+.featured-section-title {
+  position: relative;
+  font-size: 1.75rem;
+  align-self: center;
+}
+
+.featured-card {
+  transform: skew(5deg);
+  flex: 1;
+  transition: all 1s ease-in-out;
+  height: 100%;
+  position: relative;
   overflow: hidden;
-  padding-left: 3.75rem;
+}
+
+.featured-img {
+  height: 60vh;
+  width: 100%;
+  object-fit: cover;
+  transition: all 1s ease-in-out;
+  filter: grayscale(100%);
+}
+
+.featured-card:not(:nth-child(5)) {
+  margin-right: 0.5rem;
+}
+
+.featured-card-title {
+  background: rgba(211, 146, 89, 0.75);
+  padding: 0.5em;
+  transform: rotate(-90deg);
+  transform-origin: bottom left;
+  transition: all 0.5s ease-in-out;
+  min-width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 10.5%;
+  font-size: 1rem;
+}
+
+.featured-card:hover {
+  flex-grow: 3;
+}
+.featured-card:hover .featured-card-title {
+  text-align: center;
+  color: white;
+  background: rgba(255, 168, 118, 0.5);
+  font-size: 2rem;
+  transform: rotate(0deg);
+  left: 0;
+}
+
+.featured-img:hover {
+  filter: grayscale(0);
 }
 
 body {
