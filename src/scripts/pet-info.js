@@ -16,7 +16,7 @@ let pets = [
     videos: ["video_1_bella.mp4", "video_2_bella.mp4"],
     status: "Available for adoption",
     bio: "Rescued from Pennsylvania, Bella is a sweetheart who loves to play and loves to be a lap dog",
-    characteristics: ["calm", "friendly", "treat motivated"],
+    characteristics: ["friendly", "calm", "treat motivated"],
     reviews: ["Enjoys being petted!", "Smart, obedient dog who works hard and loves treats"]
   },
   {
@@ -65,12 +65,12 @@ let pets = [
     mini: false,
     colors: ["White"],
     shelter: "The Humane Society of New York",
-    photos: ["photo_1_frankie.JPG", "photo_2_frankie.HEIC", "photo_3_frankie.JPG", "photo_4_frankie.JPG"],
+    photos: ["photo_1_frankie.JPG", "photo_2_frankie.jpg", "photo_3_frankie.JPG", "photo_4_frankie.JPG"],
     firstPhoto: "",
     videos: ["video_1_frankie.MP4", "video_2_frankie.MP4"],
     status: "Available for adoption",
     bio: "Frankie is a friendly dog who loves being around people and other dogs! If you're looking for a friendly, outgoing dog and can handle youthful energy, she's a great match!",
-    characteristics: ["outgoing", "energetic", "dog-friendly"],
+    characteristics: ["outdoorsy", "outgoing", "energetic", "dog-friendly"],
     reviews: ["She's been here for less than a day and is already super excited and full of energy. Very happy dog who's a great match for anyone who isn't looking for a quiet, relaxed dog.", "An absolutely different dog following her surgery, she did not enjoy it very well and is a bit out of it. She was back to her energetic self the next day, however. Just be aware she may be different after a visit to the vet!"]
   },
   {
@@ -124,7 +124,7 @@ let pets = [
     videos: ["video_1_lena.mp4", "video_2_lena.mp4"],
     status: "Available for adoption",
     bio: "Lena is a shy-at-first cat who really loves to interact with people she likes. She loves attention and can be jealous of other companions receiving more love than her. She's very vocal and loves to eat and cares a lot about her appearance so you may see her groom herself often.",
-    characteristics: ["vocal", "shy", "friendly", "dog-tolerant", "not-cat-friendly", "treat motivated", "big eater"],
+    characteristics: ["cuddly", "vocal", "shy", "friendly", "dog-tolerant", "not-cat-friendly", "treat motivated", "big eater"],
     reviews: ["Matches the cat stereotype, loves boxes!", "She'll tolerate the brushing up until the point where she decides to attack the brush instead. Watch your hands!"]
   },
   {
@@ -155,12 +155,12 @@ let pets = [
     mini: false,
     colors: ["White", "Beige"],
     shelter: "Animal Haven",
-    photos: ["photo_1_nara.jpeg", "photo_2_nara.jpeg", "photo_3_nara.jpg"],
+    photos: ["photo_1_nara.jpeg", "photo_2_nara.jpg", "photo_3_nara.jpg"],
     firstPhoto: "photo_0_nara.jpg",
     videos: ["video_1_nara.mp4", "video_2_nara.mp4"],
     status: "Available for adoption",
     bio: "Nara is a treat motivated friendly dog who loves people! She loves going on walks and loves to play, though she isn't great at fetch.",
-    characteristics: ["vocal", "friendly", "dog-tolerant", "cat-tolerant", "treat motivated"],
+    characteristics: ["relaxed", "vocal", "friendly", "dog-tolerant", "cat-tolerant", "treat motivated"],
     reviews: ["Really happy to see you when you come home and is quick to bring a toy over to play! She doesn't always come back with her toy, however.", "Loves her plushies but gets distracted by others easily!"]
   },
   {
@@ -178,7 +178,7 @@ let pets = [
     videos: ["video_1_olaf.mp4", "video_2_olaf.mp4"],
     status: "Available for adoption",
     bio: "Olaf loves people and loves to play and cuddle. Needs a lot of attention, however, and does not like other animals!",
-    characteristics: ["friendly", "not-dog-friendly", "not-cat-friendly", "big eater"],
+    characteristics: ["chonky", "friendly", "not-dog-friendly", "not-cat-friendly", "big eater"],
     reviews: ["He enjoys pets and loves to be carried", "Loves to be lazy and be pet all day"]
   },
   {
@@ -214,7 +214,7 @@ let pets = [
     videos: ["video_1_remy.jpg", "video_2_remy.jpg", "video_3_remy.jpg", "video_4_remy.jpg"],
     status: "Currently being fostered",
     bio: "Remy is a friendly dog who is absolutely infuated and distracted by food. He loves to eat and play with great internal herding instinct. He may not be the brightest but he is obedient and is very treat motivated.",
-    characteristics: ["friendly", "energetic", "treat motivated", "dog-friendly", "big eater", "treat motivated"],
+    characteristics: ["sleepy", "friendly", "energetic", "treat motivated", "dog-friendly", "big eater", "treat motivated"],
     reviews: ["Loves to play fetch and won't stop until he gets the ball!", "He gets absolutely silly during play.", "His eyes are always on the food, even when next to the person he loves the most in the room.", "Does not care much for privacy and wants to be next to you"]
   },
   {
@@ -286,7 +286,7 @@ let pets = [
     videos: ["video_1_chase.mp4", "video_2_chase.mp4", "video_3_chase.mp4"],
     status: "Available for adoption",
     bio: "Chase is a super friendly dog who loves new people and new places. He loves to eat and is a big fan of beef tendons and ice cubes. He doesn't like it when you ignore him and would perform tricks on command as long as you give him treats.",
-    characteristics: ["friendly", "dog-friendly", "cat-friendly", "energetic", "treat motivated"],
+    characteristics: ["adventerous", "friendly", "dog-friendly", "cat-friendly", "energetic", "treat motivated"],
     reviews: ["Super playful and loves his blanket", "He loves his plushies! It's nice to see him playing on his own.", "If you give him larger treats, he takes longer to eat them since he plays with them first!"]
   },
   {
@@ -304,7 +304,7 @@ let pets = [
     videos: ["video_1_ziva.mp4"],
     status: "Available for adoption",
     bio: "Ziva is curious about almost every inanimate object that is new in her home. She'll have to slowly check up on it and rub herself on it. When it comes to people however, you need to visit a few times before she'll even be in the same room as you. She loves scratches immediately when you come home and then will just lay 'out of reach' until bedtime; but then it's all the cuddles when her owner is in bed.",
-    characteristics: ["dog-tolerant", "not-cat-friendly", "shy", "needs time to warm up"],
+    characteristics: ["playful", "dog-tolerant", "not-cat-friendly", "shy", "needs time to warm up"],
     reviews: ["When she's comfortable, she'll come and play with you and groom you!"]
   }
 ];
