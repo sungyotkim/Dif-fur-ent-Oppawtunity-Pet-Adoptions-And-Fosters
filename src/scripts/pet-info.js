@@ -270,6 +270,42 @@ let pets = [
     bio: "Addison is a confident, friendly dog who loves to go out on walks to release energy and enjoys treats. Will rest often at home.",
     characteristics: ["friendly", "dog-friendly", "not-cat-friendly", "energetic", "treat motivated"],
     reviews: []
+  },
+  {
+    name: "Chase",
+    age: "3M",
+    gender: "M",
+    species: "Canine",
+    breed: "Golden Retriever",
+    mix: true,
+    mini: false,
+    colors: ["Gold"],
+    shelter: "Animal Haven",
+    photos: ["photo_1_chase.jpg", "photo_2_chase.jpg", "photo_3_chase.jpg"],
+    firstPhoto: "photo_0_chase.jpg",
+    videos: ["video_1_chase.mp4", "video_2_chase.mp4", "video_3_chase.mp4"],
+    status: "Available for adoption",
+    bio: "Chase is a super friendly dog who loves new people and new places. He loves to eat and is a big fan of beef tendons and ice cubes. He doesn't like it when you ignore him and would perform tricks on command as long as you give him treats.",
+    characteristics: ["friendly", "dog-friendly", "cat-friendly", "energetic", "treat motivated"],
+    reviews: ["Super playful and loves his blanket", "He loves his plushies! It's nice to see him playing on his own.", "If you give him larger treats, he takes longer to eat them since he plays with them first!"]
+  },
+  {
+    name: "Ziva",
+    age: "2Y",
+    gender: "F",
+    species: "Feline",
+    breed: "Domestic Short Hair",
+    mix: true,
+    mini: false,
+    colors: ["Tabby"],
+    shelter: "Bobbi & the Strays",
+    photos: ["photo_1_ziva.jpg", "photo_2_ziva.jpg"],
+    firstPhoto: "photo_0_ziva.jpg",
+    videos: ["video_1_ziva.mp4"],
+    status: "Available for adoption",
+    bio: "Ziva is curious about almost every inanimate object that is new in her home. She'll have to slowly check up on it and rub herself on it. When it comes to people however, you need to visit a few times before she'll even be in the same room as you. She loves scratches immediately when you come home and then will just lay 'out of reach' until bedtime; but then it's all the cuddles when her owner is in bed.",
+    characteristics: ["dog-tolerant", "not-cat-friendly", "shy", "needs time to warm up"],
+    reviews: ["When she's comfortable, she'll come and play with you and groom you!"]
   }
 ];
 
