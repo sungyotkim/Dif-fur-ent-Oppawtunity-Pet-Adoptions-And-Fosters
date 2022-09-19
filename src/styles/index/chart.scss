@@ -1,3 +1,39 @@
-// .shelter-chart-container {
-//     // padding-top: 120px;
-// }
+.shelter-chart-container {
+  padding: 0 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+// .shelter-chart-title
+
+.inner-shelter-chart-container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 300px;
+}
+
+.shelter-row {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  border: 1px solid black;
+  cursor: pointer;
+  background-color: blue;
+}
+
+.shelter-row:hover {
+  background-color: lightblue;
+}
+
+// .shelter-logo-container
+
+.shelter-name-container {
+  font-size: 2rem;
+}
+
+.shelter-logo-img {
+  width: 150px;
+  height: 100px;
+}

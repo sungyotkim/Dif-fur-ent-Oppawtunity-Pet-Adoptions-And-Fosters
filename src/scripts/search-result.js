@@ -1,7 +1,7 @@
 const petsUrl = '../../dist/data/petInfo.json';
 const resultsContainer = document.querySelector('.results-card-container');
 const sheltersUrl = '../../dist/data/shelterInfo.json';
-const shelterContainer = document.querySelector(".shelter-chart-container");
+const shelterContainer = document.querySelector(".inner-shelter-chart-container");
 
 function reqPetInfo() {
   fetch(petsUrl)
