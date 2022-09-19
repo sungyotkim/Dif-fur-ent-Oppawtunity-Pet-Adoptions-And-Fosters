@@ -130,6 +130,9 @@ function cardMaker(pets) {
 reqPetInfo();
 
 function filterSpecies(pets, species) {
+  if (species === 'Any' || species === 'Multiple') { return pets }
+  console.log(species)
+
   let filtered = pets.filter(pet => {
     return pet.species === species
   })
@@ -138,6 +141,9 @@ function filterSpecies(pets, species) {
 }
 
 function filterBreed(pets, breed) {
+  if (breed.length === 0) { return pets }
+  console.log(breed)
+
   let filtered = pets.filter(pet => {
     return breed.includes(pet.breed)
   })
@@ -145,27 +151,10 @@ function filterBreed(pets, breed) {
   return filtered;
 }
 
-function filterAge(pets, start, end) {
-  let ages = [];
-  let startAge;
-  let endAge;
+function filterAge(pets, ages) {
+  if (ages.length === 0) { return pets } 
+  console.log(ages)
 
-  if (start.includes('M')) {
-    startAge = start.slice(0, start.length - 1);
-    endAge = end.slice(0, end.length - 1);
-    for (let i = startAge; i <= endAge; i++) {
-      let age = i + 'M';
-      ages.push(age);
-    }
-  } else {
-    startAge = start.slice(0, start.slice(0, start.length - 1));
-    endAge = end.slice(0, end.length - 1);
-    for (let i = startAge; i <= endAge; i++) {
-      let age = i + 'Y';
-      ages.push(age);
-    }
-  }
-  
   let filtered = pets.filter(pet => {
     return ages.includes(pet.age);
   })
@@ -180,3 +169,11 @@ function filterShelter(pets, shelter) {
 
   return filtered;
 }
+
+module.exports.filterSpecies = filterSpecies;
+module.exports.filterBreed = filterBreed;
+module.exports.filterAge = filterAge;
+module.exports.filterShelter = filterShelter;
+module.exports.reqPetInfo = reqPetInfo;
+module.exports.cardMaker = cardMaker;
+

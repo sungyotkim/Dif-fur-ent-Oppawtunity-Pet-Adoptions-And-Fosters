@@ -6,7 +6,8 @@ const breedItemsList = document.querySelector(".breed-items-list");
 const btn = document.querySelector(".search-button");
 const featuredContainer = document.querySelector(".featured-container");
 const resultsContainer = document.querySelector(".container-results");
-
+const zipcodeContainer = document.querySelector("#zip-input");
+const btnTexts = document.querySelectorAll(".dropdown-btn-text");
 
 //toggles for all dropdowns
 selectBtns.forEach(selectBtn => {
@@ -20,7 +21,6 @@ speciesItems.forEach(speciesItem => {
     speciesItem.addEventListener("click", () => {
         speciesItem.classList.toggle("checked")
         let speciesChecked = document.querySelectorAll(".item-species.checked");
-        let btnTexts = document.querySelectorAll(".dropdown-btn-text");
     
         if(speciesChecked && speciesChecked.length === 1) {
             btnTexts[0].innerText = `${speciesChecked[0].innerText}`;
@@ -73,7 +73,6 @@ breedItems.forEach(breedItem => {
     breedItem.addEventListener("click", () => {
         breedItem.classList.toggle("checked")
         let breedChecked = document.querySelectorAll(".item-breed.checked");
-        let btnTexts = document.querySelectorAll(".dropdown-btn-text");
 
         if(breedChecked && breedChecked.length === 1) {
             let felines = ['American Short Hair', 'Domestic Medium Hair', 'Domestic Short Hair', 'Exotic Short Hair']
@@ -98,7 +97,6 @@ ageItems.forEach(ageItem => {
     ageItem.addEventListener("click", () => {
         ageItem.classList.toggle("checked")
         let ageChecked = document.querySelectorAll(".item-age.checked");
-        let btnTexts = document.querySelectorAll(".dropdown-btn-text");
 
         if(ageChecked && ageChecked.length === 1) {
             btnTexts[2].innerText = `${ageChecked[0].innerText.split(' ')[0]}`
@@ -128,5 +126,18 @@ addSearchPicture();
 
 btn.addEventListener("click", () => {
     featuredContainer.setAttribute('style', 'display: none;');
-    resultsContainer.setAttribute('style', 'display: flex;')
+    resultsContainer.setAttribute('style', 'display: flex;');
+
+//     let zipcode = zipcodeContainer.innerText;
+//     let species = btnTexts[0].innerText;
+//     let breed = btnTexts[1].innerText;
+//     let age = btnTexts[2].innerText;
+
+//     //species
+    
+//     //breed
+    
+//     //age
+
+//     //zipcode
 })
