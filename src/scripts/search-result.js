@@ -251,10 +251,6 @@ function generateVideo(pets) {
   videoContainer.src = `../../dist/data/pets/${randomPet.name.toLowerCase()}/videos/${randomVideo}`
   let videoEnd = randomVideo.slice(randomVideo.length - 3);
   videoContainer.setAttribute('type', `video/${videoEnd}`);
-  console.log(randomPet);
-  console.log(randomVideo);
-  console.log(videoEnd);
-  console.log(videoContainer)
 }
 
 generatePetsWithVideo();

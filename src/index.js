@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", e => {
   const searchBtn = document.querySelector(".search-button");
 
   searchBtn.addEventListener("click", () => {
-    const zipcodeContainer = document.querySelector("#zip-input");
     const btnTexts = document.querySelectorAll(".dropdown-btn-text");
     // dropdown.featuredContainer.setAttribute('style', 'display: none;');
     // dropdown.resultsContainer.setAttribute('style', 'display: none;');
@@ -31,7 +30,6 @@ document.addEventListener("DOMContentLoaded", e => {
     }
 
     function getFilteredPets() {
-      let any = ['Any', 'Multiple']
       let breeds = [];
       let breedChecked = document.querySelectorAll(".item-breed.checked");
       let ages = [];
@@ -67,7 +65,5 @@ document.addEventListener("DOMContentLoaded", e => {
     };
 
     getFilteredPets();
-
-    //zipcode
   })
 });

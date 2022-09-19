@@ -69,9 +69,9 @@ table {
   text-decoration: none;
 }
 
-#zip-input {
+#city-input {
   background-color: white;
-  padding: 1rem 0.5rem 0.5rem;
+  padding: 1rem 1rem 0.5rem;
   min-width: 13.75rem;
   max-width: 100%;
   border: 1px solid #bb8c5d;
@@ -698,10 +698,12 @@ table {
   display: flex;
   flex-direction: column;
   width: 40%;
+  height: 100%;
 }
 
 .shelter-chart-container {
   background-color: gray;
+  height: 30%;
 }
 
 .favorites-container {
@@ -711,11 +713,16 @@ table {
 .video-container {
   display: flex;
   flex-direction: column;
+  height: 40%;
+}
+
+.inner-video-container {
+  max-height: 100%;
 }
 
 #random-video {
   width: 100%;
-  height: 50%;
+  height: 100%;
 }
 
 .shelter-chart-container {
@@ -780,7 +787,7 @@ body, html {
   background: url(../dist/assets/pawprint1.png);
   background-size: 100px;
   background-repeat: round;
-  height: 100vh;
+  height: 100%;
   width: 10%;
   top: 50px;
 }
@@ -790,7 +797,7 @@ body, html {
   background: url(../dist/assets/pawprint2.png);
   background-size: 100px;
   background-repeat: round;
-  height: 100vh;
+  height: 100%;
   width: 10%;
   top: 50px;
   right: 0px;

@@ -6,7 +6,6 @@ const breedItemsList = document.querySelector(".breed-items-list");
 const btn = document.querySelector(".search-button");
 const featuredContainer = document.querySelector(".featured-container");
 const resultsContainer = document.querySelector(".container-results");
-const zipcodeContainer = document.querySelector("#zip-input");
 const btnTexts = document.querySelectorAll(".dropdown-btn-text");
 
 //toggles for all dropdowns
