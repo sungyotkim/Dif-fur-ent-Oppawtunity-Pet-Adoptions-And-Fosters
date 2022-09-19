@@ -52,7 +52,7 @@ function cardMaker(pets) {
 }
 
 // function drawCardAnimation() {
-//   const svg = document.createElement('svg');
+//   const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
 //   svg.setAttribute('id', 'curve');
 //   const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
 //   path.setAttribute('id', 'p');
@@ -135,6 +135,8 @@ function cardMaker(pets) {
 
 //   return svg
 // }
+
+
 reqPetInfo();
 
 function filterSpecies(pets, species) {
