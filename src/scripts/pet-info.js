@@ -67,7 +67,7 @@ let pets = [
     shelter: "The Humane Society of New York",
     photos: ["photo_1_frankie.JPG", "photo_2_frankie.jpg", "photo_3_frankie.JPG", "photo_4_frankie.JPG"],
     firstPhoto: "",
-    videos: ["video_1_frankie.MP4", "video_2_frankie.MP4"],
+    videos: ["video_1_frankie.mp4", "video_2_frankie.mp4"],
     status: "Available for adoption",
     bio: "Frankie is a friendly dog who loves being around people and other dogs! If you're looking for a friendly, outgoing dog and can handle youthful energy, she's a great match!",
     characteristics: ["outdoorsy", "outgoing", "energetic", "dog-friendly"],

@@ -247,7 +247,10 @@ function generatePetsWithVideo() {
 function generateVideo(pets) {
   let randomPet = pets[Math.floor(Math.random() * pets.length)];
   let randomVideo = randomPet.videos[Math.floor(Math.random() * randomPet.videos.length)]
-  console.log(randomVideo)
+  let videoContainer = document.querySelector("#random-video");
+  videoContainer.src = `../../dist/data/pets/${randomPet.name}/videos/${randomVideo}`
+  console.log(randomPet);
+  console.log(randomVideo);
 }
 
 generatePetsWithVideo();
