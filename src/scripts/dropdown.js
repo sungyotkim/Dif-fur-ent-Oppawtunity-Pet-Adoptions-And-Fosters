@@ -128,16 +128,4 @@ btn.addEventListener("click", () => {
     featuredContainer.setAttribute('style', 'display: none;');
     resultsContainer.setAttribute('style', 'display: flex;');
 
-//     let zipcode = zipcodeContainer.innerText;
-//     let species = btnTexts[0].innerText;
-//     let breed = btnTexts[1].innerText;
-//     let age = btnTexts[2].innerText;
-
-//     //species
-    
-//     //breed
-    
-//     //age
-
-//     //zipcode
 })

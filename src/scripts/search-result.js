@@ -1,5 +1,7 @@
 const petsUrl = '../../dist/data/petInfo.json';
 const resultsContainer = document.querySelector('.results-card-container');
+const sheltersUrl = '../../dist/data/shelterInfo.json';
+const shelterContainer = document.querySelector(".shelter-chart-container");
 
 function reqPetInfo() {
   fetch(petsUrl)
@@ -15,7 +17,7 @@ function cardMaker(pets) {
 
   pets.forEach(pet => {
     const card = document.createElement('div');
-    const cardImgHolder = document.createElement('div')
+    const cardImgHolder = document.createElement('div');
     const cardImg = document.createElement('img');
     const nameTag = document.createElement('div');
     const cardBio = document.createElement('div');
@@ -131,7 +133,6 @@ reqPetInfo();
 
 function filterSpecies(pets, species) {
   if (species === 'Any' || species === 'Multiple') { return pets }
-  console.log(species)
 
   let filtered = pets.filter(pet => {
     return pet.species === species
@@ -142,7 +143,6 @@ function filterSpecies(pets, species) {
 
 function filterBreed(pets, breed) {
   if (breed.length === 0) { return pets }
-  console.log(breed)
 
   let filtered = pets.filter(pet => {
     return breed.includes(pet.breed)
@@ -153,7 +153,6 @@ function filterBreed(pets, breed) {
 
 function filterAge(pets, ages) {
   if (ages.length === 0) { return pets } 
-  console.log(ages)
 
   let filtered = pets.filter(pet => {
     return ages.includes(pet.age);
@@ -177,3 +176,34 @@ module.exports.filterShelter = filterShelter;
 module.exports.reqPetInfo = reqPetInfo;
 module.exports.cardMaker = cardMaker;
 
+function reqShelterInfo() {
+  fetch(sheltersUrl)
+    .then(res => res.json())
+    .then(data => shelterChartMaker(data))
+    .catch(error => {
+      console.log(error)
+    }) 
+}
+
+function shelterChartMaker(shelters) {
+  shelters.forEach(shelter => {
+    const row = document.createElement('div');
+    const logoContainer = document.createElement('div');
+    const nameTag = document.createElement('div');
+    const logo = document.createElement('img');
+
+    row.setAttribute('class', 'shelter-row');
+    logoContainer.setAttribute('class', 'shelter-logo-container');
+    nameTag.setAttribute('class', 'shelter-name-container');
+    logo.setAttribute('class', 'shelter-logo-img');
+
+    logo.src = `../../dist/data/assets/${shelter.name}.svg`;
+    nameTag.innerText = `${shelter.name}`;
+    logoContainer.appendChild(logo);
+    row.appendChild(logoContainer);
+    row.appendChild(nameTag);
+    shelterContainer.appendChild(row);
+  })
+}
+
+reqShelterInfo();
