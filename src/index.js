@@ -9,14 +9,8 @@ document.addEventListener("DOMContentLoaded", e => {
 
   searchBtn.addEventListener("click", () => {
     const btnTexts = document.querySelectorAll(".dropdown-btn-text");
-    // dropdown.featuredContainer.setAttribute('style', 'display: none;');
-    // dropdown.resultsContainer.setAttribute('style', 'display: none;');
 
-    let zipcode = zipcodeContainer.innerText;
     let species = btnTexts[0].innerText;
-    let breed = btnTexts[1].innerText;
-    let age = btnTexts[2].innerText;
-    // let pets = fetch(petsUrl).then(response => return response.json());
     function getPets(url) {
       return fetch(url)
         .then(response => {
