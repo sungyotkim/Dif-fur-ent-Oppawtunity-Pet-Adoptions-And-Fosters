@@ -161,18 +161,20 @@ function filterAge(pets, ages) {
   return filtered;
 }
 
-function filterShelter(pets, shelter) {
-  let filtered = pets.filter(pet => {
-    return shelter.includes(pet.shelter);
-  })
+// function filterShelter(pets, shelter) {
+//   if (shelter.length === 0) { return pets }
 
-  return filtered;
-}
+//   let filtered = pets.filter(pet => {
+//     return shelter.includes(pet.shelter);
+//   })
+
+//   return filtered;
+// }
 
 module.exports.filterSpecies = filterSpecies;
 module.exports.filterBreed = filterBreed;
 module.exports.filterAge = filterAge;
-module.exports.filterShelter = filterShelter;
+// module.exports.filterShelter = filterShelter;
 module.exports.reqPetInfo = reqPetInfo;
 module.exports.cardMaker = cardMaker;
 
@@ -184,6 +186,8 @@ function reqShelterInfo() {
       console.log(error)
     }) 
 }
+
+let sheltersChecked = [];
 
 function shelterChartMaker(shelters) {
   shelters.forEach(shelter => {
@@ -203,7 +207,55 @@ function shelterChartMaker(shelters) {
     row.appendChild(logoContainer);
     row.appendChild(nameTag);
     shelterContainer.appendChild(row);
+    
+    row.addEventListener("click", () => {
+      row.classList.toggle("checked");
+      let rowsChecked = document.querySelectorAll(".shelter-row.checked");
+      let nameDivs = resultsContainer.querySelectorAll('.result-card-name');
+      let resultNames = [];
+      nameDivs.forEach(div => { resultNames.push(div.innerText) })
+      
+      //obtain only pets from current search results
+      fetch(petsUrl)
+        .then(res => res.json())
+        .then(data => {
+          let arr = [];
+          data.forEach(pet => {
+            if (resultNames.includes(pet.name)) {
+              arr.push(pet);
+            }
+          })
+          filterByShelters(arr);
+        })
+
+      //filter pets who only belong in the selected shelters
+      function filterByShelters(petsArr) {
+        let sheltersChecked = [];
+        rowsChecked.forEach(row => {
+          sheltersChecked.push(row.innerText)
+        })
+        console.log(sheltersChecked);
+
+        let filtered = [];
+        petsArr.forEach(pet => {
+          if (sheltersChecked.includes(pet.shelter)) {
+            filtered.push(pet);
+          } 
+        })
+
+        if (sheltersChecked.length === 0) {
+          filtered = petsArr;
+        }
+        cardMaker(filtered)
+      }
+    })
   })
 }
 
 reqShelterInfo();
+
+function getSheltersChecked() {
+  return sheltersChecked;
+}
+
+module.exports.getSheltersChecked = getSheltersChecked;
