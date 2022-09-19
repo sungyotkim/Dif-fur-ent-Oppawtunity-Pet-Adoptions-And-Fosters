@@ -167,20 +167,9 @@ function filterAge(pets, ages) {
   return filtered;
 }
 
-// function filterShelter(pets, shelter) {
-//   if (shelter.length === 0) { return pets }
-
-//   let filtered = pets.filter(pet => {
-//     return shelter.includes(pet.shelter);
-//   })
-
-//   return filtered;
-// }
-
 module.exports.filterSpecies = filterSpecies;
 module.exports.filterBreed = filterBreed;
 module.exports.filterAge = filterAge;
-// module.exports.filterShelter = filterShelter;
 module.exports.reqPetInfo = reqPetInfo;
 module.exports.cardMaker = cardMaker;
 
