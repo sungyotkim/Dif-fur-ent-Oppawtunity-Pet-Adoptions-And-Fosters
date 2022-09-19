@@ -21,6 +21,7 @@ function cardMaker(pets) {
     const cardImg = document.createElement('img');
     const nameTag = document.createElement('div');
     const cardBio = document.createElement('div');
+    const cardShelter = document.createElement('div');
     
     card.setAttribute('class', 'result-card');
     cardImgHolder.setAttribute('class', 'result-card-img-holder');
@@ -42,6 +43,11 @@ function cardMaker(pets) {
     // cardBioHolder.appendChild(drawCardAnimation());
     card.appendChild(cardBioHolder);
     card.appendChild(nameTag);
+
+    cardShelter.setAttribute('class', 'result-card-shelter');
+    cardShelter.setAttribute('style', 'display: none;');
+    cardShelter.innerText = `${pet.shelter}`;
+    card.appendChild(cardShelter);
   })
 }
 
@@ -211,42 +217,25 @@ function shelterChartMaker(shelters) {
     row.addEventListener("click", () => {
       row.classList.toggle("checked");
       let rowsChecked = document.querySelectorAll(".shelter-row.checked");
-      let nameDivs = resultsContainer.querySelectorAll('.result-card-name');
-      let resultNames = [];
-      nameDivs.forEach(div => { resultNames.push(div.innerText) })
+      let cards = resultsContainer.querySelectorAll('.result-card');
       
-      //obtain only pets from current search results
-      fetch(petsUrl)
-        .then(res => res.json())
-        .then(data => {
-          let arr = [];
-          data.forEach(pet => {
-            if (resultNames.includes(pet.name)) {
-              arr.push(pet);
-            }
-          })
-          filterByShelters(arr);
-        })
-
-      //filter pets who only belong in the selected shelters
-      function filterByShelters(petsArr) {
+      if (rowsChecked.length > 0) {
         let sheltersChecked = [];
         rowsChecked.forEach(row => {
           sheltersChecked.push(row.innerText)
         })
-        console.log(sheltersChecked);
 
-        let filtered = [];
-        petsArr.forEach(pet => {
-          if (sheltersChecked.includes(pet.shelter)) {
-            filtered.push(pet);
-          } 
+        cards.forEach(card => {
+          if (!sheltersChecked.includes(card.lastChild.innerText)) {
+            card.setAttribute('style', 'display: none;')
+          } else {
+            card.setAttribute('style', 'display: "";')
+          }
         })
-
-        if (sheltersChecked.length === 0) {
-          filtered = petsArr;
-        }
-        cardMaker(filtered)
+      } else {
+        cards.forEach(card => {
+          card.setAttribute('style', 'display: "";')
+        })
       }
     })
   })
