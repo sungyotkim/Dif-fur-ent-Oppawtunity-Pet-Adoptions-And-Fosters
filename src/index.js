@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", e => {
   const featured = require('./scripts/featured');
   const searchResult = require('./scripts/search-result');
 
+
   // btn.addEventListener('click', reqData);
   
   // function reqData() {

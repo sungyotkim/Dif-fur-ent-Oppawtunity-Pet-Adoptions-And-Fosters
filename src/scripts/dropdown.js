@@ -7,6 +7,7 @@ const btn = document.querySelector(".search-button");
 const featuredContainer = document.querySelector(".featured-container");
 const resultsContainer = document.querySelector(".container-results");
 
+
 //toggles for all dropdowns
 selectBtns.forEach(selectBtn => {
     selectBtn.addEventListener("click", () => {
@@ -125,9 +126,7 @@ function addSearchPicture(name="catdog") {
 
 addSearchPicture();
 
-// function searchBtn() {
-    btn.addEventListener("click", () => {
-        featuredContainer.setAttribute('style', 'display: none;');
-        resultsContainer.setAttribute('style', 'display: flex;')
-    })
-// }
+btn.addEventListener("click", () => {
+    featuredContainer.setAttribute('style', 'display: none;');
+    resultsContainer.setAttribute('style', 'display: flex;')
+})
