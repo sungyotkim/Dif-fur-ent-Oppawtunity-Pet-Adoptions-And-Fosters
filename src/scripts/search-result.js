@@ -192,7 +192,9 @@ function shelterChartMaker(shelters) {
     
     logo.src = `../../dist/data/assets/${shelter.name}.svg`;
     nameTag.innerText = `${shelter.name}`;
+
     logoContainer.appendChild(logo);
+
     row.appendChild(logoContainer);
     row.appendChild(nameTag);
     shelterContainer.appendChild(row);
