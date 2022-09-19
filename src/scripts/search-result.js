@@ -167,35 +167,30 @@ function filterAge(pets, ages) {
   return filtered;
 }
 
-module.exports.filterSpecies = filterSpecies;
-module.exports.filterBreed = filterBreed;
-module.exports.filterAge = filterAge;
-module.exports.reqPetInfo = reqPetInfo;
-module.exports.cardMaker = cardMaker;
 
 function reqShelterInfo() {
   fetch(sheltersUrl)
-    .then(res => res.json())
+  .then(res => res.json())
     .then(data => shelterChartMaker(data))
     .catch(error => {
       console.log(error)
     }) 
-}
+  }
 
-let sheltersChecked = [];
-
+  let sheltersChecked = [];
+  
 function shelterChartMaker(shelters) {
   shelters.forEach(shelter => {
     const row = document.createElement('div');
     const logoContainer = document.createElement('div');
     const nameTag = document.createElement('div');
     const logo = document.createElement('img');
-
+    
     row.setAttribute('class', 'shelter-row');
     logoContainer.setAttribute('class', 'shelter-logo-container');
     nameTag.setAttribute('class', 'shelter-name-container');
     logo.setAttribute('class', 'shelter-logo-img');
-
+    
     logo.src = `../../dist/data/assets/${shelter.name}.svg`;
     nameTag.innerText = `${shelter.name}`;
     logoContainer.appendChild(logo);
@@ -213,7 +208,7 @@ function shelterChartMaker(shelters) {
         rowsChecked.forEach(row => {
           sheltersChecked.push(row.innerText)
         })
-
+        
         cards.forEach(card => {
           if (!sheltersChecked.includes(card.lastChild.innerText)) {
             card.setAttribute('style', 'display: none;')
@@ -232,8 +227,25 @@ function shelterChartMaker(shelters) {
 
 reqShelterInfo();
 
-function getSheltersChecked() {
-  return sheltersChecked;
+//collect all pets info first
+function generatePetsWithVideo() {
+  fetch(petsUrl)
+    .then(res => res.json())
+    .then(data => {
+
+    })
+    .catch(err => {
+      console.log(err)
+    })
 }
 
-module.exports.getSheltersChecked = getSheltersChecked;
+function generateVideo(pets) {
+  
+}
+
+
+module.exports.filterSpecies = filterSpecies;
+module.exports.filterBreed = filterBreed;
+module.exports.filterAge = filterAge;
+module.exports.reqPetInfo = reqPetInfo;
+module.exports.cardMaker = cardMaker;

@@ -2,7 +2,7 @@
   height: 100%;
   width: 100%;
   display: flex;
-  // display: none;
+  display: none;
 }
 
 .search-results-container {
@@ -85,3 +85,12 @@
 .favorites-container {
   background-color: beige;
 }
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+}
+
+// .video-container-title
+
+// .inner-video-container
