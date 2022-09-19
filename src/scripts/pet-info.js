@@ -139,7 +139,7 @@ let pets = [
     shelter: "The Humane Society of New York",
     photos: ["photo_1_mochi.JPG", "photo_2_mochi.jpg"],
     firstPhoto: "photo_0_mochi.JPG",
-    videos: ["video_1_mochi.MOV", "video_2_mochi.MOV", "video_3_mochi.MOV"],
+    videos: ["video_1_mochi.mp4", "video_2_mochi.mp4", "video_3_mochi.mp4"],
     status: "Currently being fostered",
     bio: "Mochi is a super chill, relaxed cat who really loves her pets. Great match for anyone looking for a low-energy companion!",
     characteristics: ["calm", "friendly", "cat-friendly", "not-dog-friendly"],

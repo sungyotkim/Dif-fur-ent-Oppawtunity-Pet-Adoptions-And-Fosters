@@ -9,8 +9,9 @@ $darkbrown: #bb8c5d;
 $lightgray: #AAA7A6;
 $white: white;
 
-body {
+body, html {
   background: $white;
+  height: 100%;
 }
 
 .container {
