@@ -177,7 +177,6 @@ function reqShelterInfo() {
     }) 
   }
 
-  let sheltersChecked = [];
   
 function shelterChartMaker(shelters) {
   shelters.forEach(shelter => {
@@ -232,7 +231,13 @@ function generatePetsWithVideo() {
   fetch(petsUrl)
     .then(res => res.json())
     .then(data => {
-
+      let petsWithVideos = [];
+      data.forEach(pet => {
+        if (pet.videos.length > 0) {
+          petsWithVideos.push(pet);
+        }
+      })
+      generateVideo(petsWithVideos);
     })
     .catch(err => {
       console.log(err)
@@ -240,9 +245,12 @@ function generatePetsWithVideo() {
 }
 
 function generateVideo(pets) {
-  
+  let randomPet = pets[Math.floor(Math.random() * pets.length)];
+  let randomVideo = randomPet.videos[Math.floor(Math.random() * randomPet.videos.length)]
+  console.log(randomVideo)
 }
 
+generatePetsWithVideo();
 
 module.exports.filterSpecies = filterSpecies;
 module.exports.filterBreed = filterBreed;
