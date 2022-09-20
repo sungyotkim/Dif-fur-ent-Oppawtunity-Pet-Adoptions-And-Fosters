@@ -2,11 +2,10 @@
   height: 100%;
   width: 100%;
   display: flex;
-  // display: none;
+  display: none;
 }
 
 .search-results-container {
-  // background-color: yellow;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -46,7 +45,6 @@
   border-radius: 8px;
   padding: 2px;
   background-color: rgba(0, 0, 0 ,0.85);
-  // background-color: black;
   display: flex;
   align-items: center;
 }

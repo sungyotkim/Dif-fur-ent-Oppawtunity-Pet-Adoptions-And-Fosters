@@ -428,7 +428,6 @@ table {
   background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   flex-direction: column;
-  display: none;
 }
 
 .featured-inner-container {
@@ -653,6 +652,7 @@ table {
   height: 100%;
   width: 100%;
   display: flex;
+  display: none;
 }
 
 .search-results-container {
