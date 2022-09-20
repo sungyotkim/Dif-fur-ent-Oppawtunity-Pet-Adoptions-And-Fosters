@@ -1,9 +1,7 @@
 .container-results {
-  // height: 100%;
   height: calc(94vh - 110px);
   width: 100%;
   display: flex;
-  // display: none;
 }
 
 .search-results-container {
@@ -127,14 +125,12 @@
 
 .inner-video-container {
   max-height: calc(94vh - 475px);
-  // max-height: 100%;
 }
 
 #random-video {
   width: 100%;
   min-height: calc(94vh - 495px);
   max-height: calc(94vh - 475px);
-  // height: 100%;
 }
 
 .shelter-row {

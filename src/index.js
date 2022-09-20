@@ -1,17 +1,15 @@
 document.addEventListener("DOMContentLoaded", e => {
   const petsUrl = '../dist/data/petInfo.json'
-  const container = document.querySelector('.container-center')
-
-  const dropdown = require('./scripts/dropdown');
-  const featured = require('./scripts/featured');
   const searchResult = require('./scripts/search-result');
   const searchBtn = document.querySelector(".search-button");
-  // const profileOverview = require('./scripts/profile-overview');
-  // const photoGallery = require('./scripts/photo-gallery');
-  // const videoGallery = require('./scripts/video-gallery');
   const overviewBtn = document.querySelector('.overview-btn');
   const photoGalleryBtn = document.querySelector('.photo-gallery-btn');
   const videoGalleryBtn = document.querySelector('.video-gallery-btn');
+  
+  //variables not used but need to render
+  const container = document.querySelector('.container-center')
+  const dropdown = require('./scripts/dropdown');
+  const featured = require('./scripts/featured');
   const profile = require('./scripts/profile');
 
   searchBtn.addEventListener("click", () => {

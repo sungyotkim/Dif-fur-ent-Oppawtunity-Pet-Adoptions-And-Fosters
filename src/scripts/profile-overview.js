@@ -1,8 +1,4 @@
-// const overviewContainer = document.querySelector(".profile-overview-container");
-// const photoGallery = document.querySelector(".photo-gallery-container");
-// const videoGallery = document.querySelector('.video-gallery-container');
 const profilePhoto = document.querySelector('#profile-photo');
-// const nameContainer = document.querySelector('.name-container');
 const nameTag = document.querySelector('#profile-name-tag');
 const profileName = document.querySelector('#profile-name');
 const profileAge = document.querySelector('#profile-age');
