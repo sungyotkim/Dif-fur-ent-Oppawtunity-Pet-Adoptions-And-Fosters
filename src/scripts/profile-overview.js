@@ -31,8 +31,6 @@ function reqPetInfo(profilePet) {
         }) 
 }
 
-// reqPetInfo('Nara');
-
 function populateProfile(pet) {
   profilePhoto.src = `../../dist/data/pets/${pet.name.toLowerCase()}/photos/${pet.photos[0]}`;
 

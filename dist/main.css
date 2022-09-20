@@ -428,7 +428,6 @@ table {
   background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   flex-direction: column;
-  display: none;
 }
 
 .featured-inner-container {
@@ -653,7 +652,6 @@ table {
   height: calc(94vh - 110px);
   width: 100%;
   display: flex;
-  display: none;
 }
 
 .search-results-container {
@@ -1004,10 +1002,6 @@ table {
   background: blue;
 }
 
-.profile-display .hidden {
-  display: none;
-}
-
 .profile-nav {
   display: flex;
   background: red;
@@ -1160,6 +1154,10 @@ body, html {
 
 .container-bottom {
   height: calc(94vh - 116px);
+}
+
+.hidden {
+  display: none;
 }
 
 body {

@@ -124,7 +124,13 @@ function addSearchPicture(name="catdog") {
 addSearchPicture();
 
 btn.addEventListener("click", () => {
-    featuredContainer.setAttribute('style', 'display: none;');
-    resultsContainer.setAttribute('style', 'display: flex;');
+    // featuredContainer.setAttribute('style', 'display: none;');
+    if (!featuredContainer.classList.contains('hidden')) {
+        featuredContainer.classList.toggle('hidden')
+    }
+    if (resultsContainer.classList.contains('hidden')) {
+        resultsContainer.classList.toggle('hidden')
+    }
+    // resultsContainer.setAttribute('style', 'display: flex;');
 
 })
