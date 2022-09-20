@@ -25,6 +25,7 @@
   display: flex;
   height: calc(94vh - 185px);
   background: pink;
+  display: none;
 }
 
 .profile-left-container {
@@ -80,4 +81,27 @@
 .profile-shelter-info {
   height: calc(94vh - 685px);
   background: lightgoldenrodyellow;
+}
+
+.photo-gallery-container {
+  display: flex;
+  flex-direction: column;
+  background: pink;
+  height: calc(94vh - 185px);
+  box-sizing: border-box;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-photo-container {
+  background: blue;
+  height: calc(94vh - 405px);
+  width: 80%;
+}
+
+.sub-photo-container {
+  background: gray;
+  height: 200px;
+  width: 80%;
 }
