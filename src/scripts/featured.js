@@ -25,7 +25,6 @@ function photoAdder(data) {
 
     featuredPets.forEach(currentPet => {
         const card = document.createElement('a');
-        // card.setAttribute('href', '')
         card.setAttribute('class', 'featured-card');
         const img = document.createElement('img');
         img.src = `../../dist/data/pets/${currentPet.name.toLowerCase()}/photos/${currentPet.photos[1]}`;
@@ -36,7 +35,6 @@ function photoAdder(data) {
         cardTitle.setAttribute('class', 'featured-card-title');
         const cardName = document.createElement('div');
         const cardDescription = document.createElement('div');
-        // cardName.innerText = `${currentPet.name}`;
         cardName.innerText = `${currentPet.name} the ${currentPet.characteristics[0]} ${currentPet.species === 'Canine' ? 'dog' : 'cat'}`
         cardName.setAttribute('class', 'featured-card-name');
         cardDescription.innerText = `${currentPet.bio} Click to see more!`;

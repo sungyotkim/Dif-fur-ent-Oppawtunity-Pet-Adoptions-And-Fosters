@@ -40,6 +40,8 @@ function populateReviews(pet, num = 0) {
 }
 
 function populateSubVideos(pet) {
+  subContainer.innerHTML = '';
+
   pet.videos.forEach(video => {
     const card = document.createElement('div');
     card.setAttribute('class', 'video-card');
