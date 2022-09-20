@@ -24,7 +24,7 @@ function populateMainVideo(pet, num = 0) {
   mainContainer.innerHTML = '';
 
   const vid = document.createElement('video');
-  vid.setAttribute('autoplay', 'autoplay');
+  vid.setAttribute('class', 'main-video');
   vid.setAttribute('controls', 'controls');
   vid.src = `../../dist/data/pets/${pet.name.toLowerCase()}/videos/${pet.videos[num]}`
   mainContainer.appendChild(vid);
@@ -64,4 +64,4 @@ function populateSubVideos(pet) {
 module.exports.reqPetInfo = reqPetInfo;
 module.exports.populateMainVideo = populateMainVideo;
 module.exports.populateReviews = populateReviews;
-module.exports.populateSubVideos = populateSubVideos
+module.exports.populateSubVideos = populateSubVideos;

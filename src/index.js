@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", e => {
 
   videoGalleryBtn.addEventListener("click", () => {
     if (videoGalleryContainer.classList.contains("hidden")) {
-      videoGalleryContainer.classList.toggle("hidden")
+      videoGalleryContainer.classList.toggle("hidden");
     }
     if (!overviewContainer.classList.contains("hidden")) {
       overviewContainer.classList.toggle("hidden");
