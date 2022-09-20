@@ -5,5 +5,27 @@
   height: 100%;
   width: 100%;
   display: flex;
-  // display: none;
+  flex-direction: column;
+  display: none;
+  background: blue;
+}
+
+.profile-upper-container {
+  flex-basis: 40%;
+  box-sizing: border-box;
+  display: flex;
+  background: green;
+}
+
+.profile-upper-left-container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  flex-basis: 40%;
+  background: red;
+}
+
+.photo-container {
+  box-sizing: border-box;
+
 }
