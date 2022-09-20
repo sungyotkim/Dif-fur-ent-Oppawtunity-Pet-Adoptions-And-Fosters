@@ -66,7 +66,7 @@
   object-fit: fill;
 }
 
-.name-container > p {
+#profile-name {
   position: absolute;
   color: white;
 }
@@ -86,6 +86,15 @@
   box-sizing: border-box;
   padding: 0.5rem;
   height: 100px;
+}
+
+.top-info > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-info > div > h2 {
+  margin-right: 5px;
 }
 
 .char-info {

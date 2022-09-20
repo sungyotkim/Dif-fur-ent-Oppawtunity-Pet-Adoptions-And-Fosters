@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", e => {
   const featured = require('./scripts/featured');
   const searchResult = require('./scripts/search-result');
   const searchBtn = document.querySelector(".search-button");
+  const profileOverview = require('./scripts/profile-overview');
 
   searchBtn.addEventListener("click", () => {
     const btnTexts = document.querySelectorAll(".dropdown-btn-text");
