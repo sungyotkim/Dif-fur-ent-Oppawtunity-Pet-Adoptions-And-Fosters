@@ -8,8 +8,14 @@ function renderProfile(pet) {
   overview.reqPetInfo(pet.name);
   videoGallery.reqPetInfo(pet.name);
   photoGallery.reqPetInfo(pet.name);
-  profileDisplay.classList.toggle('hidden');
-  profileOverview.classList.toggle('hidden');
+
+  if (profileDisplay.classList.contains("hidden")) {
+    profileDisplay.classList.toggle('hidden');
+  }
+
+  if (profileOverview.classList.contains("hidden")) {
+    profileOverview.classList.toggle('hidden');
+  }
 }
 
 module.exports.renderProfile = renderProfile;

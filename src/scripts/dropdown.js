@@ -7,6 +7,11 @@ const btn = document.querySelector(".search-button");
 const featuredContainer = document.querySelector(".featured-container");
 const resultsContainer = document.querySelector(".container-results");
 const btnTexts = document.querySelectorAll(".dropdown-btn-text");
+const profile = require('./profile');
+const profileDisplay = document.querySelector('.profile-display');
+const profileOverview = document.querySelector('.profile-overview-container');
+const profileVideo = document.querySelector('.video-gallery-container');
+const profilePhoto = document.querySelector('.photo-gallery-container');
 
 //toggles for all dropdowns
 selectBtns.forEach(selectBtn => {
@@ -124,13 +129,25 @@ function addSearchPicture(name="catdog") {
 addSearchPicture();
 
 btn.addEventListener("click", () => {
-    // featuredContainer.setAttribute('style', 'display: none;');
     if (!featuredContainer.classList.contains('hidden')) {
         featuredContainer.classList.toggle('hidden')
     }
+
+    if (!profileDisplay.classList.contains('hidden')) {
+        profileDisplay.classList.toggle('hidden');
+    }
+
+    if (!profilePhoto.classList.contains("hidden")) {
+        profilePhoto.classList.toggle("hidden");
+    }
+    if (!profileOverview.classList.contains("hidden")) {
+        profileOverview.classList.toggle("hidden");
+    }
+    if (!profileVideo.classList.contains("hidden")) {
+        profileVideo.classList.toggle("hidden")
+    }
+
     if (resultsContainer.classList.contains('hidden')) {
         resultsContainer.classList.toggle('hidden')
     }
-    // resultsContainer.setAttribute('style', 'display: flex;');
-
 })

@@ -2,6 +2,8 @@ const petsUrl = '../../dist/data/petInfo.json';
 const resultsContainer = document.querySelector('.results-card-container');
 const sheltersUrl = '../../dist/data/shelterInfo.json';
 const shelterContainer = document.querySelector(".inner-shelter-chart-container");
+const profile = require('./profile');
+const resultsPageContainer = document.querySelector('.container-results');
 
 function reqPetInfo() {
   fetch(petsUrl)
@@ -49,6 +51,11 @@ function cardMaker(pets) {
     cardShelter.innerText = `${pet.shelter}`;
     card.appendChild(cardShelter);
     resultsContainer.append(card);
+
+    card.addEventListener("click", () => {
+      resultsPageContainer.classList.toggle("hidden");
+      profile.renderProfile(pet);
+    })
   })
 }
 
