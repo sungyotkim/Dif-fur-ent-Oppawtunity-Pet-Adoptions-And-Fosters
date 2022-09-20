@@ -27,7 +27,17 @@ function populateMainPhoto(pet, num = 0) {
 }
 
 function populateSubPhotos(pet) {
-  
+  if (pet.firstPhoto) {
+    const card = document.createElement('div');
+    card.setAttribute('class', 'photo-card');
+    const photo = document.createElement('img');
+    photo.src = `../../dist/data/pets/${pet.name.toLowerCase()}/photos/${pet.firstPhoto}`;
+    card.appendChild(photo);
+    // const notice = documnet.createElement('h2');
+    // notice.innerText = ''
+    subContainer.appendChild(card);
+  }
+
   const card = document.createElement('div');
   card.setAttribute('class', 'photo-card');
   const photo = document.createElement('img');

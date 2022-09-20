@@ -16,7 +16,6 @@
             "photo_1_bella.jpg",
             "photo_2_bella.jpg"
         ],
-        "firstPhoto": "",
         "videos": [
             "video_1_bella.mp4",
             "video_2_bella.mp4"
@@ -48,9 +47,9 @@
         "shelter": "ASPCA Adoption Center",
         "photos": [
             "photo_1_buster.jpg",
-            "photo_2_buster.jpg"
+            "photo_2_buster.jpg",
+            "photo_0_buster.jpg"
         ],
-        "firstPhoto": "photo_0_buster.jpg",
         "videos": [],
         "status": "Currently being fostered",
         "bio": "Adorable young puppy whose energy and confidence grows day by day with experience. Shy at first but will warm up to people given time.",
@@ -75,9 +74,9 @@
         "shelter": "Bideawee",
         "photos": [
             "photo_1_coby.jpg",
-            "photo_2_coby.jpg"
+            "photo_2_coby.jpg",
+            "photo_0_coby.jpg"
         ],
-        "firstPhoto": "photo_0_coby.jpg",
         "videos": [
             "video_1_coby.mov",
             "video_2_coby.mov"
@@ -113,10 +112,9 @@
             "photo_3_frankie.JPG",
             "photo_4_frankie.JPG"
         ],
-        "firstPhoto": "",
         "videos": [
-            "video_1_frankie.mp4",
-            "video_2_frankie.mp4"
+            "video_1_frankie.MP4",
+            "video_2_frankie.MP4"
         ],
         "status": "Available for adoption",
         "bio": "Frankie is a friendly dog who loves being around people and other dogs! If you're looking for a friendly, outgoing dog and can handle youthful energy, she's a great match!",
@@ -145,9 +143,9 @@
         "shelter": "Animal Haven",
         "photos": [
             "photo_1_gia.jpg",
-            "photo_2_gia.jpg"
+            "photo_2_gia.jpg",
+            "photo_0_gia.jpg"
         ],
-        "firstPhoto": "photo_0_gia.jpg",
         "videos": [
             "video_1_gia.mp4",
             "video_2_gia.mp4",
@@ -182,9 +180,9 @@
         ],
         "shelter": "ASPCA Adoption Center",
         "photos": [
-            "photo_1_jjimbbang.jpg"
+            "photo_1_jjimbbang.jpg",
+            "photo_0_jjimbbang.jpg"
         ],
-        "firstPhoto": "photo_0_jjimbbang.jpg",
         "videos": [
             "video_1_jjimbbang.mp4",
             "video_2_jjimbbang.mp4"
@@ -220,9 +218,9 @@
             "photo_4_lena.jpg",
             "photo_5_lena.jpg",
             "photo_6_lena.jpg",
-            "photo_7_lena.jpg"
+            "photo_7_lena.jpg",
+            "photo_0_lena.jpg"
         ],
-        "firstPhoto": "photo_0_lena.jpg",
         "videos": [
             "video_1_lena.mp4",
             "video_2_lena.mp4"
@@ -258,13 +256,13 @@
         "shelter": "The Humane Society of New York",
         "photos": [
             "photo_1_mochi.JPG",
-            "photo_2_mochi.jpg"
+            "photo_2_mochi.jpg",
+            "photo_0_mochi.JPG"
         ],
-        "firstPhoto": "photo_0_mochi.JPG",
         "videos": [
-            "video_1_mochi.mp4",
-            "video_2_mochi.mp4",
-            "video_3_mochi.mp4"
+            "video_1_mochi.MOV",
+            "video_2_mochi.MOV",
+            "video_3_mochi.MOV"
         ],
         "status": "Currently being fostered",
         "bio": "Mochi is a super chill, relaxed cat who really loves her pets. Great match for anyone looking for a low-energy companion!",
@@ -296,9 +294,9 @@
         "photos": [
             "photo_1_nara.jpeg",
             "photo_2_nara.jpg",
-            "photo_3_nara.jpg"
+            "photo_3_nara.jpg",
+            "photo_0_nara.jpg"
         ],
-        "firstPhoto": "photo_0_nara.jpg",
         "videos": [
             "video_1_nara.mp4",
             "video_2_nara.mp4"
@@ -335,7 +333,6 @@
             "photo_2_olaf.jpg",
             "photo_3_olaf.jpg"
         ],
-        "firstPhoto": "",
         "videos": [
             "video_1_olaf.mp4",
             "video_2_olaf.mp4"
@@ -374,7 +371,6 @@
             "photo_5_politoed.jpg",
             "photo_6_politoed.jpg"
         ],
-        "firstPhoto": "",
         "videos": [],
         "status": "Currently being fostered",
         "bio": "Politoed is a polydactyl whose big paws are eye catching for some. He's very shy and likes to hide but will come and lay next to you once he feels comfortable. Very treat motivated.",
@@ -401,14 +397,14 @@
         "shelter": "The Humane Society of New York",
         "photos": [
             "photo_1_remy.jpg",
-            "photo_2_remy.jpg"
+            "photo_2_remy.jpg",
+            "photo_0_remy.jpg"
         ],
-        "firstPhoto": "photo_0_remy.jpg",
         "videos": [
-            "video_1_remy.mp4",
-            "video_2_remy.mp4",
-            "video_3_remy.mp4",
-            "video_4_remy.mp4"
+            "video_1_remy.jpg",
+            "video_2_remy.jpg",
+            "video_3_remy.jpg",
+            "video_4_remy.jpg"
         ],
         "status": "Currently being fostered",
         "bio": "Remy is a friendly dog who is absolutely infuated and distracted by food. He loves to eat and play with great internal herding instinct. He may not be the brightest but he is obedient and is very treat motivated.",
@@ -446,7 +442,6 @@
             "photo_3_triplets.jpg",
             "photo_4_triplets.jpg"
         ],
-        "firstPhoto": "",
         "videos": [],
         "status": "Currently sick",
         "bio": "These three cats have come to the shelter together and must leave together! They're bonded siblings who are shy and require each other for support. Scared but curious little kittens who need a lot of socializing and interaction!",
@@ -477,9 +472,9 @@
             "photo_2_nova.jpg",
             "photo_3_nova.jpg",
             "photo_4_nova.jpg",
-            "photo_5_nova.jpg"
+            "photo_5_nova.jpg",
+            "photo_0_nova.jpg"
         ],
-        "firstPhoto": "photo_0_nova.jpg",
         "videos": [],
         "status": "Currently sick",
         "bio": "Nova is a shy at first dog who will bark at strangers but given time will warm up to people and ask for pets.",
@@ -511,7 +506,6 @@
             "photo_4_addison.png",
             "photo_5_addison.png"
         ],
-        "firstPhoto": "",
         "videos": [],
         "status": "Available for adoption",
         "bio": "Addison is a confident, friendly dog who loves to go out on walks to release energy and enjoys treats. Will rest often at home.",
@@ -539,9 +533,9 @@
         "photos": [
             "photo_1_chase.jpg",
             "photo_2_chase.jpg",
-            "photo_3_chase.jpg"
+            "photo_3_chase.jpg",
+            "photo_0_chase.jpg"
         ],
-        "firstPhoto": "photo_0_chase.jpg",
         "videos": [
             "video_1_chase.mp4",
             "video_2_chase.mp4",
@@ -577,9 +571,9 @@
         "shelter": "Bobbi & the Strays",
         "photos": [
             "photo_1_ziva.jpg",
-            "photo_2_ziva.jpg"
+            "photo_2_ziva.jpg",
+            "photo_0_ziva.jpg"
         ],
-        "firstPhoto": "photo_0_ziva.jpg",
         "videos": [
             "video_1_ziva.mp4"
         ],
