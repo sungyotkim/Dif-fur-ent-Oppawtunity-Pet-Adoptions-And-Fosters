@@ -951,6 +951,12 @@ table {
   height: 200px;
   width: 95%;
   background: indigo;
+  box-sizing: border-box;
+  padding: 2rem;
+}
+
+.video-description-container h3 {
+  color: white;
 }
 
 .right-video-container {

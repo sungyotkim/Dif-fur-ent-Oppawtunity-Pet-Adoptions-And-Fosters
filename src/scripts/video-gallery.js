@@ -52,7 +52,6 @@ function populateSubVideos(pet) {
     vid.src = `../../dist/data/pets/${pet.name.toLowerCase()}/videos/${video}`;
     card.appendChild(vid);
     subContainer.appendChild(card);
-    console.log(card)
 
     card.addEventListener("click", () => {
       let index = pet.videos.indexOf(video);

@@ -31,7 +31,7 @@ function reqPetInfo(profilePet) {
         }) 
 }
 
-reqPetInfo('Nara');
+// reqPetInfo('Nara');
 
 function populateProfile(pet) {
   profilePhoto.src = `../../dist/data/pets/${pet.name.toLowerCase()}/photos/${pet.photos[0]}`;
@@ -86,3 +86,8 @@ function addShelterInfo(shelter) {
   shelterWebsite.setAttribute('target', '_blank');
   shelterWebsite.innerText = 'Link to website!'
 }
+
+module.exports.reqPetInfo = reqPetInfo;
+module.exports.populateProfile = populateProfile;
+module.exports.fetchShelterInfo = fetchShelterInfo;
+module.exports.addShelterInfo = addShelterInfo;
