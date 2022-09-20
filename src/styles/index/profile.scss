@@ -86,7 +86,18 @@
   display: flex;
   flex-direction: column;
   height: calc(94vh - 185px);
+  // height: 600px;
   background: green;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-right-inner-container {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  margin: 0 2rem;
+  box-sizing: border-box;
 }
 
 .top-info {
@@ -101,6 +112,8 @@
 .top-info > div {
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0.5rem;
 }
 
 .top-info > div > h2 {
@@ -110,14 +123,20 @@
 .char-info {
   height: 200px;
   background: lightcoral;
+  box-sizing: border-box;
+  padding: 0.5rem;
 }
 
 .bio-container {
   height: 200px;
   background: lightcyan;
+  box-sizing: border-box;
+  padding: 0.5rem;
 }
 
 .profile-shelter-info {
   height: calc(94vh - 685px);
   background: lightgoldenrodyellow;
+  box-sizing: border-box;
+  padding: 0.5rem;
 }

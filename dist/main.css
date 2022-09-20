@@ -1080,6 +1080,16 @@ table {
   flex-direction: column;
   height: calc(94vh - 185px);
   background: green;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-right-inner-container {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  margin: 0 2rem;
+  box-sizing: border-box;
 }
 
 .top-info {
@@ -1094,6 +1104,8 @@ table {
 .top-info > div {
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0.5rem;
 }
 
 .top-info > div > h2 {
@@ -1103,16 +1115,22 @@ table {
 .char-info {
   height: 200px;
   background: lightcoral;
+  box-sizing: border-box;
+  padding: 0.5rem;
 }
 
 .bio-container {
   height: 200px;
   background: lightcyan;
+  box-sizing: border-box;
+  padding: 0.5rem;
 }
 
 .profile-shelter-info {
   height: calc(94vh - 685px);
   background: lightgoldenrodyellow;
+  box-sizing: border-box;
+  padding: 0.5rem;
 }
 
 body, html {
