@@ -27,6 +27,8 @@ function populateMainPhoto(pet, num = 0) {
 }
 
 function populateSubPhotos(pet) {
+  subContainer.innerHTML = '';
+
   pet.photos.forEach(photo => {
     const card = document.createElement('div');
     card.setAttribute('class', 'photo-card');
