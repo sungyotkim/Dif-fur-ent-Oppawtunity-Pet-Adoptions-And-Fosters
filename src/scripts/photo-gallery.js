@@ -18,8 +18,6 @@ function reqPetInfo(profilePet) {
         }) 
 }
 
-reqPetInfo('Nara');
-
 function populateMainPhoto(pet, num = 0) {
   mainContainer.innerHTML = '';
 
@@ -42,3 +40,7 @@ function populateSubPhotos(pet) {
     })
   })
 }
+
+module.exports.reqPetInfo = reqPetInfo;
+module.exports.populateMainPhoto = populateMainPhoto;
+module.exports.populateSubPhotos = populateSubPhotos;

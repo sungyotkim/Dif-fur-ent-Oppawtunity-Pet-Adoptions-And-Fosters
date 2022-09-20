@@ -20,8 +20,6 @@ function reqPetInfo(profilePet) {
         }) 
 }
 
-reqPetInfo('Nara');
-
 function populateMainVideo(pet, num = 0) {
   mainContainer.innerHTML = '';
 
@@ -60,3 +58,8 @@ function populateSubVideos(pet) {
     })
   })
 }
+
+module.exports.reqPetInfo = reqPetInfo;
+module.exports.populateMainVideo = populateMainVideo;
+module.exports.populateReviews = populateReviews;
+module.exports.populateSubVideos = populateSubVideos

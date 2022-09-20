@@ -6,12 +6,13 @@ document.addEventListener("DOMContentLoaded", e => {
   const featured = require('./scripts/featured');
   const searchResult = require('./scripts/search-result');
   const searchBtn = document.querySelector(".search-button");
-  const profileOverview = require('./scripts/profile-overview');
-  const photoGallery = require('./scripts/photo-gallery');
-  const videoGallery = require('./scripts/video-gallery');
+  // const profileOverview = require('./scripts/profile-overview');
+  // const photoGallery = require('./scripts/photo-gallery');
+  // const videoGallery = require('./scripts/video-gallery');
   const overviewBtn = document.querySelector('.overview-btn');
   const photoGalleryBtn = document.querySelector('.photo-gallery-btn');
   const videoGalleryBtn = document.querySelector('.video-gallery-btn');
+  const profile = require('./scripts/profile');
 
   searchBtn.addEventListener("click", () => {
     const btnTexts = document.querySelectorAll(".dropdown-btn-text");
