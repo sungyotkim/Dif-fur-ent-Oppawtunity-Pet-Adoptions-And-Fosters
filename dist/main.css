@@ -428,6 +428,7 @@ table {
   background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   flex-direction: column;
+  display: none;
 }
 
 .featured-inner-container {
@@ -868,31 +869,11 @@ table {
 }
 
 .profile-display {
-  height: 100%;
+  height: calc(94vh - 110px);
   width: 100%;
   display: flex;
   flex-direction: column;
-  display: none;
   background: blue;
-}
-
-.profile-upper-container {
-  flex-basis: 40%;
-  box-sizing: border-box;
-  display: flex;
-  background: green;
-}
-
-.profile-upper-left-container {
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  flex-basis: 40%;
-  background: red;
-}
-
-.photo-container {
-  box-sizing: border-box;
 }
 
 body, html {
