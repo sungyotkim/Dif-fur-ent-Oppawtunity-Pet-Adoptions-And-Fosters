@@ -7,6 +7,11 @@ document.addEventListener("DOMContentLoaded", e => {
   const searchResult = require('./scripts/search-result');
   const searchBtn = document.querySelector(".search-button");
   const profileOverview = require('./scripts/profile-overview');
+  const photoGallery = require('./scripts/photo-gallery');
+  const videoGallery = require('./scripts/video-gallery');
+  const overviewBtn = document.querySelector('.overview-btn');
+  const photoGalleryBtn = document.querySelector('.photo-gallery-btn');
+  const videoGalleryBtn = document.querySelector('.video-gallery-btn');
 
   searchBtn.addEventListener("click", () => {
     const btnTexts = document.querySelectorAll(".dropdown-btn-text");
@@ -60,5 +65,44 @@ document.addEventListener("DOMContentLoaded", e => {
     };
 
     getFilteredPets();
+  })
+
+  const overviewContainer = document.querySelector('.profile-overview-container');
+  const photoGalleryContainer = document.querySelector('.photo-gallery-container');
+  const videoGalleryContainer = document.querySelector('.video-gallery-container');
+  overviewBtn.addEventListener("click", () => {
+    if (overviewContainer.classList.contains("hidden")) {
+      overviewContainer.classList.toggle("hidden");
+    }
+    if (!photoGalleryContainer.classList.contains("hidden")) {
+      photoGalleryContainer.classList.toggle("hidden");
+    }
+    if (!videoGalleryContainer.classList.contains("hidden")) {
+      videoGalleryContainer.classList.toggle("hidden")
+    }
+  })
+
+  photoGalleryBtn.addEventListener("click", () => {
+    if (photoGalleryContainer.classList.contains("hidden")) {
+      photoGalleryContainer.classList.toggle("hidden");
+    }
+    if (!overviewContainer.classList.contains("hidden")) {
+      overviewContainer.classList.toggle("hidden");
+    }
+    if (!videoGalleryContainer.classList.contains("hidden")) {
+      videoGalleryContainer.classList.toggle("hidden")
+    }
+  })
+
+  videoGalleryBtn.addEventListener("click", () => {
+    if (videoGalleryContainer.classList.contains("hidden")) {
+      videoGalleryContainer.classList.toggle("hidden")
+    }
+    if (!overviewContainer.classList.contains("hidden")) {
+      overviewContainer.classList.toggle("hidden");
+    }
+    if (!photoGalleryContainer.classList.contains("hidden")) {
+      photoGalleryContainer.classList.toggle("hidden");
+    }
   })
 });

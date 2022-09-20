@@ -876,6 +876,10 @@ table {
   background: blue;
 }
 
+.profile-display .hidden {
+  display: none;
+}
+
 .profile-nav {
   display: flex;
   background: red;
@@ -986,7 +990,6 @@ table {
   padding: 10px;
   justify-content: center;
   align-items: center;
-  display: none;
 }
 
 .main-photo-container {
@@ -1005,7 +1008,6 @@ table {
   height: calc(94vh - 185px);
   background: orange;
   display: flex;
-  display: none;
 }
 
 .left-video-container {

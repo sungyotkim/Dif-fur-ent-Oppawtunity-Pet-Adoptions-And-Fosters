@@ -10,6 +10,10 @@
   // display: none;
 }
 
+.profile-display .hidden {
+  display: none;
+}
+
 .profile-nav {
   display: flex;
   background: red;
@@ -30,6 +34,10 @@
   background: pink;
   // display: none;
 }
+
+// .profile-overview-container .hidden {
+//   display: none;
+// }
 
 .profile-left-container {
   display: flex;
@@ -124,7 +132,7 @@
   padding: 10px;
   justify-content: center;
   align-items: center;
-  display: none;
+  // display: none;
 }
 
 .main-photo-container {
@@ -146,7 +154,7 @@
   height: calc(94vh - 185px);
   background: orange;
   display: flex;
-  display: none;
+  // display: none;
 }
 
 .left-video-container {
