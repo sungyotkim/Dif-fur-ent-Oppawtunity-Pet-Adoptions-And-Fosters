@@ -46,7 +46,9 @@ function populateSubVideos(pet) {
     const card = document.createElement('div');
     card.setAttribute('class', 'video-card');
     const vid = document.createElement('video');
-    vid.setAttribute('controls', false);
+    vid.muted = true;
+    vid.setAttribute('onmouseover', 'this.play()');
+    vid.setAttribute('onmouseout', 'this.pause();this.currentTime=0;')
     vid.src = `../../dist/data/pets/${pet.name.toLowerCase()}/videos/${video}`;
     card.appendChild(vid);
     subContainer.appendChild(card);
