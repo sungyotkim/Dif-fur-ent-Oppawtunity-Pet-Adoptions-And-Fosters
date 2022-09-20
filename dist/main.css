@@ -868,6 +868,73 @@ table {
   height: 100px;
 }
 
+.photo-gallery-container {
+  display: flex;
+  flex-direction: column;
+  background: pink;
+  height: calc(94vh - 185px);
+  box-sizing: border-box;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-photo-container {
+  background: blue;
+  height: calc(94vh - 405px);
+  width: 80%;
+}
+
+.sub-photo-container {
+  background: gray;
+  height: 200px;
+  width: 80%;
+  display: flex;
+}
+
+.video-gallery-container {
+  height: calc(94vh - 185px);
+  background: orange;
+  display: flex;
+}
+
+.left-video-container {
+  height: calc(94vh - 185px);
+  background: greenyellow;
+  flex-basis: 70%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-video-container {
+  height: calc(94vh - 405px);
+  width: 95%;
+  background: gray;
+}
+
+.video-description-container {
+  height: 200px;
+  width: 95%;
+  background: indigo;
+}
+
+.right-video-container {
+  height: calc(94vh - 185px);
+  background: peachpuff;
+  flex-basis: 30%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.sub-video-container {
+  height: calc(94vh - 250px);
+  background: blueviolet;
+}
+
 .profile-display {
   height: calc(94vh - 110px);
   width: 100%;
@@ -979,72 +1046,6 @@ table {
 .profile-shelter-info {
   height: calc(94vh - 685px);
   background: lightgoldenrodyellow;
-}
-
-.photo-gallery-container {
-  display: flex;
-  flex-direction: column;
-  background: pink;
-  height: calc(94vh - 185px);
-  box-sizing: border-box;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-}
-
-.main-photo-container {
-  background: blue;
-  height: calc(94vh - 405px);
-  width: 80%;
-}
-
-.sub-photo-container {
-  background: gray;
-  height: 200px;
-  width: 80%;
-}
-
-.video-gallery-container {
-  height: calc(94vh - 185px);
-  background: orange;
-  display: flex;
-}
-
-.left-video-container {
-  height: calc(94vh - 185px);
-  background: greenyellow;
-  flex-basis: 70%;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  padding: 2rem;
-  justify-content: center;
-  align-items: center;
-}
-
-.main-video-container {
-  height: calc(94vh - 405px);
-  width: 95%;
-  background: gray;
-}
-
-.video-description-container {
-  height: 200px;
-  width: 95%;
-  background: indigo;
-}
-
-.right-video-container {
-  height: calc(94vh - 185px);
-  background: peachpuff;
-  flex-basis: 30%;
-  padding: 2rem;
-  box-sizing: border-box;
-}
-
-.sub-video-container {
-  height: calc(94vh - 250px);
-  background: blueviolet;
 }
 
 body, html {
