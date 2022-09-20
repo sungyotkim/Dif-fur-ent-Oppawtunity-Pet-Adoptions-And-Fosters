@@ -21,24 +21,24 @@ function reqPetInfo(profilePet) {
 reqPetInfo('Nara');
 
 function populateMainPhoto(pet, num = 0) {
+  mainContainer.innerHTML = '';
+
   const photo = document.createElement('img');
   photo.src = `../../dist/data/pets/${pet.name.toLowerCase()}/photos/${pet.photos[num]}`;
   mainContainer.appendChild(photo);
 }
 
 function populateSubPhotos(pet) {
-  if (pet.firstPhoto) {
+  pet.photos.forEach(photo => {
     const card = document.createElement('div');
     card.setAttribute('class', 'photo-card');
-    const photo = document.createElement('img');
-    photo.src = `../../dist/data/pets/${pet.name.toLowerCase()}/photos/${pet.firstPhoto}`;
-    card.appendChild(photo);
-    // const notice = documnet.createElement('h2');
-    // notice.innerText = ''
+    const pic = document.createElement('img');
+    pic.src = `../../dist/data/pets/${pet.name.toLowerCase()}/photos/${photo}`;
+    card.appendChild(pic);
     subContainer.appendChild(card);
-  }
-
-  const card = document.createElement('div');
-  card.setAttribute('class', 'photo-card');
-  const photo = document.createElement('img');
+    card.addEventListener("click", () => {
+      let index = pet.photos.indexOf(photo);
+      populateMainPhoto(pet, index);
+    })
+  })
 }

@@ -883,6 +883,17 @@ table {
   background: blue;
   height: calc(94vh - 405px);
   width: 80%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.375rem;
+}
+
+.main-photo-container img {
+  width: auto;
+  height: 100%;
+  border-radius: 8px;
 }
 
 .sub-photo-container {
@@ -890,6 +901,15 @@ table {
   height: 200px;
   width: 80%;
   display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding: 0.375rem;
+}
+
+.photo-card img {
+  width: auto;
+  height: 100%;
+  border-radius: 8px;
 }
 
 .video-gallery-container {
