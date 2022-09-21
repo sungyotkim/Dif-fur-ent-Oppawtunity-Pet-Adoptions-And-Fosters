@@ -406,22 +406,30 @@ table {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 0.375rem;
-  margin-right: 0.375rem;
 }
 
-.nav-item > a {
+.nav-item > a > img {
   margin-left: 0.375rem;
   margin-right: 0.375rem;
   text-decoration: none;
 }
 
-.nav-item > h1 {
+.nav-item > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.375rem;
+  margin-right: 0.375rem;
+  text-decoration: none;
+}
+
+.nav-item > a > h1 {
   font-size: 2rem;
   position: relative;
   bottom: 5px;
   display: flex;
   align-self: flex-end;
+  color: black;
 }
 
 .featured-container {
