@@ -1,6 +1,6 @@
 const container = document.querySelector('.featured-inner-container');
 const featuredContainer = document.querySelector(".featured-container");
-const petsUrl = '../../dist/data/petInfo.json';
+const petsUrl = './dist/data/petInfo.json';
 const profile = require('./profile');
 
 

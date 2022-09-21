@@ -116,7 +116,7 @@ function addSearchPicture(name="catdog") {
     }
     const div = document.createElement('div');
     const pic = document.createElement('img');
-    pic.src = `../../dist/assets/${name}.png`;
+    pic.src = `./dist/assets/${name}.png`;
     pic.setAttribute('height', "80rem");
     pic.setAttribute('class', 'search-current-photo');
     div.appendChild(pic);

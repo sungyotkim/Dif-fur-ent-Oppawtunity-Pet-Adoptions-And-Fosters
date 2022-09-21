@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", e => {
-  const petsUrl = '../dist/data/petInfo.json'
+  const petsUrl = './dist/data/petInfo.json'
   const searchResult = require('./scripts/search-result');
   const searchBtn = document.querySelector(".search-button");
   const overviewBtn = document.querySelector('.overview-btn');
