@@ -9,18 +9,26 @@ $blue: #AAC4FF;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 5px 5px;
+    box-sizing: border-box;
 }
 
 .nav-item {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 .nav-item > a > img{
     margin-left: 0.375rem;
     margin-right: 0.375rem;
     text-decoration: none;
+    box-sizing: border-box;
+    height: 100%;
+    position: relative;
+    width: 40px;
 }
 
 .nav-item > a {
@@ -30,6 +38,7 @@ $blue: #AAC4FF;
     margin-left: 0.375rem;
     margin-right: 0.375rem;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 .nav-item > a > h1 {
@@ -39,4 +48,13 @@ $blue: #AAC4FF;
     display: flex;
     align-self: flex-end;
     color: black;
+    box-sizing: border-box;
+}
+
+.icon {
+    transition: 0.7s ease-in-out;
+}
+
+.icon:hover {
+    transform: rotate(360deg);
 }
