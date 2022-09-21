@@ -613,6 +613,14 @@ table {
   box-sizing: border-box;
 }
 
+#percentage {
+  position: absolute;
+  top: 45%;
+  left: 35%;
+  font-size: xx-large;
+  font-weight: 700;
+}
+
 .goals-container {
   height: 100%;
   width: 40%;

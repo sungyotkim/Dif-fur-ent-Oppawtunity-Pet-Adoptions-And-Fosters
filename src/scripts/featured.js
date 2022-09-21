@@ -106,5 +106,10 @@ function goalProgress() {
     let currentnum = parseFloat(current);
     let percentage = Math.floor((currentnum / maxnum) * 100);
     let bar = document.getElementById("bar");
-    bar.style.height = `${percentage}` + "%"
+    bar.style.height = `${percentage}` + "%";
+    let percentageLabel = document.getElementById("percentage");
+    percentageLabel.innerText = `${percentage}%`;
+    if (percentage === 100) {
+        percentageLabel.style.left = '30%'
+    }
 }
