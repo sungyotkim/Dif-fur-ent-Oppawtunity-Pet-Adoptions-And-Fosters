@@ -823,7 +823,6 @@ table {
 .speech-bubble {
   margin-left: 1rem;
   width: 200px;
-  background-image: url("/dist/assets/speech-img.png");
   background-size: 200px 40px;
   background-repeat: no-repeat;
   display: flex;

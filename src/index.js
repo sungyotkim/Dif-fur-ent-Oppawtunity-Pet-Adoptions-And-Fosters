@@ -131,4 +131,6 @@ document.addEventListener("DOMContentLoaded", e => {
     resultsContainer.classList.toggle('hidden');
     profile.renderProfile(petInfo);
   })
+
+  speechBubble.style.backgroundImage='url(./dist/assets/speech-img.png)'
 });
