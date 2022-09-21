@@ -5,12 +5,14 @@ document.addEventListener("DOMContentLoaded", e => {
   const overviewBtn = document.querySelector('.overview-btn');
   const photoGalleryBtn = document.querySelector('.photo-gallery-btn');
   const videoGalleryBtn = document.querySelector('.video-gallery-btn');
+  const speechBubble = document.querySelector('.speech-bubble');
+  const profile = require('./scripts/profile');
+  const resultsContainer = document.querySelector(".container-results");
   
   //variables not used but need to render
   const container = document.querySelector('.container-center')
   const dropdown = require('./scripts/dropdown');
   const featured = require('./scripts/featured');
-  const profile = require('./scripts/profile');
 
   searchBtn.addEventListener("click", () => {
     const btnTexts = document.querySelectorAll(".dropdown-btn-text");
@@ -122,4 +124,11 @@ document.addEventListener("DOMContentLoaded", e => {
     selector.style.left = `${btn.offsetLeft}px`;
     selector.style.width = `${activeWidth}px`;
   };
+
+  speechBubble.addEventListener("click", () => {
+    let petName = document.querySelector('#pet-info');
+    let petInfo = {name: petName.innerText};
+    resultsContainer.classList.toggle('hidden');
+    profile.renderProfile(petInfo);
+  })
 });

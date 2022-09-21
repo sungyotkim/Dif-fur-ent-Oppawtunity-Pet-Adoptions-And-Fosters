@@ -198,6 +198,12 @@ function generateVideo(pets) {
   videoContainer.src = `../../dist/data/pets/${randomPet.name.toLowerCase()}/videos/${randomVideo}`
   let videoEnd = randomVideo.slice(randomVideo.length - 3);
   videoContainer.setAttribute('type', `video/${videoEnd}`);
+  let petInfo = document.createElement('div');
+  petInfo.setAttribute('id', 'pet-info');
+  petInfo.style.display = 'none';
+  petInfo.innerText = randomPet.name;
+  let speechBubble = document.querySelector('.speech-bubble');
+  speechBubble.appendChild(petInfo);
 }
 
 generatePetsWithVideo();
