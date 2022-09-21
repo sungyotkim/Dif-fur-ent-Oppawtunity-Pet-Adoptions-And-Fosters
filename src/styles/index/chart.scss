@@ -4,11 +4,14 @@ $lightestPurple: #EEF1FF;
 $blue: #AAC4FF;
 
 .shelter-chart-container {
-  padding: 0 4rem 2rem;
+  height: 300px;
   display: flex;
   flex-direction: column;
-  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
+  border-radius: 8px;
+  padding: 0 4rem;
 }
 
 .inner-shelter-chart-container {
