@@ -1207,7 +1207,7 @@ table {
 
 .char-info {
   height: 100%;
-  width: 50%;
+  width: 100%;
   flex-basis: 65%;
   box-sizing: border-box;
   position: relative;
@@ -1219,11 +1219,24 @@ table {
 .chars {
   margin-left: 1rem;
   box-sizing: border-box;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+  overflow: hidden;
+  align-items: center;
+  position: relative;
 }
 
 .profile-chars {
   font-weight: 500;
   font-size: larger;
+  text-transform: capitalize;
+  border: 1px solid black;
+  margin: 0.375rem;
+  padding: 0.375rem;
+  border-radius: 20px;
+  background: #EEF1FF;
 }
 
 .bio-container {
