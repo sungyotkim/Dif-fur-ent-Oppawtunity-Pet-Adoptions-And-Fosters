@@ -24,7 +24,6 @@ $blue: #AAC4FF;
 .main-video-container {
   height: calc(94vh - 405px);
   width: 95%;
-  background: gray;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -41,15 +40,24 @@ $blue: #AAC4FF;
 
 .video-description-container {
   height: 200px;
-  width: 95%;
+  width: 50%;
   box-sizing: border-box;
-  padding: 2rem;
-  background: $blue;
+  padding: 0 2rem;
   transition: 0.5s ease-in-out;
 }
 
-.video-description-container h3{
-  color: white;
+.video-description-container h2 {
+  margin-top: 1rem;
+  color: black;
+  font-weight: 700;
+  font-size: x-large;
+  margin-bottom: 1rem;
+}
+
+.video-description-container h3 {
+  color: black;
+  font-weight: 500;
+  font-size: larger;
 }
 
 .right-video-container {

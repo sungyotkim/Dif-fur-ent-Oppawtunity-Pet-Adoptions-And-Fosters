@@ -961,7 +961,6 @@ table {
 .main-video-container {
   height: calc(94vh - 405px);
   width: 95%;
-  background: gray;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -978,15 +977,24 @@ table {
 
 .video-description-container {
   height: 200px;
-  width: 95%;
+  width: 50%;
   box-sizing: border-box;
-  padding: 2rem;
-  background: #AAC4FF;
+  padding: 0 2rem;
   transition: 0.5s ease-in-out;
 }
 
+.video-description-container h2 {
+  margin-top: 1rem;
+  color: black;
+  font-weight: 700;
+  font-size: x-large;
+  margin-bottom: 1rem;
+}
+
 .video-description-container h3 {
-  color: white;
+  color: black;
+  font-weight: 500;
+  font-size: larger;
 }
 
 .right-video-container {

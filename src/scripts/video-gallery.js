@@ -33,9 +33,12 @@ function populateMainVideo(pet, num = 0) {
 function populateReviews(pet, num = 0) {
   descriptionContainer.innerHTML = '';
 
+  const title = document.createElement('h2');
+  title.innerText = 'Uploader Comments:'
   const review = document.createElement('h3');
   review.innerText = pet.reviews[num];
 
+  descriptionContainer.appendChild(title);
   descriptionContainer.appendChild(review);
 }
 
