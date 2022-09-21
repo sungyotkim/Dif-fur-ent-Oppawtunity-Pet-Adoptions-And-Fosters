@@ -1158,19 +1158,30 @@ table {
   height: 600px;
   margin: 0 2rem;
   box-sizing: border-box;
+  width: 100%;
+  position: relative;
+}
+
+.profile-right-upper-container {
+  display: flex;
+  position: relative;
+  flex-basis: 30%;
 }
 
 .top-info {
+  background-color: blue;
   display: flex;
-  justify-content: space-between;
   box-sizing: border-box;
   padding: 0.5rem;
-  height: 100px;
+  flex-basis: 50%;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  flex-direction: column;
 }
 
 .top-info > div {
   display: flex;
-  justify-content: space-between;
   box-sizing: border-box;
   padding: 0.5rem;
 }
@@ -1180,12 +1191,17 @@ table {
 }
 
 .char-info {
-  height: 200px;
+  background: yellow;
+  height: 100%;
+  width: 100%;
+  flex-basis: 50%;
   box-sizing: border-box;
+  position: relative;
   padding: 0.5rem;
 }
 
 .bio-container {
+  background: pink;
   height: 200px;
   box-sizing: border-box;
   padding: 0.5rem;

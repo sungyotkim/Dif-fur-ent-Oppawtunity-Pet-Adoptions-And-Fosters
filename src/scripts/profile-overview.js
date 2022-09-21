@@ -11,6 +11,7 @@ const shelterLocation = document.querySelector('#shelter-location');
 const shelterWebsite = document.querySelector('#shelter-website');
 const petsUrl = '../../dist/data/petInfo.json';
 const sheltersUrl = '../../dist/data/shelterInfo.json';
+const availability = document.querySelector('#availability');
 
 function reqPetInfo(profilePet) {
   fetch(petsUrl)
@@ -46,6 +47,8 @@ function populateProfile(pet) {
     colorStr += pet.colors[i];
   }
   profileColor.innerText = colorStr;
+
+  availability.innerText = `${pet.status}`;
 
   let characteristics = '';
   for (let i = 0; i < pet.characteristics.length; i++) {
