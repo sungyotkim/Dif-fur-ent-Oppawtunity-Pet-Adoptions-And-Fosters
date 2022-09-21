@@ -5,13 +5,13 @@
 @import "./index/chart.scss";
 @import "./index/profile.scss";
 
-$lightbrown: #743e28;
-$darkbrown: #bb8c5d;
-$lightgray: #AAA7A6;
-$white: white;
+$darkerPurple: #B1B2FF;
+$lighterPurple: #D2DAFF;
+$lightestPurple: #EEF1FF;
+$blue: #AAC4FF;
 
 body, html {
-  background: $white;
+  background: white;
 }
 
 .container {
@@ -36,7 +36,7 @@ body, html {
 
 .left{
   position: absolute;
-  background: url(../dist/assets/pawprint1.png);
+  // background: url(../dist/assets/pawprint1.png);
   background-size: 100px;
   background-repeat: round;
   height: 94%;
@@ -46,7 +46,7 @@ body, html {
 
 .right{
   position: absolute;
-  background: url(../dist/assets/pawprint2.png);
+  // background: url(../dist/assets/pawprint2.png);
   background-size: 100px;
   background-repeat: round;
   height: 94%;

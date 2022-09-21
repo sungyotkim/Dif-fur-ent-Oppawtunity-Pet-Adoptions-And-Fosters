@@ -1,11 +1,11 @@
-$lightbrown: #743e28;
-$darkbrown: #bb8c5d;
-$lightgray: #AAA7A6;
-$white: white;
+$darkerPurple: #B1B2FF;
+$lighterPurple: #D2DAFF;
+$lightestPurple: #EEF1FF;
+$blue: #AAC4FF;
 
 .main-nav {
     height: 50px;
-    background-color: $lightgray;
+    background-color: $darkerPurple;
     display: flex;
     justify-content: space-between;
     align-items: center;
