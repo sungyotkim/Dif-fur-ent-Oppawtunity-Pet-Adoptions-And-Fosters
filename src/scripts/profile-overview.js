@@ -34,6 +34,7 @@ function populateProfile(pet) {
     nameTag.src = `../../dist/assets/dogbone_350x80.png`;
   } else {
     nameTag.src = `../../dist/assets/fishtag_350x80.png`;
+    nameTag.setAttribute('class', 'fish');
   }
 
   profileName.innerText = `${pet.name}`;
