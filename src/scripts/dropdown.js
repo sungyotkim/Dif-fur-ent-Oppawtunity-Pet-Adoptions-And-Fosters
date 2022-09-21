@@ -148,4 +148,10 @@ btn.addEventListener("click", () => {
     if (resultsContainer.classList.contains('hidden')) {
         resultsContainer.classList.toggle('hidden')
     }
+
+    selectBtns.forEach(selectBtn => {
+        if (selectBtn.classList.contains("open")) {
+            selectBtn.classList.toggle("open");
+        }
+    })
 })
