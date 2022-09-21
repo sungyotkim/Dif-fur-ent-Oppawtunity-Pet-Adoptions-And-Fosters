@@ -122,6 +122,29 @@ $blue: #AAC4FF;
   box-sizing: border-box;
   margin-bottom: 0.5rem;
   box-sizing: border-box;
+  display: flex;
+  position: relative;
+}
+
+.speech-bubble {
+  margin-left: 1rem;
+  width: 200px;
+  background-image: url('../../../dist/assets/speech-img.png');
+  background-size: 200px 40px;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.speech-bubble > p {
+  position: relative;
+  bottom: 3px;
+  font-size: large;
+  font-weight: 500;
+  left: 2px;
 }
 
 .inner-video-container {
