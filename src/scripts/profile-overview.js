@@ -9,8 +9,8 @@ const profileBio = document.querySelector('#profile-bio');
 const shelterName = document.querySelector('#shelter-name');
 const shelterLocation = document.querySelector('#shelter-location');
 const shelterWebsite = document.querySelector('#shelter-website');
-const petsUrl = '../../dist/data/petInfo.json';
-const sheltersUrl = '../../dist/data/shelterInfo.json';
+const petsUrl = './dist/data/petInfo.json';
+const sheltersUrl = './dist/data/shelterInfo.json';
 const availability = document.querySelector('#availability');
 
 function reqPetInfo(profilePet) {
@@ -29,12 +29,12 @@ function reqPetInfo(profilePet) {
 }
 
 function populateProfile(pet) {
-  profilePhoto.src = `../../dist/data/pets/${pet.name.toLowerCase()}/photos/${pet.photos[0]}`;
+  profilePhoto.src = `./dist/data/pets/${pet.name.toLowerCase()}/photos/${pet.photos[0]}`;
 
   if (pet.species === 'Canine') {
-    nameTag.src = `../../dist/assets/dogbone_350x80.png`;
+    nameTag.src = `./dist/assets/dogbone_350x80.png`;
   } else {
-    nameTag.src = `../../dist/assets/fishtag_350x80.png`;
+    nameTag.src = `./dist/assets/fishtag_350x80.png`;
     nameTag.setAttribute('class', 'fish');
   }
 

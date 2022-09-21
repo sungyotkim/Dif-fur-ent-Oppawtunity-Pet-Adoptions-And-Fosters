@@ -1,4 +1,4 @@
-const petsUrl = '../../dist/data/petInfo.json';
+const petsUrl = './dist/data/petInfo.json';
 const mainContainer = document.querySelector('.main-video-container');
 const descriptionContainer = document.querySelector('.video-description-container');
 const subContainer = document.querySelector('.sub-video-container');
@@ -30,7 +30,7 @@ function populateMainVideo(pet, num = 0) {
   const vid = document.createElement('video');
   vid.setAttribute('class', 'main-video');
   vid.setAttribute('controls', 'controls');
-  vid.src = `../../dist/data/pets/${pet.name.toLowerCase()}/videos/${pet.videos[num]}`
+  vid.src = `./dist/data/pets/${pet.name.toLowerCase()}/videos/${pet.videos[num]}`
   mainContainer.appendChild(vid);
 }
 
@@ -56,7 +56,7 @@ function populateSubVideos(pet) {
     vid.muted = true;
     vid.setAttribute('onmouseover', 'this.play()');
     vid.setAttribute('onmouseout', 'this.pause();this.currentTime=0;')
-    vid.src = `../../dist/data/pets/${pet.name.toLowerCase()}/videos/${video}`;
+    vid.src = `./dist/data/pets/${pet.name.toLowerCase()}/videos/${video}`;
     card.appendChild(vid);
     subContainer.appendChild(card);
 

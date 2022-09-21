@@ -1,6 +1,6 @@
-const petsUrl = '../../dist/data/petInfo.json';
+const petsUrl = './dist/data/petInfo.json';
 const resultsContainer = document.querySelector('.results-card-container');
-const sheltersUrl = '../../dist/data/shelterInfo.json';
+const sheltersUrl = './dist/data/shelterInfo.json';
 const shelterContainer = document.querySelector(".inner-shelter-chart-container");
 const profile = require('./profile');
 const resultsPageContainer = document.querySelector('.container-results');
@@ -21,7 +21,7 @@ function cardMaker(pets) {
 
   if (pets.length === 0) {
     const card = document.createElement('div');
-    card.style.backgroundImage='url(../../dist/assets/nomatches.png)';
+    card.style.backgroundImage='url(./dist/assets/nomatches.png)';
     card.style.backgroundRepeat='no-repeat';
     card.style.backgroundPosition='center';
     card.style.width='100%';
@@ -48,7 +48,7 @@ function cardMaker(pets) {
 
     cardBioHolder.setAttribute('class', 'result-card-bio');
     
-    cardImg.src = `../../dist/data/pets/${pet.name.toLowerCase()}/photos/${pet.photos[0]}`;
+    cardImg.src = `./dist/data/pets/${pet.name.toLowerCase()}/photos/${pet.photos[0]}`;
 
     name.innerText = `${pet.name}`;
     bio.innerText = `${pet.bio}`;
@@ -135,7 +135,7 @@ function shelterChartMaker(shelters) {
     nameTag.setAttribute('class', 'shelter-name-container');
     logo.setAttribute('class', 'shelter-logo-img');
     
-    logo.src = `../../dist/data/assets/${shelter.name}.svg`;
+    logo.src = `./dist/data/assets/${shelter.name}.svg`;
     nameTag.innerText = `${shelter.name}`;
 
     logoContainer.appendChild(logo);
@@ -195,7 +195,7 @@ function generateVideo(pets) {
   let randomPet = pets[Math.floor(Math.random() * pets.length)];
   let randomVideo = randomPet.videos[Math.floor(Math.random() * randomPet.videos.length)]
   let videoContainer = document.querySelector("#random-video");
-  videoContainer.src = `../../dist/data/pets/${randomPet.name.toLowerCase()}/videos/${randomVideo}`
+  videoContainer.src = `./dist/data/pets/${randomPet.name.toLowerCase()}/videos/${randomVideo}`
   let videoEnd = randomVideo.slice(randomVideo.length - 3);
   videoContainer.setAttribute('type', `video/${videoEnd}`);
   let petInfo = document.createElement('div');

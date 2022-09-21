@@ -27,7 +27,7 @@ function photoAdder(data) {
         const card = document.createElement('a');
         card.setAttribute('class', 'featured-card');
         const img = document.createElement('img');
-        img.src = `../../dist/data/pets/${currentPet.name.toLowerCase()}/photos/${currentPet.photos[1]}`;
+        img.src = `./dist/data/pets/${currentPet.name.toLowerCase()}/photos/${currentPet.photos[1]}`;
         img.setAttribute('width', '50px')
         img.setAttribute('class', 'featured-img')
         const cardTitle = document.createElement('div');
