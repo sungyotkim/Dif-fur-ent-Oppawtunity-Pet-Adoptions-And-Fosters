@@ -70,6 +70,8 @@ function populateSubVideos(pet) {
 
 function populateNoVideos() {
   mainContainer.innerHTML = '';
+  descriptionContainer.innerHTML = '';
+  subContainer.innerHTML = '';
   let message = document.createElement('div');
   message.innerText = 'Sorry, I currently have no videos. If I caught your interest anyway, please adopt me! Otherwise, consider fostering me or visit me and upload socialization videos to help me get adopted! Thank you for visiting me, hope to see you soon!';
   message.setAttribute('class', 'vid-message');
