@@ -568,6 +568,7 @@ table {
   display: flex;
   box-sizing: border-box;
   position: relative;
+  justify-content: space-between;
 }
 
 .progressBar {
@@ -677,6 +678,19 @@ table {
 
 .shelter-support-container > a {
   font-size: 1.5rem;
+}
+
+.adopt-logo {
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.adopt-logo > img {
+  position: relative;
+  height: 230px;
 }
 
 .container-results {

@@ -153,6 +153,7 @@ $blue: #AAC4FF;
     display: flex;
     box-sizing: border-box;
     position: relative;
+    justify-content: space-between;
 }
 
 .progressBar {
@@ -178,7 +179,6 @@ $blue: #AAC4FF;
 
 #bar {
     width: 230px;
-    // height: 230px;
     height: 1%;
     position: absolute;
     bottom: 0;
@@ -265,4 +265,18 @@ $blue: #AAC4FF;
 
 .shelter-support-container > a {
     font-size: 1.5rem;
+}
+
+.adopt-logo {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.adopt-logo > img {
+    position: relative;
+    height: 230px;
+    // width: 230px;
 }
