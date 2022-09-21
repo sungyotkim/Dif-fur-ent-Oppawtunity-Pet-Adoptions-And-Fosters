@@ -286,7 +286,7 @@ let pets = [
     photos: ["photo_1_ziva.jpg", "photo_2_ziva.jpg", "photo_0_ziva.jpg"],
     videos: ["video_1_ziva.mp4"],
     status: "Available for adoption",
-    bio: "Ziva is curious about almost every inanimate object that is new in her home. She'll have to slowly check up on it and rub herself on it. When it comes to people however, you need to visit a few times before she'll even be in the same room as you. She loves scratches immediately when you come home and then will just lay 'out of reach' until bedtime; but then it's all the cuddles when her owner is in bed.",
+    bio: "Ziva is curious about almost every inanimate object that is new in her home. She'll have to slowly check up on it and rub herself on it. When it comes to people however, you need to visit a few times before she'll even be in the same room as you.",
     characteristics: ["playful", "dog-tolerant", "not-cat-friendly", "shy", "needs time to warm up"],
     reviews: ["When she's comfortable, she'll come and play with you and groom you!"]
   }

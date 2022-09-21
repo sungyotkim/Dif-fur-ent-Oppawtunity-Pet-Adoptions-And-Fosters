@@ -4,7 +4,7 @@ const profileName = document.querySelector('#profile-name');
 const profileAge = document.querySelector('#profile-age');
 const profileBreed = document.querySelector('#profile-breed');
 const profileColor = document.querySelector('#profile-color');
-const profileChars = document.querySelector('#profile-chars');
+const profileChars = document.querySelector('.chars');
 const profileBio = document.querySelector('#profile-bio');
 const shelterName = document.querySelector('#shelter-name');
 const shelterLocation = document.querySelector('#shelter-location');
@@ -50,12 +50,12 @@ function populateProfile(pet) {
 
   availability.innerText = `${pet.status}`;
 
-  let characteristics = '';
-  for (let i = 0; i < pet.characteristics.length; i++) {
-    if (i !== 0) { characteristics += ', ' }
-    characteristics += pet.characteristics[i];
-  }
-  profileChars.innerText = characteristics;
+  pet.characteristics.forEach(char => {
+    let profileChar = document.createElement('div');
+    profileChar.innerText = char;
+    profileChar.setAttribute('class', 'profile-chars');
+    profileChars.append(profileChar);
+  })
 
   profileBio.innerText = pet.bio;
 

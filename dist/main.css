@@ -1221,14 +1221,9 @@ table {
   box-sizing: border-box;
 }
 
-.char-info > div > h2 {
+.profile-chars {
   font-weight: 500;
   font-size: larger;
-}
-
-.char-info > div > h1 {
-  font-weight: 700;
-  font-size: x-large;
 }
 
 .bio-container {
