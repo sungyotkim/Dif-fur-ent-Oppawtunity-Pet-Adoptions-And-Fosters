@@ -4,7 +4,6 @@ const photoGallery = require('./photo-gallery');
 const profileDisplay = document.querySelector('.profile-display');
 const profileOverview = document.querySelector('.profile-overview-container');
 const overviewBtn = document.querySelector('.overview-btn');
-
 function renderProfile(pet) {
   overview.reqPetInfo(pet.name);
   videoGallery.reqPetInfo(pet.name);
@@ -22,6 +21,21 @@ function renderProfile(pet) {
   let selector = document.querySelector('.selector');
   selector.style.left = `${overviewBtn.offsetLeft}px`;
   selector.style.width = `${activeWidth}px`;
+
+  profileBtnAnimation(overviewBtn)
 }
+
+function profileBtnAnimation(btn) {
+  let prevActiveBtn = document.querySelector('.active');
+  if (!prevActiveBtn !== btn ) {
+    prevActiveBtn.classList.toggle('active');
+  }
+
+  btn.classList.toggle('active');
+  let activeWidth = btn.clientWidth;
+  let selector = document.querySelector('.selector');
+  selector.style.left = `${btn.offsetLeft}px`;
+  selector.style.width = `${activeWidth}px`;
+};
 
 module.exports.renderProfile = renderProfile;
