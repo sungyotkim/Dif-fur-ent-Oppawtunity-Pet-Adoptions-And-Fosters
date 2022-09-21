@@ -42,12 +42,29 @@ $blue: #AAC4FF;
 }
 
 .photo-card img {
-  width: 188px;
-  height: 188px;
   border-radius: 8px;
   box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .photo-card:not(:last-child) {
   margin-right: 1rem;
+}
+
+.photo-card {
+  width: 188px;
+  height: 188px;
+  border-radius: 14px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.photo-card {
+  border: 5px solid white;
+}
+
+.chosen {
+  border: 5px solid $darkerPurple;
 }

@@ -8,8 +8,8 @@ function reqPetInfo(profilePet) {
         .then(data => {
           data.forEach(pet => {
             if (pet.name === profilePet) {
-              populateMainPhoto(pet);
               populateSubPhotos(pet);
+              populateMainPhoto(pet);
             }
           })
         })
@@ -24,6 +24,13 @@ function populateMainPhoto(pet, num = 0) {
   const photo = document.createElement('img');
   photo.src = `./dist/data/pets/${pet.name.toLowerCase()}/photos/${pet.photos[num]}`;
   mainContainer.appendChild(photo);
+
+  subContainer.childNodes.forEach(child => {
+    if (child.classList.contains("chosen")) {
+      child.classList.toggle("chosen");
+    }
+  })
+  subContainer.childNodes[num].classList.toggle("chosen");
 }
 
 function populateSubPhotos(pet) {
