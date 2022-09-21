@@ -1,12 +1,16 @@
 @import "./photo-gallery";
 @import "./video-gallery";
 
+$darkerPurple: #B1B2FF;
+$lighterPurple: #D2DAFF;
+$lightestPurple: #EEF1FF;
+$blue: #AAC4FF;
+
 .profile-display {
   height: calc(94vh - 110px);
   width: 100%;
   display: flex;
   flex-direction: column;
-  background: blue;
 }
 
 .profile-nav {
@@ -58,13 +62,11 @@
 
 .profile-main {
   height: calc(94vh - 185px);
-  background: green;
 }
 
 .profile-overview-container {
   display: flex;
   height: calc(94vh - 185px);
-  background: pink;
 }
 
 .profile-left-container {
@@ -73,7 +75,6 @@
   height: calc(94vh - 185px);
   flex-basis: 40%;
   box-sizing: border-box;
-  background: lightblue;
   align-items: center;
   justify-content: center;
 }
@@ -101,7 +102,6 @@
 .name-container {
   height: 100px;
   width: 400px;
-  background: gray;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,7 +126,6 @@
   display: flex;
   flex-direction: column;
   height: calc(94vh - 185px);
-  background: green;
   justify-content: center;
   align-items: center;
 }
@@ -142,7 +141,6 @@
 .top-info {
   display: flex;
   justify-content: space-between;
-  background: yellow;
   box-sizing: border-box;
   padding: 0.5rem;
   height: 100px;
@@ -161,21 +159,18 @@
 
 .char-info {
   height: 200px;
-  background: lightcoral;
   box-sizing: border-box;
   padding: 0.5rem;
 }
 
 .bio-container {
   height: 200px;
-  background: lightcyan;
   box-sizing: border-box;
   padding: 0.5rem;
 }
 
 .profile-shelter-info {
   height: calc(94vh - 685px);
-  background: lightgoldenrodyellow;
   box-sizing: border-box;
   padding: 0.5rem;
 }

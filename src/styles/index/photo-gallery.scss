@@ -1,7 +1,11 @@
+$darkerPurple: #B1B2FF;
+$lighterPurple: #D2DAFF;
+$lightestPurple: #EEF1FF;
+$blue: #AAC4FF;
+
 .photo-gallery-container {
   display: flex;
   flex-direction: column;
-  background: pink;
   height: calc(94vh - 185px);
   box-sizing: border-box;
   padding: 10px;
@@ -10,7 +14,6 @@
 }
 
 .main-photo-container {
-  background: blue;
   height: calc(94vh - 405px);
   width: 80%;
   box-sizing: border-box;
@@ -27,7 +30,6 @@
 }
 
 .sub-photo-container {
-  background: gray;
   height: 200px;
   width: 80%;
   display: flex;

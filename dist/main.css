@@ -875,7 +875,6 @@ table {
 .photo-gallery-container {
   display: flex;
   flex-direction: column;
-  background: pink;
   height: calc(94vh - 185px);
   box-sizing: border-box;
   padding: 10px;
@@ -884,7 +883,6 @@ table {
 }
 
 .main-photo-container {
-  background: blue;
   height: calc(94vh - 405px);
   width: 80%;
   box-sizing: border-box;
@@ -901,7 +899,6 @@ table {
 }
 
 .sub-photo-container {
-  background: gray;
   height: 200px;
   width: 80%;
   display: flex;
@@ -918,13 +915,11 @@ table {
 
 .video-gallery-container {
   height: calc(94vh - 185px);
-  background: orange;
   display: flex;
 }
 
 .left-video-container {
   height: calc(94vh - 185px);
-  background: greenyellow;
   flex-basis: 70%;
   display: flex;
   flex-direction: column;
@@ -954,9 +949,9 @@ table {
 .video-description-container {
   height: 200px;
   width: 95%;
-  background: indigo;
   box-sizing: border-box;
   padding: 2rem;
+  background: #AAC4FF;
 }
 
 .video-description-container h3 {
@@ -965,7 +960,6 @@ table {
 
 .right-video-container {
   height: calc(94vh - 185px);
-  background: peachpuff;
   flex-basis: 30%;
   padding: 2rem;
   box-sizing: border-box;
@@ -973,7 +967,6 @@ table {
 
 .sub-video-container {
   height: 100%;
-  background: blueviolet;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1005,7 +998,6 @@ table {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background: blue;
 }
 
 .profile-nav {
@@ -1054,13 +1046,11 @@ table {
 
 .profile-main {
   height: calc(94vh - 185px);
-  background: green;
 }
 
 .profile-overview-container {
   display: flex;
   height: calc(94vh - 185px);
-  background: pink;
 }
 
 .profile-left-container {
@@ -1069,7 +1059,6 @@ table {
   height: calc(94vh - 185px);
   flex-basis: 40%;
   box-sizing: border-box;
-  background: lightblue;
   align-items: center;
   justify-content: center;
 }
@@ -1097,7 +1086,6 @@ table {
 .name-container {
   height: 100px;
   width: 400px;
-  background: gray;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1122,7 +1110,6 @@ table {
   display: flex;
   flex-direction: column;
   height: calc(94vh - 185px);
-  background: green;
   justify-content: center;
   align-items: center;
 }
@@ -1138,7 +1125,6 @@ table {
 .top-info {
   display: flex;
   justify-content: space-between;
-  background: yellow;
   box-sizing: border-box;
   padding: 0.5rem;
   height: 100px;
@@ -1157,21 +1143,18 @@ table {
 
 .char-info {
   height: 200px;
-  background: lightcoral;
   box-sizing: border-box;
   padding: 0.5rem;
 }
 
 .bio-container {
   height: 200px;
-  background: lightcyan;
   box-sizing: border-box;
   padding: 0.5rem;
 }
 
 .profile-shelter-info {
   height: calc(94vh - 685px);
-  background: lightgoldenrodyellow;
   box-sizing: border-box;
   padding: 0.5rem;
 }
