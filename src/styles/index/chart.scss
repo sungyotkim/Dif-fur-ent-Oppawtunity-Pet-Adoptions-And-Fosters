@@ -1,3 +1,8 @@
+$darkerPurple: #B1B2FF;
+$lighterPurple: #D2DAFF;
+$lightestPurple: #EEF1FF;
+$blue: #AAC4FF;
+
 .shelter-chart-container {
   padding: 0 4rem 2rem;
   display: flex;
@@ -18,11 +23,11 @@
   align-items: center;
   border: 1px solid black;
   cursor: pointer;
-  background-color: blue;
+  background-color: $lighterPurple;
 }
 
 .shelter-row:hover {
-  background-color: lightblue;
+  background-color: $blue;
 }
 
 

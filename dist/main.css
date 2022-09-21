@@ -63,6 +63,7 @@ table {
   justify-content: space-around;
   flex-wrap: wrap;
   z-index: 1;
+  border-radius: 8px;
 }
 
 .search-bar-container > a {
@@ -422,7 +423,6 @@ table {
 .featured-container {
   height: calc(94vh - 110px);
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   flex-direction: column;
 }
@@ -437,6 +437,8 @@ table {
   padding-left: 1.75rem;
   padding-right: 1.75rem;
   position: relative;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
 }
 
 .featured-section-title {
@@ -602,7 +604,6 @@ table {
 }
 
 .requests-container {
-  background-color: green;
   height: 100%;
   width: 60%;
   display: flex;
@@ -629,10 +630,22 @@ table {
 
 .requests > div > h4 {
   font-size: 1.5rem;
+  margin-left: 2.5rem;
+}
+
+#first {
+  margin-left: 5rem;
+}
+
+#second {
+  margin-left: 10rem;
+}
+
+#third {
+  margin-left: 15rem;
 }
 
 .shelter-support-container {
-  background-color: orange;
   height: 25%;
   width: 100%;
 }
@@ -730,7 +743,6 @@ table {
 }
 
 .right-container {
-  background-color: red;
   display: flex;
   flex-direction: column;
   width: 40%;
@@ -738,17 +750,12 @@ table {
 }
 
 .shelter-chart-container {
-  background-color: gray;
   height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-}
-
-.favorites-container {
-  background-color: beige;
 }
 
 .video-container {
@@ -767,12 +774,14 @@ table {
 
 .inner-video-container {
   max-height: calc(94vh - 475px);
+  border-radius: 8px;
 }
 
 #random-video {
   width: 100%;
   min-height: calc(94vh - 495px);
   max-height: calc(94vh - 475px);
+  border-radius: 8px;
 }
 
 .shelter-row {
@@ -784,7 +793,7 @@ table {
 }
 
 .shelter-row.checked {
-  background-color: lightblue;
+  background-color: #AAC4FF;
 }
 
 .results-page-title {
@@ -807,7 +816,7 @@ table {
 }
 
 .results-page-title:before {
-  background-color: #c50000;
+  background-color: #B1B2FF;
   content: "";
   display: block;
   height: 3px;
@@ -816,7 +825,7 @@ table {
 }
 
 .results-page-title::after {
-  background-color: #c50000;
+  background-color: #B1B2FF;
   content: "";
   display: block;
   position: absolute;
@@ -847,11 +856,11 @@ table {
   align-items: center;
   border: 1px solid black;
   cursor: pointer;
-  background-color: blue;
+  background-color: #D2DAFF;
 }
 
 .shelter-row:hover {
-  background-color: lightblue;
+  background-color: #AAC4FF;
 }
 
 .shelter-name-container {
