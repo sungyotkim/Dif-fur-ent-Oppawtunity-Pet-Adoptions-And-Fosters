@@ -113,7 +113,7 @@ let pets = [
     mini: false,
     colors: ["Dilute Calico"],
     shelter: "Bideawee",
-    photos: ["photo_1_lena.jpg", "photo_2_lena.jpg", "photo_3_lena.jpg", "photo_4_lena.jpg", "photo_5_lena.jpg", "photo_6_lena.jpg", "photo_7_lena.jpg", "photo_0_lena.jpg"],
+    photos: ["photo_1_lena.jpg", "photo_2_lena.jpg", "photo_3_lena.jpg", "photo_4_lena.jpg", "photo_5_lena.jpg", "photo_0_lena.jpg"],
     videos: ["video_1_lena.mp4", "video_2_lena.mp4"],
     status: "Available for adoption",
     bio: "Lena is a shy-at-first cat who really loves to interact with people she likes. She loves attention and can be jealous of other companions receiving more love than her. She's very vocal and loves to eat and cares a lot about her appearance so you may see her groom herself often.",
