@@ -208,51 +208,6 @@ $blue: #AAC4FF;
     position: relative;
 }
 
-.requests-container {
-    height: 100%;
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    box-sizing: border-box;
-}
-
-.requests {
-    margin-left: 0;
-    margin-right: 0;
-    display: flex;
-    flex-direction: column;
-    padding: 0.5rem;
-    justify-content: space-evenly;
-    box-sizing: border-box;
-    position: relative;
-}
-
-.requests > div > h2 {
-    font-size: 2rem;
-}
-
-.requests > div > h3 {
-    font-size: 1.7rem;
-}
-
-.requests > div > h4 {
-    font-size: 1.5rem;
-    margin-left: 2.5rem;
-}
-
-#first {
-    margin-left: 5rem;
-}
-
-#second {
-    margin-left: 10rem;
-}
-
-#third {
-    margin-left: 15rem;
-}
-
 .shelter-support-container {
     width: 100%;
     box-sizing: border-box;
