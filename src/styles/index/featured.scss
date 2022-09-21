@@ -200,11 +200,17 @@ $blue: #AAC4FF;
 
 #percentage {
     position: absolute;
-    // left: 30%;
     top: 45%;
     left: 35%;
     font-size: xx-large;
     font-weight: 700;
+    display: none;
+}
+
+.progressBar:hover {
+    #percentage {
+        display: flex;
+    }
 }
 
 .goals-container {

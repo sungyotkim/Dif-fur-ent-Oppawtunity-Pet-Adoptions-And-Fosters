@@ -619,6 +619,11 @@ table {
   left: 35%;
   font-size: xx-large;
   font-weight: 700;
+  display: none;
+}
+
+.progressBar:hover #percentage {
+  display: flex;
 }
 
 .goals-container {
