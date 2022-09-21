@@ -210,63 +210,46 @@ $blue: #AAC4FF;
     display: none;
 }
 
-.progressBar:hover {
+.progress-container {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.progress-container:hover {
     #percentage {
         display: flex;
     }
 }
 
 .goals-container {
-    height: 100%;
-    width: 40%;
+    width: fit-content;
     display: flex;
     flex-direction: column;
     margin: 0;
     position: relative;
     box-sizing: border-box;
     position: relative;
+    // background-color: #8789fc;
+    margin-top: 15px;
+    margin-right: 15px;
+    height: 230px;
+    padding: 1rem 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
-.goal-timer-container {
-    height: 30%;
-    margin-left: 0;
-    margin-right: 0;
-    display: flex;
-    justify-content: space-between;   
-    align-items: center;
-    font-size: 2rem;
-    padding: 10px;
-    border: 1px solid black;
-    box-sizing: border-box;
-    position: relative;
+.goals-container > h2 {
+    font-size: xx-large;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
 }
 
-.stretch-goal {
-    height: 50%;
-    margin-left: 0;
-    margin-right: 0;    
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    font-size: 2rem;
-    padding: 10px;
-    border: 1px solid black;
-    box-sizing: border-box;
-    position: relative;
-}
-
-.current-goal {
-    height: 50%;
-    margin-left: 0;
-    margin-right: 0;
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    font-size: 2rem;
-    padding: 10px;
-    border: 1px solid black;
-    box-sizing: border-box;
-    position: relative;
+.goals-container > h3 {
+    font-size: xx-large;
+    font-weight: 500;
 }
 
 .shelter-support-container {
