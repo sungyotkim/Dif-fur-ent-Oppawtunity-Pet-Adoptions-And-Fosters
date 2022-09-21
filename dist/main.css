@@ -840,6 +840,8 @@ table {
   padding: 0 4rem 2rem;
   display: flex;
   flex-direction: column;
+  border-radius: 8px;
+  box-sizing: border-box;
 }
 
 .inner-shelter-chart-container {
@@ -848,15 +850,21 @@ table {
   overflow-y: auto;
   overflow-x: hidden;
   height: 300px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.shelter-row:not(:last-child) {
+  margin-bottom: 0.3rem;
 }
 
 .shelter-row {
   display: flex;
-  flex-basis: 100%;
   align-items: center;
   border: 1px solid black;
   cursor: pointer;
   background-color: #D2DAFF;
+  border-radius: 8px;
 }
 
 .shelter-row:hover {
@@ -864,7 +872,7 @@ table {
 }
 
 .shelter-name-container {
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 
 .shelter-logo-img {
