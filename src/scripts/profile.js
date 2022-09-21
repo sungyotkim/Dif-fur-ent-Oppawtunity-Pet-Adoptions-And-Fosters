@@ -3,6 +3,7 @@ const videoGallery = require('./video-gallery');
 const photoGallery = require('./photo-gallery');
 const profileDisplay = document.querySelector('.profile-display');
 const profileOverview = document.querySelector('.profile-overview-container');
+const overviewBtn = document.querySelector('.overview-btn');
 
 function renderProfile(pet) {
   overview.reqPetInfo(pet.name);
@@ -16,6 +17,11 @@ function renderProfile(pet) {
   if (profileOverview.classList.contains("hidden")) {
     profileOverview.classList.toggle('hidden');
   }
+
+  let activeWidth = overviewBtn.clientWidth;
+  let selector = document.querySelector('.selector');
+  selector.style.left = `${overviewBtn.offsetLeft}px`;
+  selector.style.width = `${activeWidth}px`;
 }
 
 module.exports.renderProfile = renderProfile;

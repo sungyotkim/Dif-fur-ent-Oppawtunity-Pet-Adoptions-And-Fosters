@@ -79,6 +79,7 @@ document.addEventListener("DOMContentLoaded", e => {
     if (!videoGalleryContainer.classList.contains("hidden")) {
       videoGalleryContainer.classList.toggle("hidden")
     }
+    profileBtnAnimation(overviewBtn)
   })
 
   photoGalleryBtn.addEventListener("click", () => {
@@ -91,6 +92,7 @@ document.addEventListener("DOMContentLoaded", e => {
     if (!videoGalleryContainer.classList.contains("hidden")) {
       videoGalleryContainer.classList.toggle("hidden")
     }
+    profileBtnAnimation(photoGalleryBtn)
   })
 
   videoGalleryBtn.addEventListener("click", () => {
@@ -103,5 +105,19 @@ document.addEventListener("DOMContentLoaded", e => {
     if (!photoGalleryContainer.classList.contains("hidden")) {
       photoGalleryContainer.classList.toggle("hidden");
     }
+    profileBtnAnimation(videoGalleryBtn)
   })
+
+  function profileBtnAnimation(btn) {
+    let prevActiveBtn = document.querySelector('.active');
+    if (!prevActiveBtn !== btn ) {
+      prevActiveBtn.classList.toggle('active');
+    }
+
+    btn.classList.toggle('active');
+    let activeWidth = btn.clientWidth;
+    let selector = document.querySelector('.selector');
+    selector.style.left = `${btn.offsetLeft}px`;
+    selector.style.width = `${activeWidth}px`;
+  };
 });
