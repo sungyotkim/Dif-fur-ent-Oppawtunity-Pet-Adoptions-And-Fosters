@@ -55,7 +55,7 @@ function photoAdder(data) {
 reqPetPhoto()
 
 function timer() {
-    let countDownDate = new Date("Jan 1, 2023 00:00:00").getTime();
+    let countDownDate = new Date("Oct 1, 2022 00:00:00").getTime();
 
     let x = setInterval(function() {
         let timeNow = new Date().getTime();
@@ -110,6 +110,6 @@ function goalProgress() {
     let percentageLabel = document.getElementById("percentage");
     percentageLabel.innerText = `${percentage}%`;
     if (percentage === 100) {
-        percentageLabel.style.left = '30%'
+        percentageLabel.style.left = '35%'
     }
 }
