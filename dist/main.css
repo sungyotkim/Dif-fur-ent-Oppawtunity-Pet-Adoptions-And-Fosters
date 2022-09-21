@@ -1154,6 +1154,7 @@ table {
   height: calc(94vh - 185px);
   justify-content: center;
   align-items: center;
+  padding-right: 90px;
 }
 
 .profile-right-inner-container {
@@ -1166,49 +1167,73 @@ table {
   position: relative;
 }
 
-.profile-right-upper-container {
+.profile-right-bottom-container {
   display: flex;
   position: relative;
   flex-basis: 30%;
+  flex-direction: column;
 }
 
-.top-info {
-  background-color: blue;
+.bottom-info {
   display: flex;
   box-sizing: border-box;
   padding: 0.5rem;
   flex-basis: 35%;
   height: 100%;
-  width: 100%;
+  width: 50%;
   position: relative;
   flex-direction: column;
 }
 
-.top-info > div {
+.bottom-info > div {
   display: flex;
   box-sizing: border-box;
   padding: 0.5rem;
 }
 
-.top-info > div > h2 {
+.bottom-info > div > h2 {
   margin-right: 5px;
+  font-weight: 500;
+  font-size: larger;
 }
 
 .char-info {
-  background: yellow;
   height: 100%;
-  width: 100%;
+  width: 50%;
   flex-basis: 65%;
   box-sizing: border-box;
   position: relative;
   padding: 0.5rem;
 }
 
+.char-info > h2 {
+  font-weight: 500;
+  font-size: larger;
+}
+
 .bio-container {
-  background: pink;
+  background: #B1B2FF;
   height: 200px;
   box-sizing: border-box;
   padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.bio-container h1 {
+  font-weight: 700;
+  font-size: x-large;
+  margin-bottom: 0.2rem;
+}
+
+.bio-container h2 {
+  font-weight: 500;
+  font-size: larger;
+  margin-bottom: 0.375rem;
+}
+
+.bio-container a {
+  font-weight: 500;
+  font-size: larger;
 }
 
 .profile-shelter-info {
