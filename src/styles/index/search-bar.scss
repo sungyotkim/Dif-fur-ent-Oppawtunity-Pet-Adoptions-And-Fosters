@@ -76,7 +76,7 @@ $blue: #AAC4FF;
     min-width: 15.25rem;
     box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
     display: none;
-    z-index: 10;
+    z-index: 999;
 }
 
 .dropdown-items .item {

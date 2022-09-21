@@ -161,10 +161,9 @@ $blue: #AAC4FF;
 .top-info {
   background-color: blue;
   display: flex;
-  // justify-content: space-between;
   box-sizing: border-box;
   padding: 0.5rem;
-  flex-basis: 50%;
+  flex-basis: 35%;
   height: 100%;
   width: 100%;
   position: relative;
@@ -173,7 +172,6 @@ $blue: #AAC4FF;
 
 .top-info > div {
   display: flex;
-  // justify-content: space-between;
   box-sizing: border-box;
   padding: 0.5rem;
 }
@@ -186,7 +184,7 @@ $blue: #AAC4FF;
   background: yellow;
   height: 100%;
   width: 100%;
-  flex-basis: 50%;
+  flex-basis: 65%;
   box-sizing: border-box;
   position: relative;
   padding: 0.5rem;

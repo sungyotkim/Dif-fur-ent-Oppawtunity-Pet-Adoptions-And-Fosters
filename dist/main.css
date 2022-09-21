@@ -1,3 +1,7 @@
+/*!*************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
+  \*************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,700;1,800&display=swap);
 /*!****************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/reset.css ***!
   \****************************************************************************************************/
@@ -49,9 +53,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/*!*************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
-  \*************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss (1) ***!
+  \*****************************************************************************************************************************************/
 .search-bar-container {
   position: relative;
   top: 0px;
@@ -122,7 +126,7 @@ table {
   min-width: 15.25rem;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   display: none;
-  z-index: 10;
+  z-index: 999;
 }
 
 .dropdown-items .item {
@@ -1173,7 +1177,7 @@ table {
   display: flex;
   box-sizing: border-box;
   padding: 0.5rem;
-  flex-basis: 50%;
+  flex-basis: 35%;
   height: 100%;
   width: 100%;
   position: relative;
@@ -1194,7 +1198,7 @@ table {
   background: yellow;
   height: 100%;
   width: 100%;
-  flex-basis: 50%;
+  flex-basis: 65%;
   box-sizing: border-box;
   position: relative;
   padding: 0.5rem;
@@ -1269,9 +1273,9 @@ body, html {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 input {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Nunito", sans-serif;
 }
