@@ -924,6 +924,7 @@ table {
   height: 300px;
   border-radius: 8px;
   box-sizing: border-box;
+  padding-right: 0.5rem;
 }
 
 .shelter-row:not(:last-child) {
@@ -935,7 +936,7 @@ table {
   align-items: center;
   border: 1px solid black;
   cursor: pointer;
-  background-color: #D2DAFF;
+  background-color: #EEF1FF;
   border-radius: 8px;
 }
 
