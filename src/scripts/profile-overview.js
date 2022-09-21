@@ -8,7 +8,7 @@ const profileChars = document.querySelector('.chars');
 const profileBio = document.querySelector('#profile-bio');
 const shelterName = document.querySelector('#shelter-name');
 const shelterLocation = document.querySelector('#shelter-location');
-const shelterWebsite = document.querySelector('#shelter-website');
+const shelterWebsite = document.querySelector('.shelter-website');
 const petsUrl = './dist/data/petInfo.json';
 const sheltersUrl = './dist/data/shelterInfo.json';
 const availability = document.querySelector('#availability');
@@ -83,7 +83,7 @@ function addShelterInfo(shelter) {
   shelterLocation.innerText = shelter.location;
   shelterWebsite.href = shelter.website;
   shelterWebsite.setAttribute('target', '_blank');
-  shelterWebsite.innerText = 'Link to website!'
+  // shelterWebsite.innerText = 'Link to website!'
 }
 
 module.exports.reqPetInfo = reqPetInfo;
