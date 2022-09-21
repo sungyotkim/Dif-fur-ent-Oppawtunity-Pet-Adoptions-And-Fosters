@@ -91,3 +91,24 @@ function goalIncrementer() {
 }
 
 goalIncrementer();
+
+let i = 0;
+function moveProgress() {
+    if (i === 0) {
+        i = 1;
+        let ele = document.getElementById('bar');
+        let height = 10;
+        let id = setInterval(() => {
+            if (height >= 100) {
+                clearInterval(id);
+                i = 0;
+            } else {
+                height++;
+                ele.style.height = height + "%";
+                ele.innerHTML = height + "%";
+            }
+        }, 10);
+    }
+}
+
+moveProgress();
