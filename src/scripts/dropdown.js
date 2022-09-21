@@ -148,10 +148,31 @@ btn.addEventListener("click", () => {
     if (resultsContainer.classList.contains('hidden')) {
         resultsContainer.classList.toggle('hidden')
     }
-
-    // selectBtns.forEach(selectBtn => {
-    //     if (selectBtn.classList.contains("open")) {
-    //         selectBtn.classList.toggle("open");
-    //     }
-    // })
 })
+
+function resetCheckedDropdowns() {
+    speciesItems.forEach(speciesItem => {
+        if (speciesItem.classList.contains("checked")) {
+            speciesItem.classList.toggle("checked");
+        }
+    })
+
+    breedItems.forEach(breedItem => {
+        if (breedItem.classList.contains("checked")) {
+            breedItem.classList.toggle("checked");
+        }
+    })
+
+    ageItems.forEach(ageItem => {
+        if (ageItem.classList.contains("checked")) {
+            ageItem.classList.toggle("checked");
+        }
+    })
+
+    selectBtns.forEach(selectBtn => {
+        selectBtn.children[1].children[0].innerText = 'Any'
+    })
+}
+
+module.exports.resetCheckedDropdowns = resetCheckedDropdowns;
+module.exports.addSearchPicture = addSearchPicture;

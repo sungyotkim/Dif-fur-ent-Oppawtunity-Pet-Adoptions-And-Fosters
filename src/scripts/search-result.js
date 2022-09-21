@@ -5,6 +5,7 @@ const shelterContainer = document.querySelector(".inner-shelter-chart-container"
 const profile = require('./profile');
 const resultsPageContainer = document.querySelector('.container-results');
 const selectBtns = document.querySelectorAll(".dropdown-top");
+const dropdown = require('./dropdown');
 
 function reqPetInfo() {
   fetch(petsUrl)
@@ -64,6 +65,8 @@ function cardMaker(pets) {
         selectBtn.classList.toggle("open");
     }
   })
+  dropdown.resetCheckedDropdowns();
+  dropdown.addSearchPicture();
 }
 
 reqPetInfo();
