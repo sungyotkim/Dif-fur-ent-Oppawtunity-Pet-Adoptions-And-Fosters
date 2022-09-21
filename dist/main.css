@@ -1049,26 +1049,31 @@ table {
 }
 
 .profile-nav {
-  display: inline-block;
+  display: flex;
   background: #EEF1FF;
   height: 75px;
-  justify-content: space-around;
+  justify-content: space-evenly;
   box-sizing: border-box;
   padding: 0.5rem 5rem;
   position: relative;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   border-radius: 50px;
+  align-items: center;
 }
 
 .profile-nav-btn {
   color: black;
   text-transform: uppercase;
   padding: 10px 20px;
-  display: inline-block;
+  display: flex;
   position: relative;
   z-index: 1;
   transition-duration: 0.6s;
   cursor: pointer;
+  height: 100%;
+  font-size: x-large;
+  align-items: center;
+  font-weight: 500;
 }
 
 .profile-nav-btn.active {
