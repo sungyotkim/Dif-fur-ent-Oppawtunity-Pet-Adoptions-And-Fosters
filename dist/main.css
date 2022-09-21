@@ -894,6 +894,7 @@ table {
   padding: 10px;
   justify-content: center;
   align-items: center;
+  transition: 0.5s ease-in-out;
 }
 
 .main-photo-container {
@@ -904,6 +905,7 @@ table {
   justify-content: center;
   align-items: center;
   padding: 0.375rem;
+  transition: 0.5s ease-in-out;
 }
 
 .main-photo-container img {
@@ -935,6 +937,7 @@ table {
 .video-gallery-container {
   height: calc(94vh - 185px);
   display: flex;
+  transition: 0.5s ease-in-out;
 }
 
 .left-video-container {
@@ -946,6 +949,7 @@ table {
   padding: 2rem;
   justify-content: center;
   align-items: center;
+  transition: 0.5s ease-in-out;
 }
 
 .main-video-container {
@@ -957,6 +961,7 @@ table {
   align-items: center;
   justify-content: center;
   padding: 0.375rem;
+  transition: 0.5s ease-in-out;
 }
 
 .main-video-container video {
@@ -971,6 +976,7 @@ table {
   box-sizing: border-box;
   padding: 2rem;
   background: #AAC4FF;
+  transition: 0.5s ease-in-out;
 }
 
 .video-description-container h3 {
