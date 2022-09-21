@@ -4,6 +4,7 @@ const sheltersUrl = '../../dist/data/shelterInfo.json';
 const shelterContainer = document.querySelector(".inner-shelter-chart-container");
 const profile = require('./profile');
 const resultsPageContainer = document.querySelector('.container-results');
+const selectBtns = document.querySelectorAll(".dropdown-top");
 
 function reqPetInfo() {
   fetch(petsUrl)
@@ -56,6 +57,12 @@ function cardMaker(pets) {
       resultsPageContainer.classList.toggle("hidden");
       profile.renderProfile(pet);
     })
+  })
+
+  selectBtns.forEach(selectBtn => {
+    if (selectBtn.classList.contains("open")) {
+        selectBtn.classList.toggle("open");
+    }
   })
 }
 

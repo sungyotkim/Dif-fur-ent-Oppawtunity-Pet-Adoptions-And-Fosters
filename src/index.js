@@ -54,13 +54,15 @@ document.addEventListener("DOMContentLoaded", e => {
         breedChecked.forEach(breedItem => {
               breeds.push(breedItem.innerText);
         })
-          ageRangeFinder();
+        
+        ageRangeFinder();
 
         let filtered = searchResult.filterSpecies(pets, species);
         filtered = searchResult.filterBreed(filtered, breeds);
         filtered = searchResult.filterAge(filtered, ageRange.flat());
         searchResult.cardMaker(filtered);
       })
+
     };
 
     getFilteredPets();

@@ -149,9 +149,9 @@ btn.addEventListener("click", () => {
         resultsContainer.classList.toggle('hidden')
     }
 
-    selectBtns.forEach(selectBtn => {
-        if (selectBtn.classList.contains("open")) {
-            selectBtn.classList.toggle("open");
-        }
-    })
+    // selectBtns.forEach(selectBtn => {
+    //     if (selectBtn.classList.contains("open")) {
+    //         selectBtn.classList.toggle("open");
+    //     }
+    // })
 })
