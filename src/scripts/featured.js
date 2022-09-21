@@ -81,34 +81,30 @@ timer();
 //fake incrementer to simulate adoptions
 function goalIncrementer() {
     let goal = document.getElementById("adopted-numbers");
+    let max = document.getElementById("goal-numbers").innerText;
 
-    setInterval(() => {
-        let current = goal.innerText;
-        current = current.split(",").join("");
-        let next = parseInt(current) + 1;
-        goal.innerText = next.toLocaleString("en-US");
-    }, 10000);
+    if (parseFloat(goal.innerText) < parseFloat(max)) {   
+        let incrementer = setInterval(() => {
+            let current = goal.innerText;
+            current = current.split(",").join("");
+            let next = parseInt(current) + 1;
+            goal.innerText = next.toLocaleString("en-US");
+            goalProgress();
+            if (goal.innerText === max) {
+                clearInterval(incrementer);
+            }
+        }, 1000);
+    }
 }
 
 goalIncrementer();
 
-let i = 0;
-function moveProgress() {
-    if (i === 0) {
-        i = 1;
-        let ele = document.getElementById('bar');
-        let height = 10;
-        let id = setInterval(() => {
-            if (height >= 100) {
-                clearInterval(id);
-                i = 0;
-            } else {
-                height++;
-                ele.style.height = height + "%";
-                // ele.innerText = height + "%";
-            }
-        }, 10);
-    }
+function goalProgress() {
+    let max = document.getElementById("goal-numbers").innerText;
+    let current = document.getElementById("adopted-numbers").innerText;
+    let maxnum = parseFloat(max);
+    let currentnum = parseFloat(current);
+    let percentage = Math.floor((currentnum / maxnum) * 100);
+    let bar = document.getElementById("bar");
+    bar.style.height = `${percentage}` + "%"
 }
-
-moveProgress();
