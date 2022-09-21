@@ -19,6 +19,17 @@ function reqPetInfo() {
 function cardMaker(pets) {
   resultsContainer.innerHTML = "";
 
+  if (pets.length === 0) {
+    const card = document.createElement('div');
+    card.style.backgroundImage='url(../../dist/assets/nomatches.png)';
+    card.style.backgroundRepeat='no-repeat';
+    card.style.backgroundPosition='center';
+    card.style.width='100%';
+    card.style.height='100%';
+    resultsContainer.appendChild(card);
+    return;
+  }
+
   pets.forEach(pet => {
     const card = document.createElement('div');
     const cardImgHolder = document.createElement('div');

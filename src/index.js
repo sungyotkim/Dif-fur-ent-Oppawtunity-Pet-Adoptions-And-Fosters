@@ -60,6 +60,7 @@ document.addEventListener("DOMContentLoaded", e => {
         let filtered = searchResult.filterSpecies(pets, species);
         filtered = searchResult.filterBreed(filtered, breeds);
         filtered = searchResult.filterAge(filtered, ageRange.flat());
+        console.log(filtered);
         searchResult.cardMaker(filtered);
       })
 
