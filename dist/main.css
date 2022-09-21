@@ -429,6 +429,8 @@ table {
   width: 100%;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
 }
 
 .featured-inner-container {
@@ -443,6 +445,7 @@ table {
   position: relative;
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 10px;
+  box-sizing: border-box;
 }
 
 .featured-section-title {
@@ -450,10 +453,9 @@ table {
   font-size: 3rem;
   align-self: center;
   font-weight: 600;
-  background-image: linear-gradient(45deg, #553c9a, #ee4b2b);
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
+  color: #B1B2FF;
+  margin-bottom: 0.375rem;
+  box-sizing: border-box;
 }
 
 .featured-bottom-container {
@@ -461,6 +463,8 @@ table {
   flex-direction: column;
   height: 100%;
   width: 100%;
+  box-sizing: border-box;
+  position: relative;
 }
 
 .featured-card {
@@ -471,6 +475,7 @@ table {
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .featured-img {
@@ -561,6 +566,8 @@ table {
   height: 75%;
   width: 100%;
   display: flex;
+  box-sizing: border-box;
+  position: relative;
 }
 
 .goals-container {
@@ -569,6 +576,8 @@ table {
   display: flex;
   flex-direction: column;
   margin: 0;
+  position: relative;
+  box-sizing: border-box;
   position: relative;
 }
 
@@ -582,6 +591,8 @@ table {
   font-size: 2rem;
   padding: 10px;
   border: 1px solid black;
+  box-sizing: border-box;
+  position: relative;
 }
 
 .stretch-goal {
@@ -594,6 +605,8 @@ table {
   font-size: 2rem;
   padding: 10px;
   border: 1px solid black;
+  box-sizing: border-box;
+  position: relative;
 }
 
 .current-goal {
@@ -606,6 +619,8 @@ table {
   font-size: 2rem;
   padding: 10px;
   border: 1px solid black;
+  box-sizing: border-box;
+  position: relative;
 }
 
 .requests-container {
@@ -614,6 +629,7 @@ table {
   display: flex;
   flex-direction: column;
   position: relative;
+  box-sizing: border-box;
 }
 
 .requests {
@@ -623,6 +639,8 @@ table {
   flex-direction: column;
   padding: 0.5rem;
   justify-content: space-evenly;
+  box-sizing: border-box;
+  position: relative;
 }
 
 .requests > div > h2 {
@@ -651,8 +669,10 @@ table {
 }
 
 .shelter-support-container {
-  height: 25%;
   width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  height: 100%;
 }
 
 .shelter-support-container > h2 {
@@ -1017,7 +1037,7 @@ table {
   width: 100%;
   position: relative;
   padding: 0.375rem;
-  overflow-y: scroll;
+  overflow-y: auto;
   max-height: max-content;
 }
 
