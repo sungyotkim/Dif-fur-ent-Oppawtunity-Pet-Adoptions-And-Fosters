@@ -65,7 +65,7 @@ $blue: #AAC4FF;
 }
 
 .featured-card-title {
-    background: rgba(211, 146, 89, 0.75);
+    background: $blue;
     padding: 0.5rem;
     padding-top: 0.75rem;
     transform: rotate(-90deg);
@@ -77,11 +77,13 @@ $blue: #AAC4FF;
     bottom: 0;
     left: 12.5%;
     font-size: 1rem;
-    color: white;
+    color: black;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .featured-card-name {
-    background: rgba(211, 146, 89, 0.75);
+    background: $blue;
     padding-top: 0.25rem;
     padding-bottom: 0.75rem;
     position: absolute;
@@ -91,13 +93,13 @@ $blue: #AAC4FF;
     right: 0;
     transition: all 0.5s ease-in-out;
     font-size: 1.5rem;
-    color: white;
+    color: black;
     text-align: center;
     overflow: hidden;
 }
 
 .featured-card-bio {
-    background: rgba(211, 146, 89, 0.75);
+    background: $blue;
     position: absolute;
     height: fit-content;
     top: 100%;
@@ -108,22 +110,22 @@ $blue: #AAC4FF;
     flex-grow: 3;
     .featured-card-title {
         text-align: center;
-        color: white;
-        background: rgba(255, 168, 118, 0.75);
+        color: black;
+        background: $blue;
         font-size: 2rem;
         transform: rotate(0deg);
         left: 0;
         bottom: -4rem;
     }
     .featured-card-name {
-        background: rgba(255, 168, 118, 0.75);
+        background: $blue;
         transform: translateY(100%);
-        color: white;
+        color: black;
         transition-delay: 0.5s;
     }
     .featured-card-bio {
-        background: rgba(255, 168, 118, 0.75);
-        color: white;
+        background: $blue;
+        color: black;
         transform: translateY(-100%);
         transition-delay: 0.5s;
         font-size: 1.3rem;
@@ -140,7 +142,6 @@ $blue: #AAC4FF;
 }
 
 .goal-request-container {
-    background-color: white;
     height: 75%;
     width: 100%;
     display: flex;
