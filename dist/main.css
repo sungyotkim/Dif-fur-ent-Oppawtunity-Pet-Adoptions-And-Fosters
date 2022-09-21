@@ -1035,6 +1035,12 @@ table {
   border-radius: 8px;
 }
 
+.vid-message {
+  font-weight: 700;
+  font-size: x-large;
+  line-height: 2rem;
+}
+
 .profile-display {
   height: calc(94vh - 110px);
   width: 100%;

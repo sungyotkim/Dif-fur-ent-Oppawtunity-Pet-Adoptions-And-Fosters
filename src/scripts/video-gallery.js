@@ -9,9 +9,13 @@ function reqPetInfo(profilePet) {
         .then(data => {
           data.forEach(pet => {
             if (pet.name === profilePet) {
-              populateMainVideo(pet);
-              populateReviews(pet);
-              populateSubVideos(pet);
+              if (pet.videos.length === 0) {
+                populateNoVideos()
+              } else {
+                populateMainVideo(pet);
+                populateReviews(pet);
+                populateSubVideos(pet);
+              }
             }
           })
         })
@@ -62,6 +66,14 @@ function populateSubVideos(pet) {
       populateReviews(pet, index);
     })
   })
+}
+
+function populateNoVideos() {
+  mainContainer.innerHTML = '';
+  let message = document.createElement('div');
+  message.innerText = 'Sorry, I currently have no videos. If I caught your interest anyway, please adopt me! Otherwise, consider fostering me or visit me and upload socialization videos to help me get adopted! Thank you for visiting me, hope to see you soon!';
+  message.setAttribute('class', 'vid-message');
+  mainContainer.appendChild(message);
 }
 
 module.exports.reqPetInfo = reqPetInfo;
