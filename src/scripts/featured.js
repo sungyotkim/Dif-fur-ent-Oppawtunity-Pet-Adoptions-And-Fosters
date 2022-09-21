@@ -71,7 +71,7 @@ function timer() {
 
         if (timeDistance < 0 ) {
             clearInterval(x);
-            goalTimer.innerHTML = 'Finished!'
+            goalTimer.innerHTML = "Time's up!"
         }
     }, 1000);
 }
@@ -93,7 +93,7 @@ function goalIncrementer() {
             if (goal.innerText === max) {
                 clearInterval(incrementer);
             }
-        }, 1000);
+        }, 5000);
     }
 }
 
@@ -113,3 +113,5 @@ function goalProgress() {
         percentageLabel.style.left = '35%'
     }
 }
+
+goalProgress();

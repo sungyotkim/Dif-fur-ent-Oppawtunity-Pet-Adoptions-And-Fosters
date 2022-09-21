@@ -178,7 +178,8 @@ $blue: #AAC4FF;
 
 #bar {
     width: 230px;
-    height: 230px;
+    // height: 230px;
+    height: 1%;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -232,7 +233,6 @@ $blue: #AAC4FF;
     position: relative;
     box-sizing: border-box;
     position: relative;
-    // background-color: #8789fc;
     margin-top: 15px;
     margin-right: 15px;
     height: 230px;
