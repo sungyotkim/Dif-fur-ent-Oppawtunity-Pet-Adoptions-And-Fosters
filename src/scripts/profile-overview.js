@@ -50,6 +50,7 @@ function populateProfile(pet) {
 
   availability.innerText = `${pet.status}`;
 
+  profileChars.innerHTML = '';
   pet.characteristics.forEach(char => {
     let profileChar = document.createElement('div');
     profileChar.innerText = char;
