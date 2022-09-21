@@ -105,7 +105,7 @@ function moveProgress() {
             } else {
                 height++;
                 ele.style.height = height + "%";
-                ele.innerHTML = height + "%";
+                // ele.innerText = height + "%";
             }
         }, 10);
     }

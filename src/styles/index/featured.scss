@@ -156,21 +156,48 @@ $blue: #AAC4FF;
 }
 
 .progressBar {
-    width: 300px;
+    width: 200px;
     height: 190px;
-    background-color: $darkestPurple;
-    display: flex;
     align-items: flex-end;
+    position: relative;
+    background-color: $lightestPurple;
+    box-sizing: border-box;
+}
+
+.progressBar > i {
+    position: relative;
+    font-size: 200px;
+    color: white;
+    height: 200px;
+    width: 190px;
+    box-sizing: border-box;
 }
 
 #bar {
-    width: 300px;
-    height: 10%;
-    background-color: $blue;
-    text-align: center;
-    line-height: 190px;
-    color: white;
+    width: 200px;
+    height: 140px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    box-sizing: border-box;
+    display: flex;
+    overflow: hidden;
 }
+
+#bar > i {
+    font-size: 200px;
+    width: 200px;
+    height: 190px;
+    color: transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: $darkerPurple;
+    -webkit-background-clip: text;
+    background-clip: text;
+    box-sizing: border-box;
+}
+
 
 .goals-container {
     height: 100%;
