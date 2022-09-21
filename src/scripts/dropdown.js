@@ -161,6 +161,7 @@ function resetCheckedDropdowns() {
         if (breedItem.classList.contains("checked")) {
             breedItem.classList.toggle("checked");
         }
+        breedItem.removeAttribute("style")
     })
 
     ageItems.forEach(ageItem => {
