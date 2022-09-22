@@ -11,7 +11,13 @@ $blue: #AAC4FF;
     align-items: center;
     justify-content: center;
     position: relative;
+    transition: 1s ease-in-out;
 }
+
+.hidden {
+    display: none;
+}
+
 
 .landing-center {
     height: 344px;

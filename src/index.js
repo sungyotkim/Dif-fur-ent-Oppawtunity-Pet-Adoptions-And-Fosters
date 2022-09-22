@@ -8,6 +8,10 @@ document.addEventListener("DOMContentLoaded", e => {
   const speechBubble = document.querySelector('.speech-bubble');
   const profile = require('./scripts/profile');
   const resultsContainer = document.querySelector(".container-results");
+  const landingBrowseBtn = document.querySelector(".landing-browse-btn");
+  const mainContainer = document.querySelector('.container');
+  const landing = document.querySelector('.landing');
+  const home = document.querySelector('#home-button');
   
   //variables not used but need to render
   const container = document.querySelector('.container-center')
@@ -133,4 +137,26 @@ document.addEventListener("DOMContentLoaded", e => {
   })
 
   speechBubble.style.backgroundImage='url(./dist/assets/speech-img.png)'
+
+  landingBrowseBtn.addEventListener("click", () => {
+    if (mainContainer.classList.contains('hidden')) {
+      mainContainer.classList.toggle('hidden');
+    }
+    if (!landing.classList.contains('hidden')) {
+      landing.classList.toggle('hidden')
+    }
+    console.log(mainContainer.classList)
+    console.log(landing.classList)
+  })
+
+  home.addEventListener("click", () => {
+    if (mainContainer.classList.contains('hidden')) {
+      mainContainer.classList.toggle('hidden');
+    }
+    if (!landing.classList.contains('hidden')) {
+      landing.classList.toggle('hidden')
+    }
+    console.log(mainContainer.classList)
+    console.log(landing.classList)
+  })
 });

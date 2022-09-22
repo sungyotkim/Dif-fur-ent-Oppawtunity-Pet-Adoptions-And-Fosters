@@ -1394,6 +1394,7 @@ body, html {
   top: 0px;
   left: 0px;
   background: white;
+  transition: 1s ease-in-out;
 }
 
 .container > div {
@@ -1465,6 +1466,11 @@ body, html {
   align-items: center;
   justify-content: center;
   position: relative;
+  transition: 1s ease-in-out;
+}
+
+.hidden {
+  display: none;
 }
 
 .landing-center {
@@ -1539,6 +1545,7 @@ body, html {
 
 body {
   font-family: "Nunito", sans-serif;
+  caret-color: transparent;
 }
 
 input {
