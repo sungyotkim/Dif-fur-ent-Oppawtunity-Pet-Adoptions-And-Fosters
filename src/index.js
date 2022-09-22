@@ -18,6 +18,9 @@ document.addEventListener("DOMContentLoaded", e => {
   const firstText = document.querySelector("#first");
   const secondText = document.querySelector('#second');
   let infoIcon = document.querySelector('.info-icon');
+  const mainAboutBtn = document.querySelector('.main-about-btn');
+  const underNavContainer = document.querySelector('.under-nav');
+  const aboutContainer =document.querySelector('.about-container');
   
   //variables not used but need to render
   const container = document.querySelector('.container-center')
@@ -164,6 +167,10 @@ document.addEventListener("DOMContentLoaded", e => {
       featuredContainer.classList.toggle("hidden")
     }
 
+    if (underNavContainer.classList.contains("hidden")) {
+      underNavContainer.classList.toggle("hidden")
+    }
+
     if (!landing.classList.contains('hidden')) {
       landing.classList.toggle('hidden')
     }
@@ -187,12 +194,19 @@ document.addEventListener("DOMContentLoaded", e => {
     if (!profileDisplayContainer.classList.contains("hidden")) {
       profileDisplayContainer.classList.toggle("hidden")
     }
+
+    if (!aboutContainer.classList.contains("hidden")) {
+      aboutContainer.classList.toggle("hidden")
+    }
   })
 
   function displayAboutPageAnimations() {
     if (!infoIcon.classList.contains('hidden')) {
       infoIcon.classList.toggle('hidden')
     }
+
+    firstText.innerText = '';
+    secondText.innerText = '';
     textCreator();
 
     let firstPhrase = 'About 6.3 million dogs and cats enter animal shelters in the US every year...';
@@ -206,6 +220,7 @@ document.addEventListener("DOMContentLoaded", e => {
       let offset = 0;
       let skipCount = 0;
       let texter = setInterval(() => {
+
         if (forwards) {
           if (offset >= firstLength) {
             skipCount++;
@@ -252,10 +267,49 @@ document.addEventListener("DOMContentLoaded", e => {
           if (infoIcon.classList.contains('hidden')) {
             infoIcon.classList.toggle('hidden')
           }
-          showChart()
         }
       }, 50);
     }
+
   }
-  displayAboutPageAnimations();
+
+  mainAboutBtn.addEventListener("click", () => {
+    if (!featuredContainer.classList.contains("hidden")) {
+      featuredContainer.classList.toggle("hidden")
+    }
+
+    if (!landing.classList.contains('hidden')) {
+      landing.classList.toggle('hidden')
+    }
+
+    if (!overviewContainer.classList.contains("hidden")) {
+      overviewContainer.classList.toggle("hidden");
+    }
+
+    if (!photoGalleryContainer.classList.contains("hidden")) {
+      photoGalleryContainer.classList.toggle("hidden");
+    }
+
+    if (!videoGalleryContainer.classList.contains("hidden")) {
+      videoGalleryContainer.classList.toggle("hidden")
+    }
+
+    if (!searchResultsContainer.classList.contains("hidden")) {
+      searchResultsContainer.classList.toggle("hidden")
+    }
+
+    if (!profileDisplayContainer.classList.contains("hidden")) {
+      profileDisplayContainer.classList.toggle("hidden")
+    }
+
+    if (!underNavContainer.classList.contains("hidden")) {
+      underNavContainer.classList.toggle("hidden")
+    }
+
+    if (aboutContainer.classList.contains("hidden")) {
+      aboutContainer.classList.toggle("hidden")
+    }
+
+    displayAboutPageAnimations()
+  })
 });
