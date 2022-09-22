@@ -590,6 +590,40 @@
         ]
     },
     {
+        "name": "Phoebe",
+        "age": "2Y",
+        "gender": "F",
+        "species": "Feline",
+        "breed": "Siamese",
+        "mix": false,
+        "mini": false,
+        "colors": [
+            "Brown",
+            "Cream"
+        ],
+        "shelter": "Animal Haven",
+        "photos": [
+            "photo_1_phoebe.jpg",
+            "photo_2_phoebe.jpg",
+            "photo_3_phoebe"
+        ],
+        "videos": [
+            "video_1_phoebe.mp4"
+        ],
+        "status": "Available for adoption",
+        "bio": "Phoebe is a playful cat that can be pretty spoiled. She wants a lot of attention and can become needy if she grows attached to you. Will speak with you!",
+        "characteristics": [
+            "needy",
+            "playful",
+            "not-dog-friendly",
+            "not-cat-friendly",
+            "vocal"
+        ],
+        "reviews": [
+            "Super playful but a bit chaotic! Be warned!"
+        ]
+    },
+    {
         "name": "Leon",
         "age": "8Y",
         "gender": "M",
