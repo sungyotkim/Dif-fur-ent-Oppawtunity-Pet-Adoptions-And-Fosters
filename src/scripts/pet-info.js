@@ -147,7 +147,7 @@ let pets = [
     mini: false,
     colors: ["White", "Beige"],
     shelter: "Animal Haven",
-    photos: ["photo_1_nara.jpeg", "photo_2_nara.jpg", "photo_3_nara.jpg", "photo_0_nara.jpg"],
+    photos: ["photo_1_nara.jpeg", "photo_2_nara.jpg", "photo_3_nara.jpg", "photo_4_nara.jpg", "photo_0_nara.jpg"],
     videos: ["video_1_nara.mp4", "video_2_nara.mp4"],
     status: "Available for adoption",
     bio: "Nara is a treat motivated friendly dog who loves people! She loves going on walks and loves to play, though she isn't great at fetch.",
