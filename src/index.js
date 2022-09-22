@@ -336,4 +336,23 @@ document.addEventListener("DOMContentLoaded", e => {
 
     displayAboutPageAnimations()
   })
+
+  $(function () {
+    $('form').submit(function (e) {
+      e.preventDefault();
+      $.ajax({
+        type: 'POST',
+        url: 'https://script.google.com/macros/s/AKfycbwY9nayc0-xjhK7b45SWPoL8GXiHSDSfgcSBPHI14iJGlZf34sN-wbHIv_67mjFwX9r/exec',
+        data: {
+          fName: $(this)[0][0].value,
+          lName: $(this)[0][1].value,
+          email: $(this)[0][2].value,
+          phone: $(this)[0][3].value,
+          message: $(this)[0][7].value,
+        },
+        beforeSend: console.log($(this)),
+        success: alert('Submitted!')
+      })
+    })
+  })
 });

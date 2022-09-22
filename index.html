@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,700;1,800&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <title>Project Name</title>
   </head>
 
@@ -418,24 +419,24 @@
                       <h2 class="request-shelter-name"></h2>
 
                       <p>This is a placeholder form. Currently, submitting does nothing!</p>
-                      <label for="First Name">
+                      <label for="fName">
                         <h2>First Name</h2>
-                        <input type="text" placeholder="Enter Your First Name" required name="First Name">
+                        <input type="text" placeholder="Enter Your First Name" required name="fName">
                       </label>
 
-                      <label for="Last Name">
+                      <label for="lName">
                         <h2>Last Name</h2>
-                        <input type="text" placeholder="Enter Your Last Name" required name="Last Name">
+                        <input type="text" placeholder="Enter Your Last Name" required name="lName">
                       </label>
 
-                      <label for="Email">
+                      <label for="email">
                         <h2>Email</h2>
-                        <input type="text" placeholder="Enter Your Email (optional)" name="Email">
+                        <input type="text" placeholder="Enter Your Email (optional)" name="email">
                       </label>
 
-                      <label for="Phone">
+                      <label for="phone">
                         <h2>Phone</h2>
-                        <input type="text" placeholder="Enter Your Phone Number (optional)" name="Phone">
+                        <input type="tel" placeholder="e.g. 123-456-7890" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                       </label>
 
                       <label>
@@ -445,12 +446,12 @@
                         <input type="radio" id="visiting" value="visiting">
                       </label>
                       
-                      <label for="Message">
+                      <label for="message">
                         <h2>Message</h2>
-                        <input type="textarea" name="Message" placeholder="Write your message here..." rows="4" cols="30">
+                        <input type="textarea" name="message" placeholder="Write your message here..." rows="4" cols="30">
                       </label>
 
-                      <button type="submit" class="btn">Leave a message!</button>
+                      <button type="submit" class="submit-btn">Leave a message!</button>
                     </form>
                     <div class="close-button">Close button</div>
                   </div>
