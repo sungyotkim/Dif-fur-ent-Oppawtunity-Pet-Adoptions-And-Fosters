@@ -193,6 +193,7 @@ document.addEventListener("DOMContentLoaded", e => {
     if (!infoIcon.classList.contains('hidden')) {
       infoIcon.classList.toggle('hidden')
     }
+    textCreator();
 
     let firstPhrase = 'About 6.3 million dogs and cats enter animal shelters in the US every year...';
     let secondPhrase = 'But only about 4.1 million dogs and cats are adopted annually.';
@@ -251,11 +252,20 @@ document.addEventListener("DOMContentLoaded", e => {
           if (infoIcon.classList.contains('hidden')) {
             infoIcon.classList.toggle('hidden')
           }
+          showChart()
         }
       }, 50);
     }
 
-    textCreator();
+    function showChart() {
+      let chart = document.querySelector('.chart');
+      if (chart.classList.contains("hidden")) {
+        chart.classList.toggle('hidden');
+        chart.classList.toggle('active')
+      }
+
+    }
+
   }
   displayAboutPageAnimations();
 });
