@@ -103,3 +103,4 @@ row.addEventListener("click", () => {
 - Linking to a shelter's API to pull in data/images/videos of actual animals available for adoption/foster/visits.
 - Allowing connection between html forms to shelters to enable requests to adopt/shelter/visit a given animal.
 - Pulling live data from shelters to populate adoption goals with live numbers, rather than simulated numbers.
+- Compatibility with smaller screens / mobile compatibility
