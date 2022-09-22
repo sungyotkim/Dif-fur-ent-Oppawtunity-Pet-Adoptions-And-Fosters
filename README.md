@@ -12,15 +12,6 @@ In order to minimize the rate of adoption returns and to maximize the rates of a
 Beyond visual information, an interactive review userface would be implemented to allow for visitors, volunteers, and fosterers to leave reviews describing their (hopefully positive) interactions with the pets to allow for a better up-to-date description of the animal. Potential adopters can then absorb this variety of data upfront and online before going and visiting the pet to filter the animals of interest with ease and comparing their in person interactions with the information on the animal's profile page to confirm whether or not they make a good pair. <br>
 By allowing for a more unique online interaction with the animals, shelters would also experience a more efficient means of interacting with prospective adopters and ideally, face less rates of return. There will also be an option to request to foster these animals for people who are interested in fostering, but either unsure of adopting or only able to foster for a period of time. If possible, data from multiple shelters will be obtained thereby allowing users to see available animals from multiple shelters at one given place, saving them from the effort of navigating multiple websites to access such information.
 
-## Instructions
-- From the landing page, you may opt to see the about page for the project or choose to browse the project. Regardless of which option you choose, you will have the ability to access the other.
-- The featured page includes 5 random interactive photos of the animals available on the site. You may click on any picture to view their profile page.
-- A search bar exists on every page minus the landing and the about page. You may filter the animals on the site using the dropdown items available. As this is a small scale project, only NYC animals/shelters have been included. You may leave the city input blank as it will default to NYC.
-- From the search results page, you can continue to filter results by shelter or click on any pet to see their profile page. You may also click the speech bubble above the randomly generated featured video to see that animal's profile as well.
-- The profile page allows users to view the overview, all photos, and all videos (if any). Toggle the view you want!
-- For the photo gallery, simply click on the photo you wish to see and it will populate it on the larger view screen. The selected photo has a small border highlight.
-- For the video gallery, simply click on the smaller videos on the right to render the video on the larger screeen. Its associated review/comment will be populated underneath the main video.
-
 ## Technologies
 - Vanilla JS
 - HTML/CSS
@@ -90,8 +81,20 @@ row.addEventListener("click", () => {
       }
     })
 ```
+## Instructions
+- From the landing page, you may opt to see the about page for the project or choose to browse the project. Regardless of which option you choose, you will have the ability to access the other.
+- The featured page includes 5 random interactive photos of the animals available on the site. You may click on any picture to view their profile page.
+![featured-screen-shot](https://github.com/sungyotkim/Dif-fur-ent-Oppawtunity-Pet-Adoptions-And-Fosters/blob/main/github-assets/featuredPageSample2.PNG)
 
-![img](https://github.com/sungyotkim/Dif-fur-ent-Oppawtunity-Pet-Adoptions-And-Fosters/blob/main/github-assets/featuredPageSample2.PNG)
+- A search bar exists on every page minus the landing and the about page. You may filter the animals on the site using the dropdown items available. As this is a small scale project, only NYC animals/shelters have been included. You may leave the city input blank as it will default to NYC.
+- From the search results page, you can continue to filter results by shelter or click on any pet to see their profile page. You may also click the speech bubble above the randomly generated featured video to see that animal's profile as well.
+![search-results-screen-shot](https://github.com/sungyotkim/Dif-fur-ent-Oppawtunity-Pet-Adoptions-And-Fosters/blob/main/github-assets/searchResultsSample.PNG)
+
+- The profile page allows users to view the overview, all photos, and all videos (if any). Toggle the view you want!
+![profile-page-screen-shot](https://github.com/sungyotkim/Dif-fur-ent-Oppawtunity-Pet-Adoptions-And-Fosters/blob/main/github-assets/profileSample.PNG)
+- For the photo gallery, simply click on the photo you wish to see and it will populate it on the larger view screen. The selected photo has a small border highlight.
+- For the video gallery, simply click on the smaller videos on the right to render the video on the larger screeen. Its associated review/comment will be populated underneath the main video.
+![photo-gallery-screen-shot](https://github.com/sungyotkim/Dif-fur-ent-Oppawtunity-Pet-Adoptions-And-Fosters/blob/main/github-assets/photoGallerySample.PNG)
 
 
 ## TODO's / Future Features
