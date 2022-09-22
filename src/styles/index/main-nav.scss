@@ -9,7 +9,7 @@ $blue: #AAC4FF;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 5px;
+    padding: 5px 10px;
     box-sizing: border-box;
 }
 
@@ -21,7 +21,19 @@ $blue: #AAC4FF;
     box-sizing: border-box;
 }
 
-.nav-item > a > img{
+.nav-item > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.375rem;
+    margin-right: 0.375rem;
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+#home-button > img {
     margin-left: 0.375rem;
     margin-right: 0.375rem;
     text-decoration: none;
@@ -31,7 +43,7 @@ $blue: #AAC4FF;
     width: 40px;
 }
 
-.nav-item > a {
+#home-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,9 +51,10 @@ $blue: #AAC4FF;
     margin-right: 0.375rem;
     text-decoration: none;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
-.nav-item > a > h1 {
+#home-button > h1 {
     font-size: 2rem;
     position: relative;
     bottom: 5px;
