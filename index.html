@@ -414,46 +414,52 @@
                   </div>
 
                   <div class="form-popup" id="myForm">
-                    <form action="https://script.google.com/macros/s/AKfycbwY9nayc0-xjhK7b45SWPoL8GXiHSDSfgcSBPHI14iJGlZf34sN-wbHIv_67mjFwX9r/exec" method="POST">
-                      <h2 class="request-form-title"></h2>
-                      <h2 class="request-shelter-name"></h2>
-
-                      <p>This is a placeholder form. Currently, submitting does nothing!</p>
-                      <label for="fName">
-                        <h2>First Name</h2>
-                        <input type="text" placeholder="Enter Your First Name" required name="fName">
-                      </label>
-
-                      <label for="lName">
-                        <h2>Last Name</h2>
-                        <input type="text" placeholder="Enter Your Last Name" required name="lName">
-                      </label>
-
-                      <label for="email">
-                        <h2>Email</h2>
-                        <input type="text" placeholder="Enter Your Email (optional)" name="email">
-                      </label>
-
-                      <label for="phone">
-                        <h2>Phone</h2>
-                        <input type="tel" placeholder="e.g. 123-456-7890" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-                      </label>
-
-                      <label>
-                        <h2>Select your request type (placeholder)</h2>
-                        <input type="radio" id="adoption" value="adoption" checked>
-                        <input type="radio" id="foster" value="foster">
-                        <input type="radio" id="visiting" value="visiting">
-                      </label>
-                      
-                      <label for="message">
-                        <h2>Message</h2>
-                        <input type="textarea" name="message" placeholder="Write your message here..." rows="4" cols="30">
-                      </label>
-
-                      <button type="submit" class="submit-btn">Leave a message!</button>
-                    </form>
-                    <div class="close-button">Close button</div>
+                    <div class="outer-form-container">
+                      <form action="https://script.google.com/macros/s/AKfycbwY9nayc0-xjhK7b45SWPoL8GXiHSDSfgcSBPHI14iJGlZf34sN-wbHIv_67mjFwX9r/exec" method="POST" class="form-container">
+                        <div>
+                          <h2 class="request-form-title">Pet name</h2>
+                          <h2 class="request-shelter-name">Shelter name</h2>
+                        </div>
+  
+                        <p>This is a placeholder form. Currently, submitting does nothing!</p>
+                        <label for="fName">
+                          <h2>First Name</h2>
+                          <input type="text" placeholder="Enter Your First Name" required name="fName">
+                        </label>
+  
+                        <label for="lName">
+                          <h2>Last Name</h2>
+                          <input type="text" placeholder="Enter Your Last Name" required name="lName">
+                        </label>
+  
+                        <label for="email">
+                          <h2>Email</h2>
+                          <input type="text" placeholder="Enter Your Email (optional)" name="email">
+                        </label>
+  
+                        <label for="phone">
+                          <h2>Phone</h2>
+                          <input type="tel" placeholder="e.g. 123-456-7890" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        </label>
+  
+                        <label>
+                          <h2>Select your request type (placeholder)</h2>
+                          <input type="radio" id="adoption" value="adoption" checked>Adoption
+                          <input type="radio" id="foster" value="foster">Foster
+                          <input type="radio" id="visiting" value="visiting">Visiting
+                        </label>
+                        
+                        <label for="message">
+                          <h2>Message</h2>
+                          <textarea name="message" placeholder="Write your message here..."></textarea>
+                        </label>
+  
+                        <div>
+                          <button type="submit" class="submit-btn">Leave a message!</button>
+                        </div>
+                      </form>
+                      <div class="close-button"><i class="fa-solid fa-circle-xmark"></i></div>
+                    </div>
                   </div>
                 </div>
                 
