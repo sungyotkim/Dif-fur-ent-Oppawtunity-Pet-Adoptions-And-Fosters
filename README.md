@@ -1,5 +1,7 @@
 # Dif-fur-ent-Oppawtunity-Pet-Adoptions-And-Foster <img src="https://emoji.discadia.com/emojis/c6d92ad3-7d82-489a-aeda-09657c9a901a.gif" width="40">
 
+![project-demo](https://github.com/sungyotkim/Dif-fur-ent-Oppawtunity-Pet-Adoptions-And-Fosters/blob/main/github-assets/projectDemo.gif)
+
 ## [Link to live version](https://sungyotkim.github.io/Dif-fur-ent-Oppawtunity-Pet-Adoptions-And-Fosters/) 
 
 ## Background - The Numbers and The Reasons:
