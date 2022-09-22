@@ -12,6 +12,8 @@ const returnToSearchBtn = document.querySelector('.return-to-search');
 const resultsContainer = document.querySelector('.container-results');
 const requestFormTitle = document.querySelector('.request-form-title');
 const requestShelterName = document.querySelector('.request-shelter-name');
+const photoGalleryContainer = document.querySelector('.photo-gallery-container');
+const videoGalleryContainer = document.querySelector('.video-gallery-container');
 
 function renderProfile(pet) {
   overview.reqPetInfo(pet.name);
@@ -69,12 +71,12 @@ returnToSearchBtn.addEventListener("click", () => {
     profileOverview.classList.toggle('hidden')
   }
 
-  if (!photoGallery.classList.contains('hidden')) {
-    photoGallery.classList.toggle('hidden')
+  if (!photoGalleryContainer.classList.contains('hidden')) {
+    photoGalleryContainer.classList.toggle('hidden')
   }
 
-  if (!videoGallery.classList.contains('hidden')) {
-    videoGallery.classList.toggle('hidden')
+  if (!videoGalleryContainer.classList.contains('hidden')) {
+    videoGalleryContainer.classList.toggle('hidden')
   }
 })
 
