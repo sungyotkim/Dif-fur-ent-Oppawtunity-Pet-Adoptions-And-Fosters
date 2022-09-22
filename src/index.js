@@ -152,8 +152,17 @@ document.addEventListener("DOMContentLoaded", e => {
     if (mainContainer.classList.contains('hidden')) {
       mainContainer.classList.toggle('hidden');
     }
+
     if (!landing.classList.contains('hidden')) {
       landing.classList.toggle('hidden')
+    }
+
+    if (featuredContainer.classList.contains("hidden")) {
+      featuredContainer.classList.toggle("hidden")
+    }
+
+    if (underNavContainer.classList.contains("hidden")) {
+      underNavContainer.classList.toggle("hidden")
     }
   })
 
