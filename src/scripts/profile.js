@@ -51,8 +51,6 @@ function profileBtnAnimation(btn) {
 
 formPopupBtn.addEventListener("click", () => {
   formPopup.classList.toggle('hidden');
-  // requestFormTitle.innerHTML = `${currentPet.name}`;
-  // requestShelterName.innerHTML = `${currentPet.shelter}`;
 })
 
 formCloseBtn.addEventListener("click", () => {
@@ -65,7 +63,19 @@ formSubmitBtn.addEventListener("click", () => {
 
 returnToSearchBtn.addEventListener("click", () => {
   profileDisplay.classList.toggle('hidden');
-  resultsContainer.classList.toggle('hidden')
+  resultsContainer.classList.toggle('hidden');
+
+  if (!profileOverview.classList.contains('hidden')) {
+    profileOverview.classList.toggle('hidden')
+  }
+
+  if (!photoGallery.classList.contains('hidden')) {
+    photoGallery.classList.toggle('hidden')
+  }
+
+  if (!videoGallery.classList.contains('hidden')) {
+    videoGallery.classList.toggle('hidden')
+  }
 })
 
 module.exports.renderProfile = renderProfile;
