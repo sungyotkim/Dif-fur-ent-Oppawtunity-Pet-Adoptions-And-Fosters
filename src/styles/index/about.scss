@@ -19,10 +19,11 @@ $blue: #AAC4FF;
 .about-intro {
     width: fit-content;
     position: relative;
-    height: 15%;
+    height: 132px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 #first {
@@ -30,20 +31,24 @@ $blue: #AAC4FF;
     font-weight: 700;
     line-height: 2rem;
     padding: 0.375rem;
+    box-sizing: border-box;
+    height: 44px;
 }
 
 
 .second-container {
     display: flex;
     flex-direction: row;
+    margin-left: 8.75rem;
+    box-sizing: border-box;
+    height: 32px;
 }
 
 #second {
     font-size: x-large;
     font-weight: 700;
     line-height: 2rem;
-    padding: 0.375rem;
-    margin-left: 3rem;
+    // padding: 0.375rem;
 }
 
 #about-info-icon {
