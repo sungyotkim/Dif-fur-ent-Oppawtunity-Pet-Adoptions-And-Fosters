@@ -442,6 +442,12 @@ table {
   text-decoration: none;
   box-sizing: border-box;
   cursor: pointer;
+  padding-right: 5px;
+  border-radius: 8px;
+}
+
+#home-button:hover {
+  background-color: #D2DAFF;
 }
 
 #home-button > h1 {
@@ -460,6 +466,20 @@ table {
 
 .icon:hover {
   transform: rotate(360deg);
+}
+
+.main-about-btn {
+  cursor: pointer;
+  margin-right: 0.375rem;
+  font-size: 2rem;
+  font-weight: 700px;
+  border-radius: 8px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.main-about-btn:hover {
+  background-color: #D2DAFF;
 }
 
 .featured-container {
