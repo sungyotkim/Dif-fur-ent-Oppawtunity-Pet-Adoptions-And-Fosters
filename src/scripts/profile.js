@@ -9,7 +9,9 @@ const formPopup = document.querySelector('.form-popup');
 const formCloseBtn = document.querySelector('.close-button');
 const formSubmitBtn = document.querySelector('.submit-btn');
 const returnToSearchBtn = document.querySelector('.return-to-search');
-const resultsContainer = document.querySelector('.container-results')
+const resultsContainer = document.querySelector('.container-results');
+const requestFormTitle = document.querySelector('.request-form-title');
+const requestShelterName = document.querySelector('.request-shelter-name');
 
 function renderProfile(pet) {
   overview.reqPetInfo(pet.name);
@@ -29,7 +31,9 @@ function renderProfile(pet) {
   selector.style.left = `${overviewBtn.offsetLeft}px`;
   selector.style.width = `${activeWidth}px`;
 
-  profileBtnAnimation(overviewBtn)
+  profileBtnAnimation(overviewBtn);
+  requestFormTitle.innerHTML = `${pet.name}`;
+  requestShelterName.innerHTML = `${pet.shelter}`;
 }
 
 function profileBtnAnimation(btn) {
@@ -46,7 +50,9 @@ function profileBtnAnimation(btn) {
 };
 
 formPopupBtn.addEventListener("click", () => {
-  formPopup.classList.toggle('hidden')
+  formPopup.classList.toggle('hidden');
+  // requestFormTitle.innerHTML = `${currentPet.name}`;
+  // requestShelterName.innerHTML = `${currentPet.shelter}`;
 })
 
 formCloseBtn.addEventListener("click", () => {
