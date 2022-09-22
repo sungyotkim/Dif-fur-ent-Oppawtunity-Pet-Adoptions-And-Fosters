@@ -12,6 +12,9 @@ document.addEventListener("DOMContentLoaded", e => {
   const mainContainer = document.querySelector('.container');
   const landing = document.querySelector('.landing');
   const home = document.querySelector('#home-button');
+  const featuredContainer = document.querySelector(".featured-container");
+  const searchResultsContainer = document.querySelector(".container-results");
+  const profileDisplayContainer = document.querySelector(".profile-display");
   
   //variables not used but need to render
   const container = document.querySelector('.container-center')
@@ -153,10 +156,33 @@ document.addEventListener("DOMContentLoaded", e => {
     if (mainContainer.classList.contains('hidden')) {
       mainContainer.classList.toggle('hidden');
     }
+
+    if (featuredContainer.classList.contains("hidden")) {
+      featuredContainer.classList.toggle("hidden")
+    }
+
     if (!landing.classList.contains('hidden')) {
       landing.classList.toggle('hidden')
     }
-    console.log(mainContainer.classList)
-    console.log(landing.classList)
+
+    if (!overviewContainer.classList.contains("hidden")) {
+      overviewContainer.classList.toggle("hidden");
+    }
+
+    if (!photoGalleryContainer.classList.contains("hidden")) {
+      photoGalleryContainer.classList.toggle("hidden");
+    }
+
+    if (!videoGalleryContainer.classList.contains("hidden")) {
+      videoGalleryContainer.classList.toggle("hidden")
+    }
+
+    if (!searchResultsContainer.classList.contains("hidden")) {
+      searchResultsContainer.classList.toggle("hidden")
+    }
+
+    if (!profileDisplayContainer.classList.contains("hidden")) {
+      profileDisplayContainer.classList.toggle("hidden")
+    }
   })
 });
