@@ -256,16 +256,6 @@ document.addEventListener("DOMContentLoaded", e => {
         }
       }, 50);
     }
-
-    function showChart() {
-      let chart = document.querySelector('.chart');
-      if (chart.classList.contains("hidden")) {
-        chart.classList.toggle('hidden');
-        chart.classList.toggle('active')
-      }
-
-    }
-
   }
   displayAboutPageAnimations();
 });
