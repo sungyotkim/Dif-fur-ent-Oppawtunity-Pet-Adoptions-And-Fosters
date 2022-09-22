@@ -4,6 +4,10 @@ const photoGallery = require('./photo-gallery');
 const profileDisplay = document.querySelector('.profile-display');
 const profileOverview = document.querySelector('.profile-overview-container');
 const overviewBtn = document.querySelector('.overview-btn');
+const formPopupBtn = document.querySelector('.adopt-me-container');
+const formPopup = document.querySelector('.form-popup')
+const formCloseBtn = document.querySelector('.close-button');
+
 function renderProfile(pet) {
   overview.reqPetInfo(pet.name);
   videoGallery.reqPetInfo(pet.name);
@@ -37,5 +41,13 @@ function profileBtnAnimation(btn) {
   selector.style.left = `${btn.offsetLeft}px`;
   selector.style.width = `${activeWidth}px`;
 };
+
+formPopupBtn.addEventListener("click", () => {
+  formPopup.classList.toggle('hidden')
+})
+
+formCloseBtn.addEventListener("click", () => {
+  formPopup.classList.toggle('hidden')
+})
 
 module.exports.renderProfile = renderProfile;
