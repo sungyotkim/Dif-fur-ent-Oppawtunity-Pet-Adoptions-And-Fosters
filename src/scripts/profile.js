@@ -7,7 +7,9 @@ const overviewBtn = document.querySelector('.overview-btn');
 const formPopupBtn = document.querySelector('.adopt-me-container');
 const formPopup = document.querySelector('.form-popup');
 const formCloseBtn = document.querySelector('.close-button');
-const formSubmitBtn = document.querySelector('.submit-btn')
+const formSubmitBtn = document.querySelector('.submit-btn');
+const returnToSearchBtn = document.querySelector('.return-to-search');
+const resultsContainer = document.querySelector('.container-results')
 
 function renderProfile(pet) {
   overview.reqPetInfo(pet.name);
@@ -53,6 +55,11 @@ formCloseBtn.addEventListener("click", () => {
 
 formSubmitBtn.addEventListener("click", () => {
   formPopup.classList.toggle('hidden')
+})
+
+returnToSearchBtn.addEventListener("click", () => {
+  profileDisplay.classList.toggle('hidden');
+  resultsContainer.classList.toggle('hidden')
 })
 
 module.exports.renderProfile = renderProfile;
