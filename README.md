@@ -22,7 +22,76 @@ By allowing for a more unique online interaction with the animals, shelters woul
 - For the video gallery, simply click on the smaller videos on the right to render the video on the larger screeen. Its associated review/comment will be populated underneath the main video.
 
 ## Technologies
-- Fully implemented with HTML/CSS(SCSS)/JS
+- Vanilla JS
+- HTML/CSS
+- JQuery
+
+## Development
+**Filtering Search Results Snippet**
+Simplifying the search algorithm implemented as much as possible, after fetching all pet data from the pet JSON file, the results displayed are filtered based on user input. Currently, the user is bale to filter by species, breed, and age. 
+
+```javascript
+function filterSpecies(pets, species) {
+  if (species === 'Any' || species === 'Multiple') { return pets }
+
+  let filtered = pets.filter(pet => {
+    return pet.species === species
+  })
+
+  return filtered;
+}
+
+function filterBreed(pets, breed) {
+  if (breed.length === 0) { return pets }
+
+  let filtered = pets.filter(pet => {
+    return breed.includes(pet.breed)
+  })
+
+  return filtered;
+}
+
+function filterAge(pets, ages) {
+  if (ages.length === 0) { return pets } 
+
+  let filtered = pets.filter(pet => {
+    return ages.includes(pet.age);
+  })
+
+  return filtered;
+}
+```
+
+Once the search results are displayed, users are able to filter the results further by choosing to view pets based on which shelters they are currently residing in. These shelters are organized in a chart via rows and by selecting a given row, the current filtered results are hidden/revealed appropriately. 
+
+```javascript
+row.addEventListener("click", () => {
+      row.classList.toggle("checked");
+      let rowsChecked = document.querySelectorAll(".shelter-row.checked");
+      let cards = resultsContainer.querySelectorAll('.result-card');
+      
+      if (rowsChecked.length > 0) {
+        let sheltersChecked = [];
+        rowsChecked.forEach(row => {
+          sheltersChecked.push(row.innerText)
+        })
+        
+        cards.forEach(card => {
+          if (!sheltersChecked.includes(card.lastChild.innerText)) {
+            card.setAttribute('style', 'display: none;')
+          } else {
+            card.setAttribute('style', 'display: "";')
+          }
+        })
+      } else {
+        cards.forEach(card => {
+          card.setAttribute('style', 'display: "";')
+        })
+      }
+    })
+```
+
+
 
 ## TODO's / Future Features
 - Linking to a shelter's API to pull in data/images/videos of actual animals available for adoption/foster/visits.
