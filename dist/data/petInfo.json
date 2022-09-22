@@ -561,7 +561,7 @@
         "gender": "F",
         "species": "Feline",
         "breed": "Domestic Short Hair",
-        "mix": true,
+        "mix": false,
         "mini": false,
         "colors": [
             "Tabby"
@@ -586,6 +586,37 @@
         ],
         "reviews": [
             "When she's comfortable, she'll come and play with you and groom you!"
+        ]
+    },
+    {
+        "name": "Leon",
+        "age": "8Y",
+        "gender": "M",
+        "species": "Feline",
+        "breed": "Tabby",
+        "mix": false,
+        "mini": false,
+        "colors": [
+            "Brown",
+            "Black"
+        ],
+        "shelter": "Animal Haven",
+        "photos": [
+            "photo_1_leon.jpg"
+        ],
+        "videos": [
+            "video_1_leon.mp4"
+        ],
+        "status": "Available for adoption",
+        "bio": "Leon is a sweet cat who loves his toys and grows very fond of people. He's not very friendly with other animals though.",
+        "characteristics": [
+            "sweet",
+            "not-dog-friendly",
+            "not-cat-friendly",
+            "friendly"
+        ],
+        "reviews": [
+            "This was him with his favorite toy!"
         ]
     }
 ]
