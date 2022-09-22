@@ -370,6 +370,11 @@ $blue: #AAC4FF;
   margin-right: 5px;
   margin-left: 10px;
   margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.radio-label {
+  cursor: pointer;
 }
 
 .form-container > label > input[type=text]:focus, .form-container > label > input[type=tel]:focus {
