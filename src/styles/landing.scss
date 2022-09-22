@@ -88,3 +88,7 @@ $blue: #AAC4FF;
     color: white;
     font-size: 18px;
 }
+
+.landing-btns > div:hover {
+    background-color: $lighterPurple;
+}

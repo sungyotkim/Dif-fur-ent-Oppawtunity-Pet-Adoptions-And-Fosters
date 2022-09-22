@@ -1916,6 +1916,10 @@ body, html {
   font-size: 18px;
 }
 
+.landing-btns > div:hover {
+  background-color: #D2DAFF;
+}
+
 body {
   font-family: "Nunito", sans-serif;
   caret-color: transparent;
