@@ -110,7 +110,7 @@ function goalProgress() {
     let percentageLabel = document.getElementById("percentage");
     percentageLabel.innerText = `${percentage}%`;
     if (percentage === 100) {
-        percentageLabel.style.left = '35%'
+        percentageLabel.style.left = '25%'
     }
 }
 
