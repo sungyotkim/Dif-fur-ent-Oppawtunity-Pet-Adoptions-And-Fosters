@@ -279,7 +279,7 @@ let pets = [
     gender: "F",
     species: "Feline",
     breed: "Domestic Short Hair",
-    mix: true,
+    mix: false,
     mini: false,
     colors: ["Tabby"],
     shelter: "Bobbi & the Strays",
@@ -289,6 +289,40 @@ let pets = [
     bio: "Ziva is curious about almost every inanimate object that is new in her home. She'll have to slowly check up on it and rub herself on it. When it comes to people however, you need to visit a few times before she'll even be in the same room as you.",
     characteristics: ["playful", "dog-tolerant", "not-cat-friendly", "shy", "needs time to warm up"],
     reviews: ["When she's comfortable, she'll come and play with you and groom you!"]
+  },
+  {
+    name: "Phoebe",
+    age: "2Y",
+    gender: "F",
+    species: "Feline",
+    breed: "Siamese",
+    mix: false,
+    mini: false,
+    colors: ["Brown", "Cream"],
+    shelter: "Animal Haven",
+    photos: ["photo_1_phoebe.jpg"],
+    videos: ["video_1_phoebe.mp4"],
+    status: "Available for adoption",
+    bio: "Phoebe is a playful cat that can be pretty spoiled. She wants a lot of attention and can become needy if she grows attached to you. Will speak with you!",
+    characteristics: ["needy", "playful", "not-dog-friendly", "not-cat-friendly", "vocal"],
+    reviews: [""]
+  },
+  {
+    name: "Leon",
+    age: "8Y",
+    gender: "M",
+    species: "Feline",
+    breed: "Tabby",
+    mix: false,
+    mini: false,
+    colors: ["Brown", "Black"],
+    shelter: "Animal Haven",
+    photos: ["photo_1_leon.jpg"],
+    videos: ["video_1_leon.mp4"],
+    status: "Available for adoption",
+    bio: "Leon is a sweet cat who loves his toys and grows very fond of people. He's not very friendly with other animals though.",
+    characteristics: ["sweet", "not-dog-friendly", "not-cat-friendly", "friendly"],
+    reviews: ["This was him with his favorite toy!"]
   }
 ];
 
