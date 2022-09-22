@@ -350,8 +350,13 @@ document.addEventListener("DOMContentLoaded", e => {
           phone: $(this)[0][3].value,
           message: $(this)[0][7].value,
         },
-        beforeSend: console.log($(this)),
-        success: alert('Submitted!')
+        success: alert('Submitted!'),
+        error: function (data) {
+          let r = jQuery.parseJSON(data.responseText);
+          alert("Message: " + r.Message);
+          alert("StackTrace: " + r.StackTrace);
+          alert("ExceptionType: " + r.ExceptionType);
+        }
       })
     })
   })
