@@ -20,7 +20,8 @@ document.addEventListener("DOMContentLoaded", e => {
   let infoIcon = document.querySelector('.info-icon');
   const mainAboutBtn = document.querySelector('.main-about-btn');
   const underNavContainer = document.querySelector('.under-nav');
-  const aboutContainer =document.querySelector('.about-container');
+  const aboutContainer = document.querySelector('.about-container');
+  const landingAboutBtn = document.querySelector('.landing-about-btn');
   
   //variables not used but need to render
   const container = document.querySelector('.container-center')
@@ -154,8 +155,22 @@ document.addEventListener("DOMContentLoaded", e => {
     if (!landing.classList.contains('hidden')) {
       landing.classList.toggle('hidden')
     }
-    console.log(mainContainer.classList)
-    console.log(landing.classList)
+  })
+
+  landingAboutBtn.addEventListener("click", () => {
+    if (!landing.classList.contains('hidden')) {
+      landing.classList.toggle('hidden')
+    }
+
+    if (mainContainer.classList.contains('hidden')) {
+      mainContainer.classList.toggle('hidden');
+    }
+
+    if (aboutContainer.classList.contains('hidden')) {
+      aboutContainer.classList.toggle('hidden');
+    }
+
+    displayAboutPageAnimations()
   })
 
   home.addEventListener("click", () => {
