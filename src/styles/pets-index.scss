@@ -4,6 +4,7 @@
 @import "./index/search-results.scss";
 @import "./index/chart.scss";
 @import "./index/profile.scss";
+@import "./index/about.scss";
 
 $darkerPurple: #B1B2FF;
 $lighterPurple: #D2DAFF;
@@ -24,6 +25,7 @@ body, html {
   left: 0px;
   background: white;
   transition: 1s ease-in-out;
+  position: relative;
 }
 
 .container > div {

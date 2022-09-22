@@ -1393,6 +1393,16 @@ table {
   text-decoration: none;
 }
 
+.about-container {
+  position: relative;
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: blue;
+}
+
 body, html {
   background: #B1B2FF;
   height: 100%;
@@ -1407,6 +1417,7 @@ body, html {
   left: 0px;
   background: white;
   transition: 1s ease-in-out;
+  position: relative;
 }
 
 .container > div {
