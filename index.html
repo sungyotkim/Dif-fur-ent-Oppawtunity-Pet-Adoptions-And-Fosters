@@ -414,31 +414,40 @@
 
                   <div class="form-popup" id="myForm">
                     <form action="https://script.google.com/macros/s/AKfycbwY9nayc0-xjhK7b45SWPoL8GXiHSDSfgcSBPHI14iJGlZf34sN-wbHIv_67mjFwX9r/exec" method="POST">
-                      <p>This is just a sample project so none of these animals are actually available for adoption. This form serves as a placeholder but it does work! Please fill out this form if you would like to leave me a message! Please include your email/phone if you would like me to contact you.</p>
+                      <h2 class="request-form-title"></h2>
+                      <h2 class="request-shelter-name"></h2>
 
-                      <label>
+                      <p>This is a placeholder form. Currently, submitting does nothing!</p>
+                      <label for="First Name">
                         <h2>First Name</h2>
-                        <input type="text" placeholder="Enter Your First Name" required>
+                        <input type="text" placeholder="Enter Your First Name" required name="First Name">
                       </label>
 
-                      <label>
+                      <label for="Last Name">
                         <h2>Last Name</h2>
-                        <input type="text" placeholder="Enter Your Last Name" required>
+                        <input type="text" placeholder="Enter Your Last Name" required name="Last Name">
                       </label>
 
-                      <label>
+                      <label for="Email">
                         <h2>Email</h2>
-                        <input type="text" placeholder="Enter Your Email (optional)">
+                        <input type="text" placeholder="Enter Your Email (optional)" name="Email">
                       </label>
 
-                      <label>
+                      <label for="Phone">
                         <h2>Phone</h2>
-                        <input type="text" placeholder="Enter Your Phone Number (optional)">
+                        <input type="text" placeholder="Enter Your Phone Number (optional)" name="Phone">
                       </label>
 
                       <label>
+                        <h2>Select your request type (placeholder)</h2>
+                        <input type="radio" id="adoption" value="adoption" checked>
+                        <input type="radio" id="foster" value="foster">
+                        <input type="radio" id="visiting" value="visiting">
+                      </label>
+                      
+                      <label for="Message">
                         <h2>Message</h2>
-                        <input type="textarea" placeholder="Write your message here..." rows="4" cols="50">
+                        <input type="textarea" name="Message" placeholder="Write your message here..." rows="4" cols="30">
                       </label>
 
                       <button type="submit" class="btn">Leave a message!</button>
