@@ -300,7 +300,7 @@ let pets = [
     mini: false,
     colors: ["Brown", "Cream"],
     shelter: "Animal Haven",
-    photos: ["photo_1_phoebe.jpg", "photo_2_phoebe.jpg", "photo_3_phoebe"],
+    photos: ["photo_1_phoebe.jpg", "photo_2_phoebe.jpg", "photo_3_phoebe.jpg"],
     videos: ["video_1_phoebe.mp4"],
     status: "Available for adoption",
     bio: "Phoebe is a playful cat that can be pretty spoiled. She wants a lot of attention and can become needy if she grows attached to you. Will speak with you!",
