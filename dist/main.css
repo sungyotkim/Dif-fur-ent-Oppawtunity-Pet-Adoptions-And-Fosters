@@ -1217,6 +1217,17 @@ table {
   font-weight: 500;
 }
 
+.return-to-search {
+  position: fixed;
+  left: 10%;
+  height: 55px;
+  border-radius: 50px;
+}
+
+.return-to-search:hover {
+  background-color: #8789fc;
+}
+
 .profile-nav-btn > span {
   margin-right: 5px;
 }
