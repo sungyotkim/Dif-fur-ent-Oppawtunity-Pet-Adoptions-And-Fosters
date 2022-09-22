@@ -15,6 +15,9 @@ document.addEventListener("DOMContentLoaded", e => {
   const featuredContainer = document.querySelector(".featured-container");
   const searchResultsContainer = document.querySelector(".container-results");
   const profileDisplayContainer = document.querySelector(".profile-display");
+  const firstText = document.querySelector("#first");
+  const secondText = document.querySelector('#second');
+  let infoIcon = document.querySelector('.info-icon');
   
   //variables not used but need to render
   const container = document.querySelector('.container-center')
@@ -185,4 +188,74 @@ document.addEventListener("DOMContentLoaded", e => {
       profileDisplayContainer.classList.toggle("hidden")
     }
   })
+
+  function displayAboutPageAnimations() {
+    if (!infoIcon.classList.contains('hidden')) {
+      infoIcon.classList.toggle('hidden')
+    }
+
+    let firstPhrase = 'About 6.3 million dogs and cats enter animal shelters in the US every year...';
+    let secondPhrase = 'But only about 4.1 million dogs and cats are adopted annually.';
+    let firstLength = firstPhrase.length;
+    let secondLength = secondPhrase.length;
+    
+    function textCreator() {
+      let text;
+      let forwards = true;
+      let offset = 0;
+      let skipCount = 0;
+      let texter = setInterval(() => {
+        if (forwards) {
+          if (offset >= firstLength) {
+            skipCount++;
+          }
+        } 
+
+        text = firstPhrase.substr(0, offset);
+        if (skipCount === 0) {
+          if (forwards) {
+            offset++;
+          } 
+        }
+        firstText.innerText = text;
+
+        if (text.length === firstLength) {
+          clearInterval(texter);
+          textCreator2();
+        }
+      }, 50);
+    }
+
+    function textCreator2() {
+      let text;
+      let forwards = true;
+      let offset = 0;
+      let skipCount = 0;
+      let texter = setInterval(() => {
+        if (forwards) {
+          if (offset >= secondLength) {
+            skipCount++;
+          }
+        } 
+
+        text = secondPhrase.substr(0, offset);
+        if (skipCount === 0) {
+          if (forwards) {
+            offset++;
+          } 
+        }
+        secondText.innerText = text;
+
+        if (text.length === secondLength) {
+          clearInterval(texter);
+          if (infoIcon.classList.contains('hidden')) {
+            infoIcon.classList.toggle('hidden')
+          }
+        }
+      }, 50);
+    }
+
+    textCreator();
+  }
+  displayAboutPageAnimations();
 });

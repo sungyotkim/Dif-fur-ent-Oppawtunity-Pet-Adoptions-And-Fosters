@@ -3,6 +3,10 @@ $lighterPurple: #D2DAFF;
 $lightestPurple: #EEF1FF;
 $blue: #AAC4FF;
 
+.hidden {
+    display: none;
+}
+
 .about-container {
     position: relative;
     height: 100%;
@@ -28,14 +32,18 @@ $blue: #AAC4FF;
     padding: 0.375rem;
 }
 
+
+.second-container {
+    display: flex;
+    flex-direction: row;
+}
+
 #second {
     font-size: x-large;
     font-weight: 700;
-    display: flex;
     line-height: 2rem;
     padding: 0.375rem;
-    margin-left: 2rem;
-    justify-content: flex-end; 
+    margin-left: 3rem;
 }
 
 #about-info-icon {
