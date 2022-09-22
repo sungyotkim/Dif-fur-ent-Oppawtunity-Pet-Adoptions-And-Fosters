@@ -91,6 +91,7 @@ row.addEventListener("click", () => {
     })
 ```
 
+![img](https://github.com/sungyotkim/Dif-fur-ent-Oppawtunity-Pet-Adoptions-And-Fosters/blob/main/github-assets/featuredPageSample2.PNG)
 
 
 ## TODO's / Future Features
