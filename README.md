@@ -1,5 +1,7 @@
 # Dif-fur-ent-Oppawtunity-Pet-Adoptions-And-Foster <img src="https://emoji.discadia.com/emojis/c6d92ad3-7d82-489a-aeda-09657c9a901a.gif" width="40">
 
+## [Link to live version](https://sungyotkim.github.io/Dif-fur-ent-Oppawtunity-Pet-Adoptions-And-Fosters/) 
+
 ## Background - The Numbers and The Reasons:
 Most people love animals, but animals may not be for everyone. While there are different ways one could obtain a pet of their own, adopting a pet is highly recommended as many animals are homeless and in need of a family. In fact, according to the ASPCA roughly **6.3 million** dogs and cats enter animal shelters in the US every year. Of those animals, about **4.1 million are adopted**. Sadly, roughly 900,000 shelter animals are euthanized due to a variety of reasons including declining health status and overpopulation of shelters. It's important to note that the rate of euthanization has [decreased considerably since 2011](https://www.aspca.org/helping-people-pets/shelter-intake-and-surrender/pet-statistics#:~:text=Facts%20about%20U.S.%20Animal%20Shelters%3A&text=These%20are%20national%20estimates%3B%20the,and%203.2%20million%20are%20cats.) which can be partially attribtued to increasing percentages of animals adopted and returned to their owners. <br>
 Of the pets that are adopted, however, roughly [7-20% are returned to the shelter](https://www.americanhumane.org/publication/keeping-pets-dogs-and-cats-in-homes-phase-ii-descriptive-study-of-post-adoption-retention-in-six-shelters-in-three-u-s-cities/). These numbers can partially vary depending on the shelter definition of returns. While unsuccessful adoptions can't be avoided as non-perfect matches can occur, some contributing factors to returning pets after adoptions are unrealistic/wrong expectations and behavioral issues of the animal. <br>
@@ -10,38 +12,19 @@ In order to minimize the rate of adoption returns and to maximize the rates of a
 Beyond visual information, an interactive review userface would be implemented to allow for visitors, volunteers, and fosterers to leave reviews describing their (hopefully positive) interactions with the pets to allow for a better up-to-date description of the animal. Potential adopters can then absorb this variety of data upfront and online before going and visiting the pet to filter the animals of interest with ease and comparing their in person interactions with the information on the animal's profile page to confirm whether or not they make a good pair. <br>
 By allowing for a more unique online interaction with the animals, shelters would also experience a more efficient means of interacting with prospective adopters and ideally, face less rates of return. There will also be an option to request to foster these animals for people who are interested in fostering, but either unsure of adopting or only able to foster for a period of time. If possible, data from multiple shelters will be obtained thereby allowing users to see available animals from multiple shelters at one given place, saving them from the effort of navigating multiple websites to access such information.
 
-## Functionality & MVPs
-In Dif-fur-ent Oppawtunity, users will be able to: <br>
-- [ ] Search through animals available for adoption/fostering from different shelters
-- [ ] Filter their search result by species, breed, gender, age, characteristics, and location
-- [ ] View individual animals profiles to see relevant pictures, bio, and videos of the animal
-- [ ] Request to foster the animal
-- [ ] Request to adopt the animal
-- [ ] See the shelter's requirements to foster/adopt the animal
+## Instructions
+- From the landing page, you may opt to see the about page for the project or choose to browse the project. Regardless of which option you choose, you will have the ability to access the other.
+- The featured page includes 5 random interactive photos of the animals available on the site. You may click on any picture to view their profile page.
+- A search bar exists on every page minus the landing and the about page. You may filter the animals on the site using the dropdown items available. As this is a small scale project, only NYC animals/shelters have been included. You may leave the city input blank as it will default to NYC.
+- From the search results page, you can continue to filter results by shelter or click on any pet to see their profile page. You may also click the speech bubble above the randomly generated featured video to see that animal's profile as well.
+- The profile page allows users to view the overview, all photos, and all videos (if any). Toggle the view you want!
+- For the photo gallery, simply click on the photo you wish to see and it will populate it on the larger view screen. The selected photo has a small border highlight.
+- For the video gallery, simply click on the smaller videos on the right to render the video on the larger screeen. Its associated review/comment will be populated underneath the main video.
 
-In addition, this project will include:
+## Technologies
+- Fully implemented with HTML/CSS(SCSS)/JS
 
-- [x] A README explaining the project
-- [ ] An about page detailing additional background information resulting to the creation of this project
-- [ ] Credits to relevant sources
-
-## Wireframes
-##### Main Page: 
-<img src="./github-assets/main-page-wireframe.JPG" width="600" alt="main-page-wireframe">
-
-##### Animal Profile Page:
-<img src="./github-assets/profile-page-wireframe.JPG" width="600" alt="profile-page-wireframe">
-
-## Technologies, Libraries, APIs
-- Dog API for dog image placeholders: https://dog.ceo/dog-api/
-- Cat API for cat image placeholders: https://thecatapi.com/
-- Express.js backend holding information of animals to pull from
-- D3 library for rendering charts in the about page
-
-## Implementation Timeline
-- Friday Afternoon: Complete main display page set up
-- Weekend: Research APIs, how to use express.js, possibly build out backend, finish set up
-- Monday: Populate index page, set sorting ability
-- Tuesday: Populate profile pages for animals
-- Wednesday: Set up shelter pages, work on html/css
-- Thursday Morning: Test functionality, debug kinks
+## TODO's / Future Features
+- Linking to a shelter's API to pull in data/images/videos of actual animals available for adoption/foster/visits.
+- Allowing connection between html forms to shelters to enable requests to adopt/shelter/visit a given animal.
+- Pulling live data from shelters to populate adoption goals with live numbers, rather than simulated numbers.
