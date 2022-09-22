@@ -1217,6 +1217,10 @@ table {
   font-weight: 500;
 }
 
+.profile-nav-btn > span {
+  margin-right: 5px;
+}
+
 .profile-nav-btn.active {
   color: white;
 }

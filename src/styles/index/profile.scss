@@ -27,7 +27,6 @@ $blue: #AAC4FF;
   align-items: center;
 }
 
-
 .profile-nav-btn {
   color: black;
   text-transform: uppercase;
@@ -40,6 +39,10 @@ $blue: #AAC4FF;
   font-size: x-large;
   align-items: center;
   font-weight: 500;
+}
+
+.profile-nav-btn > span {
+  margin-right: 5px;
 }
 
 .profile-nav-btn.active {
