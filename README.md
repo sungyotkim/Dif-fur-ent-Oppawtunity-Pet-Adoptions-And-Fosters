@@ -17,7 +17,7 @@ By allowing for a more unique online interaction with the animals, shelters woul
 ## Technologies
 - Vanilla JS
 - HTML/CSS
-- JQuery
+- JQuery for sending forms with AJAX
 
 ## Development
 **Filtering Search Results Snippet**
