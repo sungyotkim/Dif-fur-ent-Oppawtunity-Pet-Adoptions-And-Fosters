@@ -5,8 +5,9 @@ const profileDisplay = document.querySelector('.profile-display');
 const profileOverview = document.querySelector('.profile-overview-container');
 const overviewBtn = document.querySelector('.overview-btn');
 const formPopupBtn = document.querySelector('.adopt-me-container');
-const formPopup = document.querySelector('.form-popup')
+const formPopup = document.querySelector('.form-popup');
 const formCloseBtn = document.querySelector('.close-button');
+const formSubmitBtn = document.querySelector('.submit-btn')
 
 function renderProfile(pet) {
   overview.reqPetInfo(pet.name);
@@ -47,6 +48,10 @@ formPopupBtn.addEventListener("click", () => {
 })
 
 formCloseBtn.addEventListener("click", () => {
+  formPopup.classList.toggle('hidden')
+})
+
+formSubmitBtn.addEventListener("click", () => {
   formPopup.classList.toggle('hidden')
 })
 
