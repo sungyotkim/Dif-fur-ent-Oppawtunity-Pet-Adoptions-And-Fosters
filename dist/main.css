@@ -1925,6 +1925,13 @@ body, html {
   background-color: #D2DAFF;
 }
 
+.credit {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -65px;
+}
+
 body {
   font-family: "Nunito", sans-serif;
   caret-color: transparent;

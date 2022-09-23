@@ -92,3 +92,10 @@ $blue: #AAC4FF;
 .landing-btns > div:hover {
     background-color: $lighterPurple;
 }
+
+.credit {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -65px;
+}
