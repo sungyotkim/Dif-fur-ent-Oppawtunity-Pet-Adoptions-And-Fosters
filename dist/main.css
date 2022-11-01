@@ -396,7 +396,7 @@ table {
 
 .main-nav {
   height: 50px;
-  background-color: #B1B2FF;
+  background-color: #b1b2ff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -447,7 +447,7 @@ table {
 }
 
 #home-button:hover {
-  background-color: #D2DAFF;
+  background-color: #d2daff;
 }
 
 #home-button > h1 {
@@ -468,6 +468,10 @@ table {
   transform: rotate(360deg);
 }
 
+.fa-angellist {
+  font-size: 30px;
+}
+
 .main-about-btn {
   cursor: pointer;
   margin-right: 0.375rem;
@@ -479,7 +483,7 @@ table {
 }
 
 .main-about-btn:hover {
-  background-color: #D2DAFF;
+  background-color: #d2daff;
 }
 
 .featured-container {
